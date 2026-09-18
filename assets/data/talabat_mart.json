@@ -2,21 +2,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "15-09-2026 (10)",
-    "display_title": "حسبة الخروف - 15/09/2026 (دفعة 10)",
+    "display_title": "15/09/2026 - دفعة 10",
+    "sub_title": "دفعة 10 • حسبة الخروف",
     "date": "15/09/2026",
     "batch_label": "دفعة 10",
     "sheep_count": 5.0,
     "price_per_kg": 9.8,
     "invoice_total": 1274.0,
-    "weight_received": 116.5,
-    "weight_cut": 116.5,
-    "waste_loss": 0.0,
+    "weight_received": 130.0,
+    "weight_cut": 128.9,
+    "waste_loss": 1.1,
     "cuts_total_value": 1274.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 32.8,
-        "percentage": "28%",
+        "percentage": "364%",
         "price": 11.095,
         "total": 363.925,
         "status": "primary"
@@ -24,7 +25,7 @@
       {
         "name": "شقف",
         "qty": 10.5,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 210.0,
         "status": "normal"
@@ -40,7 +41,7 @@
       {
         "name": "ريش",
         "qty": 17.0,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 14.0,
         "total": 238.0,
         "status": "highlight_yellow"
@@ -48,7 +49,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 17.5,
-        "percentage": "15%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 210.0,
         "status": "highlight_yellow"
@@ -56,7 +57,7 @@
       {
         "name": "بدنيات",
         "qty": 19.0,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 57.0,
         "status": "highlight_red"
@@ -95,8 +96,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 12.5,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -104,7 +105,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 15.25,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 10.5,
         "total": 160.125,
         "status": "normal"
@@ -114,21 +115,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "14-09-2026 (9)",
-    "display_title": "حسبة الخروف - 14/09/2026 (دفعة 9)",
+    "display_title": "14/09/2026 - دفعة 9",
+    "sub_title": "دفعة 9 • حسبة الخروف",
     "date": "14/09/2026",
     "batch_label": "دفعة 9",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 2067.8,
-    "weight_received": 192.49,
-    "weight_cut": 192.49,
-    "waste_loss": 0.0,
+    "weight_received": 211.0,
+    "weight_cut": 210.4,
+    "waste_loss": 0.6,
     "cuts_total_value": 2067.8,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.0,
-        "percentage": "32%",
+        "percentage": "674%",
         "price": 11.048,
         "total": 673.95,
         "status": "primary"
@@ -136,7 +138,7 @@
       {
         "name": "شقف",
         "qty": 17.0,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 340.0,
         "status": "normal"
@@ -152,7 +154,7 @@
       {
         "name": "ريش",
         "qty": 26.5,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 14.0,
         "total": 371.0,
         "status": "highlight_yellow"
@@ -160,7 +162,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 24.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 288.0,
         "status": "highlight_yellow"
@@ -168,7 +170,7 @@
       {
         "name": "بدنيات",
         "qty": 31.5,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 94.5,
         "status": "highlight_red"
@@ -184,7 +186,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -207,8 +209,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 18.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -216,7 +218,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.5,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 10.5,
         "total": 236.25,
         "status": "normal"
@@ -226,21 +228,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "13-09-2026 (8)",
-    "display_title": "حسبة الخروف - 13/09/2026 (دفعة 8)",
+    "display_title": "13/09/2026 - دفعة 8",
+    "sub_title": "دفعة 8 • حسبة الخروف",
     "date": "13/09/2026",
     "batch_label": "دفعة 8",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 1969.8,
-    "weight_received": 181.85,
-    "weight_cut": 181.85,
+    "weight_received": 201.0,
+    "weight_cut": 201.0,
     "waste_loss": 0.0,
     "cuts_total_value": 1969.8,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 67.1,
-        "percentage": "37%",
+        "percentage": "649%",
         "price": 9.676,
         "total": 649.25,
         "status": "primary"
@@ -248,7 +251,7 @@
       {
         "name": "شقف",
         "qty": 18.5,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 370.0,
         "status": "normal"
@@ -264,7 +267,7 @@
       {
         "name": "ريش",
         "qty": 23.5,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 329.0,
         "status": "highlight_yellow"
@@ -272,7 +275,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 24.3,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 291.6,
         "status": "highlight_yellow"
@@ -280,7 +283,7 @@
       {
         "name": "بدنيات",
         "qty": 20.3,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 3.0,
         "total": 60.9,
         "status": "highlight_red"
@@ -288,7 +291,7 @@
       {
         "name": "نتر",
         "qty": 3.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 9.0,
         "status": "highlight_red"
@@ -319,8 +322,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 19.25,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -328,7 +331,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 20.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 210.0,
         "status": "normal"
@@ -338,21 +341,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "12-09-2026 (7)",
-    "display_title": "حسبة الخروف - 12/09/2026 (دفعة 7)",
+    "display_title": "12/09/2026 - دفعة 7",
+    "sub_title": "دفعة 7 • حسبة الخروف",
     "date": "12/09/2026",
     "batch_label": "دفعة 7",
     "sheep_count": 5.0,
     "price_per_kg": 9.8,
     "invoice_total": 1332.8,
-    "weight_received": 122.89,
-    "weight_cut": 122.89,
-    "waste_loss": 0.0,
+    "weight_received": 136.0,
+    "weight_cut": 135.3,
+    "waste_loss": 0.7,
     "cuts_total_value": 1332.8,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 43.0,
-        "percentage": "35%",
+        "percentage": "444%",
         "price": 10.333,
         "total": 444.3,
         "status": "primary"
@@ -360,7 +364,7 @@
       {
         "name": "شقف",
         "qty": 12.0,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 240.0,
         "status": "normal"
@@ -376,7 +380,7 @@
       {
         "name": "ريش",
         "qty": 13.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 189.0,
         "status": "highlight_yellow"
@@ -384,7 +388,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 17.7,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 212.4,
         "status": "highlight_yellow"
@@ -392,7 +396,7 @@
       {
         "name": "بدنيات",
         "qty": 15.4,
-        "percentage": "13%",
+        "percentage": "11%",
         "price": 3.0,
         "total": 46.2,
         "status": "highlight_red"
@@ -431,8 +435,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 12.5,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -440,7 +444,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 15.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 10.5,
         "total": 157.5,
         "status": "normal"
@@ -450,21 +454,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "10-09-2026 (6)",
-    "display_title": "حسبة الخروف - 10/09/2026 (دفعة 6)",
+    "display_title": "10/09/2026 - دفعة 6",
+    "sub_title": "دفعة 6 • حسبة الخروف",
     "date": "10/09/2026",
     "batch_label": "دفعة 6",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 1989.4,
-    "weight_received": 179.0,
-    "weight_cut": 179.0,
-    "waste_loss": 0.0,
+    "weight_received": 203.0,
+    "weight_cut": 202.38,
+    "waste_loss": 0.62,
     "cuts_total_value": 1989.4,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 54.3,
-        "percentage": "30%",
+        "percentage": "627%",
         "price": 11.555,
         "total": 627.45,
         "status": "primary"
@@ -472,7 +477,7 @@
       {
         "name": "شقف",
         "qty": 19.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 380.0,
         "status": "normal"
@@ -488,7 +493,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -496,7 +501,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 18.0,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 12.0,
         "total": 216.0,
         "status": "highlight_yellow"
@@ -504,7 +509,7 @@
       {
         "name": "بدنيات",
         "qty": 24.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 72.0,
         "status": "highlight_red"
@@ -543,8 +548,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.12,
-        "percentage": "0%",
+        "qty": 23.5,
+        "percentage": "12%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -552,7 +557,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 25.5,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 10.5,
         "total": 267.75,
         "status": "normal"
@@ -562,21 +567,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "7-09-2026 (2)",
-    "display_title": "حسبة الخروف - 7/09/2026 (دفعة 2)",
+    "display_title": "7/09/2026 - دفعة 2",
+    "sub_title": "دفعة 2 • حسبة الخروف",
     "date": "7/09/2026",
     "batch_label": "دفعة 2",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 2067.8,
-    "weight_received": 187.41,
-    "weight_cut": 187.41,
-    "waste_loss": 0.0,
+    "weight_received": 211.0,
+    "weight_cut": 210.6,
+    "waste_loss": 0.4,
     "cuts_total_value": 2067.8,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 60.0,
-        "percentage": "32%",
+        "percentage": "675%",
         "price": 11.245,
         "total": 674.7,
         "status": "primary"
@@ -584,7 +590,7 @@
       {
         "name": "شقف",
         "qty": 18.0,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 360.0,
         "status": "normal"
@@ -600,7 +606,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -608,7 +614,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 28.0,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 336.0,
         "status": "highlight_yellow"
@@ -616,7 +622,7 @@
       {
         "name": "بدنيات",
         "qty": 25.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 75.0,
         "status": "highlight_red"
@@ -624,7 +630,7 @@
       {
         "name": "نتر",
         "qty": 7.0,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 21.0,
         "status": "highlight_red"
@@ -632,7 +638,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -655,8 +661,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.11,
-        "percentage": "0%",
+        "qty": 23.3,
+        "percentage": "11%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -664,7 +670,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 19.2,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 201.6,
         "status": "normal"
@@ -674,21 +680,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "5-09-2026 (5)",
-    "display_title": "حسبة الخروف - 5/09/2026 (دفعة 5)",
+    "display_title": "5/09/2026 - دفعة 5",
+    "sub_title": "دفعة 5 • حسبة الخروف",
     "date": "5/09/2026",
     "batch_label": "دفعة 5",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 1705.2,
-    "weight_received": 138.07,
-    "weight_cut": 138.07,
-    "waste_loss": 0.0,
+    "weight_received": 174.0,
+    "weight_cut": 157.05,
+    "waste_loss": 16.95,
     "cuts_total_value": 1705.2,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 50.0,
-        "percentage": "36%",
+        "percentage": "720%",
         "price": 14.405,
         "total": 720.25,
         "status": "primary"
@@ -696,7 +703,7 @@
       {
         "name": "شقف",
         "qty": 13.7,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 274.0,
         "status": "normal"
@@ -712,7 +719,7 @@
       {
         "name": "ريش",
         "qty": 21.0,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 14.0,
         "total": 294.0,
         "status": "highlight_yellow"
@@ -720,7 +727,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 15.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 12.0,
         "total": 186.0,
         "status": "highlight_yellow"
@@ -728,7 +735,7 @@
       {
         "name": "بدنيات",
         "qty": 20.0,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 60.0,
         "status": "highlight_red"
@@ -752,7 +759,7 @@
       {
         "name": "خصاوي",
         "qty": 2.35,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 11.75,
         "status": "highlight_yellow"
@@ -767,8 +774,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.12,
-        "percentage": "0%",
+        "qty": 19.1,
+        "percentage": "12%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -776,7 +783,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 12.4,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 130.2,
         "status": "normal"
@@ -786,21 +793,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "4-09-2026 (4)",
-    "display_title": "حسبة الخروف - 4/09/2026 (دفعة 4)",
+    "display_title": "4/09/2026 - دفعة 4",
+    "sub_title": "دفعة 4 • حسبة الخروف",
     "date": "4/09/2026",
     "batch_label": "دفعة 4",
     "sheep_count": 8.0,
     "price_per_kg": 9.75,
     "invoice_total": 2037.75,
-    "weight_received": 189.69,
-    "weight_cut": 189.69,
-    "waste_loss": 0.0,
+    "weight_received": 209.0,
+    "weight_cut": 208.6,
+    "waste_loss": 0.4,
     "cuts_total_value": 2037.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 60.1,
-        "percentage": "32%",
+        "percentage": "734%",
         "price": 12.208,
         "total": 733.7,
         "status": "primary"
@@ -824,7 +832,7 @@
       {
         "name": "ريش",
         "qty": 23.2,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 324.8,
         "status": "highlight_yellow"
@@ -832,7 +840,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 17.1,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 205.2,
         "status": "highlight_yellow"
@@ -840,7 +848,7 @@
       {
         "name": "بدنيات",
         "qty": 32.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 96.0,
         "status": "highlight_red"
@@ -848,7 +856,7 @@
       {
         "name": "نتر",
         "qty": 9.0,
-        "percentage": "5%",
+        "percentage": "4%",
         "price": 3.0,
         "total": 27.0,
         "status": "highlight_red"
@@ -879,8 +887,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 19.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -888,7 +896,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 27.1,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 10.5,
         "total": 284.55,
         "status": "normal"
@@ -898,45 +906,46 @@
   {
     "type": "lamb_report",
     "sheet_name": "3-09-2026 (4)",
-    "display_title": "حسبة الخروف - 3/09/2026 (دفعة 4)",
+    "display_title": "3/09/2026 - دفعة 4",
+    "sub_title": "دفعة 4 • حسبة الخروف",
     "date": "3/09/2026",
     "batch_label": "دفعة 4",
     "sheep_count": 8.0,
-    "price_per_kg": 11.826,
-    "invoice_total": 1472.63,
-    "weight_received": 124.52,
-    "weight_cut": 124.52,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1472.63,
+    "price_per_kg": 0.0,
+    "invoice_total": -0.0,
+    "weight_received": 225.0,
+    "weight_cut": 223.98,
+    "waste_loss": 1.02,
+    "cuts_total_value": -0.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 0.28,
-        "percentage": "0%",
-        "price": 224.0,
-        "total": 61.6,
+        "qty": 61.6,
+        "percentage": "28%",
+        "price": -24.468,
+        "total": -1507.2,
         "status": "primary"
       },
       {
         "name": "شقف",
         "qty": 21.0,
-        "percentage": "17%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 420.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 19.32,
+        "percentage": "9%",
         "price": 5.0,
-        "total": 0.43,
+        "total": 96.6,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 23.0,
-        "percentage": "18%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 322.0,
         "status": "highlight_yellow"
@@ -944,7 +953,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 25.5,
-        "percentage": "20%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 306.0,
         "status": "highlight_yellow"
@@ -952,7 +961,7 @@
       {
         "name": "بدنيات",
         "qty": 24.6,
-        "percentage": "20%",
+        "percentage": "11%",
         "price": 3.0,
         "total": 73.8,
         "status": "highlight_red"
@@ -960,7 +969,7 @@
       {
         "name": "نتر",
         "qty": 3.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 9.0,
         "status": "highlight_red"
@@ -968,7 +977,7 @@
       {
         "name": "كلاوي",
         "qty": 1.06,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.3,
         "status": "highlight_yellow"
@@ -976,7 +985,7 @@
       {
         "name": "خصاوي",
         "qty": 2.4,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 12.0,
         "status": "highlight_yellow"
@@ -991,8 +1000,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 19.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1000,7 +1009,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.0,
-        "percentage": "18%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 231.0,
         "status": "normal"
@@ -1010,21 +1019,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "2-09-2026 (3)",
-    "display_title": "حسبة الخروف - 2/09/2026 (دفعة 3)",
+    "display_title": "2/09/2026 - دفعة 3",
+    "sub_title": "دفعة 3 • حسبة الخروف",
     "date": "2/09/2026",
     "batch_label": "دفعة 3",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 2126.6,
-    "weight_received": 187.21,
-    "weight_cut": 187.21,
-    "waste_loss": 0.0,
+    "weight_received": 217.0,
+    "weight_cut": 216.175,
+    "waste_loss": 0.825,
     "cuts_total_value": 2126.6,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.77,
-        "percentage": "33%",
+        "percentage": "779%",
         "price": 12.609,
         "total": 778.9,
         "status": "primary"
@@ -1032,7 +1042,7 @@
       {
         "name": "شقف",
         "qty": 18.0,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 360.0,
         "status": "normal"
@@ -1048,7 +1058,7 @@
       {
         "name": "ريش",
         "qty": 20.5,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 287.0,
         "status": "highlight_yellow"
@@ -1056,7 +1066,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 27.4,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 328.8,
         "status": "highlight_yellow"
@@ -1064,7 +1074,7 @@
       {
         "name": "بدنيات",
         "qty": 30.6,
-        "percentage": "16%",
+        "percentage": "14%",
         "price": 3.0,
         "total": 91.8,
         "status": "highlight_red"
@@ -1080,7 +1090,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -1088,7 +1098,7 @@
       {
         "name": "خصاوي",
         "qty": 3.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 15.0,
         "status": "highlight_yellow"
@@ -1103,8 +1113,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.14,
-        "percentage": "0%",
+        "qty": 29.1,
+        "percentage": "13%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1112,7 +1122,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 20.2,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 212.1,
         "status": "normal"
@@ -1122,21 +1132,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "31-08-2026",
-    "display_title": "حسبة الخروف - 31/08/2026",
+    "display_title": "31/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "31/08/2026",
     "batch_label": "",
     "sheep_count": 9.0,
     "price_per_kg": 9.8,
     "invoice_total": 2254.0,
-    "weight_received": 207.74,
-    "weight_cut": 207.74,
-    "waste_loss": 0.0,
+    "weight_received": 230.0,
+    "weight_cut": 229.15,
+    "waste_loss": 0.85,
     "cuts_total_value": 2254.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 67.4,
-        "percentage": "32%",
+        "percentage": "737%",
         "price": 10.931,
         "total": 736.75,
         "status": "primary"
@@ -1144,7 +1155,7 @@
       {
         "name": "شقف",
         "qty": 23.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 460.0,
         "status": "normal"
@@ -1160,7 +1171,7 @@
       {
         "name": "ريش",
         "qty": 23.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 322.0,
         "status": "highlight_yellow"
@@ -1168,7 +1179,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 25.5,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 306.0,
         "status": "highlight_yellow"
@@ -1176,7 +1187,7 @@
       {
         "name": "بدنيات",
         "qty": 35.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 105.0,
         "status": "highlight_red"
@@ -1215,8 +1226,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 21.5,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1224,7 +1235,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 25.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 10.5,
         "total": 262.5,
         "status": "normal"
@@ -1234,21 +1245,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "30-08-2026",
-    "display_title": "حسبة الخروف - 30/08/2026",
+    "display_title": "30/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "30/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 2087.4,
-    "weight_received": 187.42,
-    "weight_cut": 187.42,
-    "waste_loss": 0.0,
+    "weight_received": 213.0,
+    "weight_cut": 212.0,
+    "waste_loss": 1.0,
     "cuts_total_value": 2087.4,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 55.2,
-        "percentage": "29%",
+        "percentage": "584%",
         "price": 10.585,
         "total": 584.3,
         "status": "primary"
@@ -1256,7 +1268,7 @@
       {
         "name": "شقف",
         "qty": 21.3,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 426.0,
         "status": "normal"
@@ -1272,7 +1284,7 @@
       {
         "name": "ريش",
         "qty": 24.0,
-        "percentage": "13%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 336.0,
         "status": "highlight_yellow"
@@ -1280,7 +1292,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 24.8,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 297.6,
         "status": "highlight_yellow"
@@ -1288,7 +1300,7 @@
       {
         "name": "بدنيات",
         "qty": 25.6,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 76.8,
         "status": "highlight_red"
@@ -1304,7 +1316,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -1327,8 +1339,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.12,
-        "percentage": "0%",
+        "qty": 24.7,
+        "percentage": "12%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1336,7 +1348,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 28.6,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 10.5,
         "total": 300.3,
         "status": "normal"
@@ -1346,21 +1358,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "29-08-2026",
-    "display_title": "حسبة الخروف - 29/08/2026",
+    "display_title": "29/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "29/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.75,
     "invoice_total": 2037.75,
-    "weight_received": 190.29,
-    "weight_cut": 190.29,
-    "waste_loss": 0.0,
+    "weight_received": 209.0,
+    "weight_cut": 209.3,
+    "waste_loss": -0.3,
     "cuts_total_value": 2037.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 60.1,
-        "percentage": "32%",
+        "percentage": "726%",
         "price": 12.088,
         "total": 726.5,
         "status": "primary"
@@ -1384,7 +1397,7 @@
       {
         "name": "ريش",
         "qty": 23.2,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 324.8,
         "status": "highlight_yellow"
@@ -1392,7 +1405,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 17.7,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 212.4,
         "status": "highlight_yellow"
@@ -1400,7 +1413,7 @@
       {
         "name": "بدنيات",
         "qty": 32.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 96.0,
         "status": "highlight_red"
@@ -1408,7 +1421,7 @@
       {
         "name": "نتر",
         "qty": 9.0,
-        "percentage": "5%",
+        "percentage": "4%",
         "price": 3.0,
         "total": 27.0,
         "status": "highlight_red"
@@ -1439,8 +1452,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 19.1,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1448,7 +1461,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 27.1,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 10.5,
         "total": 284.55,
         "status": "normal"
@@ -1458,21 +1471,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "28-08-2026",
-    "display_title": "حسبة الخروف - 28/08/2026",
+    "display_title": "28/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "28/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 9.8,
     "invoice_total": 1269.1,
-    "weight_received": 118.49,
-    "weight_cut": 118.49,
-    "waste_loss": 0.0,
+    "weight_received": 129.5,
+    "weight_cut": 130.4,
+    "waste_loss": -0.9,
     "cuts_total_value": 1269.1,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 43.5,
-        "percentage": "37%",
+        "percentage": "452%",
         "price": 10.386,
         "total": 451.8,
         "status": "primary"
@@ -1480,7 +1494,7 @@
       {
         "name": "شقف",
         "qty": 13.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 260.0,
         "status": "normal"
@@ -1496,7 +1510,7 @@
       {
         "name": "ريش",
         "qty": 13.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 189.0,
         "status": "highlight_yellow"
@@ -1504,7 +1518,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 10.5,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 126.0,
         "status": "highlight_yellow"
@@ -1512,7 +1526,7 @@
       {
         "name": "بدنيات",
         "qty": 16.6,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 49.8,
         "status": "highlight_red"
@@ -1551,8 +1565,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 12.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1560,7 +1574,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 14.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 10.5,
         "total": 147.0,
         "status": "normal"
@@ -1570,21 +1584,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "27-08-2026",
-    "display_title": "حسبة الخروف - 27/08/2026",
+    "display_title": "27/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "27/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 2058.0,
-    "weight_received": 192.38,
-    "weight_cut": 192.38,
-    "waste_loss": 0.0,
+    "weight_received": 210.0,
+    "weight_cut": 209.297,
+    "waste_loss": 0.703,
     "cuts_total_value": 2058.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.2,
-        "percentage": "32%",
+        "percentage": "655%",
         "price": 10.708,
         "total": 655.315,
         "status": "primary"
@@ -1592,7 +1607,7 @@
       {
         "name": "شقف",
         "qty": 20.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 410.0,
         "status": "normal"
@@ -1616,7 +1631,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 23.7,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 284.4,
         "status": "highlight_yellow"
@@ -1624,7 +1639,7 @@
       {
         "name": "بدنيات",
         "qty": 32.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 96.0,
         "status": "highlight_red"
@@ -1632,7 +1647,7 @@
       {
         "name": "نتر",
         "qty": 3.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 9.0,
         "status": "highlight_red"
@@ -1640,7 +1655,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -1663,8 +1678,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 17.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1682,21 +1697,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "26-08-2026",
-    "display_title": "حسبة الخروف - 26/08/2026",
+    "display_title": "26/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "26/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
     "invoice_total": 1960.0,
-    "weight_received": 179.39,
-    "weight_cut": 179.39,
-    "waste_loss": 0.0,
+    "weight_received": 200.0,
+    "weight_cut": 196.8,
+    "waste_loss": 3.2,
     "cuts_total_value": 1960.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.0,
-        "percentage": "34%",
+        "percentage": "693%",
         "price": 11.367,
         "total": 693.4,
         "status": "primary"
@@ -1704,7 +1720,7 @@
       {
         "name": "شقف",
         "qty": 19.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 390.0,
         "status": "normal"
@@ -1720,7 +1736,7 @@
       {
         "name": "ريش",
         "qty": 20.2,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 282.8,
         "status": "highlight_yellow"
@@ -1728,7 +1744,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 20.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 12.0,
         "total": 240.0,
         "status": "highlight_yellow"
@@ -1736,7 +1752,7 @@
       {
         "name": "بدنيات",
         "qty": 29.2,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 87.6,
         "status": "highlight_red"
@@ -1775,8 +1791,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 17.5,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -1784,7 +1800,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 20.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 210.0,
         "status": "normal"
@@ -1794,21 +1810,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "25-08-2026",
-    "display_title": "حسبة الخروف - 25/08/2026",
+    "display_title": "25/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "25/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 9.8,
     "invoice_total": 1254.4,
-    "weight_received": 127.39,
-    "weight_cut": 127.39,
-    "waste_loss": 0.0,
+    "weight_received": 128.0,
+    "weight_cut": 127.8,
+    "waste_loss": 0.2,
     "cuts_total_value": 1254.4,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 36.1,
-        "percentage": "28%",
+        "percentage": "320%",
         "price": 8.878,
         "total": 320.5,
         "status": "primary"
@@ -1887,17 +1904,17 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 11.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "8%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -1906,21 +1923,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "23-08-2026",
-    "display_title": "حسبة الخروف - 23/08/2026",
+    "display_title": "23/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "23/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 8.75,
     "invoice_total": 2170.0,
-    "weight_received": 182.01,
-    "weight_cut": 182.01,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1916.035,
+    "weight_received": 248.0,
+    "weight_cut": 246.2,
+    "waste_loss": 1.8,
+    "cuts_total_value": 2170.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 66.6,
-        "percentage": "37%",
+        "percentage": "714%",
         "price": 10.716,
         "total": 713.7,
         "status": "primary"
@@ -1928,23 +1946,23 @@
       {
         "name": "شقف",
         "qty": 18.0,
-        "percentage": "10%",
+        "percentage": "7%",
         "price": 20.0,
         "total": 360.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.21,
-        "percentage": "0%",
+        "qty": 51.0,
+        "percentage": "21%",
         "price": 5.0,
-        "total": 1.035,
+        "total": 255.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 21.0,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 294.0,
         "status": "highlight_yellow"
@@ -1952,7 +1970,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 34.5,
-        "percentage": "19%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 414.0,
         "status": "highlight_yellow"
@@ -1960,7 +1978,7 @@
       {
         "name": "بدنيات",
         "qty": 24.0,
-        "percentage": "13%",
+        "percentage": "10%",
         "price": 3.0,
         "total": 72.0,
         "status": "highlight_red"
@@ -1976,7 +1994,7 @@
       {
         "name": "كلاوي",
         "qty": 1.0,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 5.0,
         "status": "highlight_yellow"
@@ -1984,7 +2002,7 @@
       {
         "name": "خصاوي",
         "qty": 2.8,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 14.0,
         "status": "highlight_yellow"
@@ -1999,17 +2017,17 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 24.0,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -2018,29 +2036,30 @@
   {
     "type": "lamb_report",
     "sheet_name": "22-08-2026",
-    "display_title": "حسبة الخروف - 22/08/2026",
+    "display_title": "22/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "22/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.8,
-    "invoice_total": 1171.1,
-    "weight_received": 125.61,
-    "weight_cut": 125.61,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1171.1,
+    "invoice_total": 0.0,
+    "weight_received": 0.0,
+    "weight_cut": 162.85,
+    "waste_loss": -162.85,
+    "cuts_total_value": 0.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 0.23,
-        "percentage": "0%",
-        "price": 163.043,
-        "total": 37.5,
+        "qty": 37.5,
+        "percentage": "23%",
+        "price": -30.229,
+        "total": -1133.6,
         "status": "primary"
       },
       {
         "name": "شقف",
         "qty": 14.5,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 290.0,
         "status": "normal"
@@ -2056,7 +2075,7 @@
       {
         "name": "ريش",
         "qty": 22.0,
-        "percentage": "18%",
+        "percentage": "14%",
         "price": 14.0,
         "total": 308.0,
         "status": "highlight_yellow"
@@ -2064,7 +2083,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 29.1,
-        "percentage": "23%",
+        "percentage": "18%",
         "price": 12.0,
         "total": 349.2,
         "status": "highlight_yellow"
@@ -2072,7 +2091,7 @@
       {
         "name": "بدنيات",
         "qty": 24.7,
-        "percentage": "20%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 74.1,
         "status": "highlight_red"
@@ -2080,7 +2099,7 @@
       {
         "name": "نتر",
         "qty": 2.1,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 6.3,
         "status": "highlight_red"
@@ -2096,23 +2115,23 @@
       {
         "name": "خصاوي",
         "qty": 2.25,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 11.25,
         "status": "highlight_yellow"
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "17%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.13,
-        "percentage": "0%",
+        "qty": 21.1,
+        "percentage": "13%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2120,7 +2139,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 8.5,
-        "percentage": "7%",
+        "percentage": "5%",
         "price": 10.5,
         "total": 89.25,
         "status": "normal"
@@ -2130,21 +2149,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "21-08-2026",
-    "display_title": "حسبة الخروف - 21/08/2026",
+    "display_title": "21/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "21/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.25,
     "invoice_total": 1168.5,
-    "weight_received": 101.88,
-    "weight_cut": 101.88,
-    "waste_loss": 0.0,
+    "weight_received": 114.0,
+    "weight_cut": 113.87,
+    "waste_loss": 0.13,
     "cuts_total_value": 1168.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 35.0,
-        "percentage": "34%",
+        "percentage": "417%",
         "price": 11.926,
         "total": 417.4,
         "status": "primary"
@@ -2152,7 +2172,7 @@
       {
         "name": "شقف",
         "qty": 13.0,
-        "percentage": "13%",
+        "percentage": "11%",
         "price": 20.0,
         "total": 260.0,
         "status": "normal"
@@ -2168,7 +2188,7 @@
       {
         "name": "ريش",
         "qty": 13.9,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 194.6,
         "status": "highlight_yellow"
@@ -2176,7 +2196,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 10.9,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 12.0,
         "total": 130.8,
         "status": "highlight_yellow"
@@ -2184,7 +2204,7 @@
       {
         "name": "بدنيات",
         "qty": 14.0,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 42.0,
         "status": "highlight_red"
@@ -2208,7 +2228,7 @@
       {
         "name": "خصاوي",
         "qty": 1.57,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 7.85,
         "status": "highlight_yellow"
@@ -2223,8 +2243,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.11,
-        "percentage": "0%",
+        "qty": 12.1,
+        "percentage": "11%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2242,21 +2262,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "20-08-2026",
-    "display_title": "حسبة الخروف - 20/08/2026",
+    "display_title": "20/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "20/08/2026",
     "batch_label": "",
     "sheep_count": 6.0,
     "price_per_kg": 10.25,
     "invoice_total": 1619.5,
-    "weight_received": 143.26,
-    "weight_cut": 143.26,
-    "waste_loss": 0.0,
+    "weight_received": 158.0,
+    "weight_cut": 157.17,
+    "waste_loss": 0.83,
     "cuts_total_value": 1619.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 53.0,
-        "percentage": "37%",
+        "percentage": "644%",
         "price": 12.145,
         "total": 643.68,
         "status": "primary"
@@ -2264,7 +2285,7 @@
       {
         "name": "شقف",
         "qty": 16.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 320.0,
         "status": "normal"
@@ -2280,7 +2301,7 @@
       {
         "name": "ريش",
         "qty": 13.0,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 14.0,
         "total": 182.0,
         "status": "highlight_yellow"
@@ -2288,7 +2309,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 15.2,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 12.0,
         "total": 182.4,
         "status": "highlight_yellow"
@@ -2296,7 +2317,7 @@
       {
         "name": "بدنيات",
         "qty": 19.9,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 59.7,
         "status": "highlight_red"
@@ -2304,7 +2325,7 @@
       {
         "name": "نتر",
         "qty": 5.5,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 16.5,
         "status": "highlight_red"
@@ -2335,8 +2356,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 14.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2344,7 +2365,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 16.3,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 171.15,
         "status": "normal"
@@ -2354,21 +2375,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "18-08-2026",
-    "display_title": "حسبة الخروف - 18/08/2026",
+    "display_title": "18/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "18/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2895.75,
-    "weight_received": 213.23,
-    "weight_cut": 213.23,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2631.65,
+    "weight_received": 297.0,
+    "weight_cut": 293.85,
+    "waste_loss": 3.15,
+    "cuts_total_value": 2895.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 55.0,
-        "percentage": "26%",
+        "percentage": "846%",
         "price": 15.386,
         "total": 846.25,
         "status": "primary"
@@ -2376,23 +2398,23 @@
       {
         "name": "شقف",
         "qty": 22.5,
-        "percentage": "11%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 450.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.18,
-        "percentage": "0%",
+        "qty": 53.0,
+        "percentage": "18%",
         "price": 5.0,
-        "total": 0.9,
+        "total": 265.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 29.9,
-        "percentage": "14%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 418.6,
         "status": "highlight_yellow"
@@ -2400,7 +2422,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 39.5,
-        "percentage": "19%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 474.0,
         "status": "highlight_yellow"
@@ -2408,7 +2430,7 @@
       {
         "name": "بدنيات",
         "qty": 27.8,
-        "percentage": "13%",
+        "percentage": "9%",
         "price": 3.0,
         "total": 83.4,
         "status": "highlight_red"
@@ -2416,7 +2438,7 @@
       {
         "name": "نتر",
         "qty": 6.2,
-        "percentage": "3%",
+        "percentage": "2%",
         "price": 3.0,
         "total": 18.6,
         "status": "highlight_red"
@@ -2447,8 +2469,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 27.9,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2456,7 +2478,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 25.1,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 263.55,
         "status": "normal"
@@ -2466,21 +2488,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "17-08-2026",
-    "display_title": "حسبة الخروف - 17/08/2026",
+    "display_title": "17/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "17/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.25,
     "invoice_total": 1332.5,
-    "weight_received": 118.82,
-    "weight_cut": 118.82,
-    "waste_loss": 0.0,
+    "weight_received": 130.0,
+    "weight_cut": 129.93,
+    "waste_loss": 0.07,
     "cuts_total_value": 1332.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 38.5,
-        "percentage": "32%",
+        "percentage": "486%",
         "price": 12.62,
         "total": 485.875,
         "status": "primary"
@@ -2488,7 +2511,7 @@
       {
         "name": "شقف",
         "qty": 13.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 260.0,
         "status": "normal"
@@ -2504,7 +2527,7 @@
       {
         "name": "ريش",
         "qty": 14.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 196.0,
         "status": "highlight_yellow"
@@ -2512,7 +2535,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 11.7,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 12.0,
         "total": 140.4,
         "status": "highlight_yellow"
@@ -2520,7 +2543,7 @@
       {
         "name": "بدنيات",
         "qty": 20.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 60.0,
         "status": "highlight_red"
@@ -2528,7 +2551,7 @@
       {
         "name": "نتر",
         "qty": 4.25,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 12.75,
         "status": "highlight_red"
@@ -2544,7 +2567,7 @@
       {
         "name": "خصاوي",
         "qty": 1.9,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 9.5,
         "status": "highlight_yellow"
@@ -2559,8 +2582,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 11.2,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2578,21 +2601,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "16-08-2026",
-    "display_title": "حسبة الخروف - 16/08/2026",
+    "display_title": "16/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "16/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2661.75,
-    "weight_received": 226.74,
-    "weight_cut": 226.74,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2552.155,
+    "weight_received": 273.0,
+    "weight_cut": 271.77,
+    "waste_loss": 1.23,
+    "cuts_total_value": 2661.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 74.0,
-        "percentage": "33%",
+        "percentage": "833%",
         "price": 11.258,
         "total": 833.1,
         "status": "primary"
@@ -2600,23 +2624,23 @@
       {
         "name": "شقف",
         "qty": 25.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 500.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 22.0,
+        "percentage": "8%",
         "price": 5.0,
-        "total": 0.405,
+        "total": 110.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 28.0,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 392.0,
         "status": "highlight_yellow"
@@ -2624,7 +2648,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 32.7,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 392.4,
         "status": "highlight_yellow"
@@ -2632,7 +2656,7 @@
       {
         "name": "بدنيات",
         "qty": 27.8,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 3.0,
         "total": 83.4,
         "status": "highlight_red"
@@ -2656,7 +2680,7 @@
       {
         "name": "خصاوي",
         "qty": 3.65,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 18.25,
         "status": "highlight_yellow"
@@ -2671,8 +2695,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 23.2,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2680,7 +2704,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 25.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 262.5,
         "status": "normal"
@@ -2690,21 +2714,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "15-08-2026",
-    "display_title": "حسبة الخروف - 15/08/2026",
+    "display_title": "15/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "15/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2838.0,
-    "weight_received": 236.95,
-    "weight_cut": 236.95,
-    "waste_loss": 0.0,
+    "weight_received": 264.0,
+    "weight_cut": 262.75,
+    "waste_loss": 1.25,
     "cuts_total_value": 2838.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 68.8,
-        "percentage": "29%",
+        "percentage": "947%",
         "price": 13.765,
         "total": 947.05,
         "status": "primary"
@@ -2712,7 +2737,7 @@
       {
         "name": "شقف",
         "qty": 27.5,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 550.0,
         "status": "normal"
@@ -2728,7 +2753,7 @@
       {
         "name": "ريش",
         "qty": 29.9,
-        "percentage": "13%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 418.6,
         "status": "highlight_yellow"
@@ -2736,7 +2761,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 39.0,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 12.0,
         "total": 468.0,
         "status": "highlight_yellow"
@@ -2744,7 +2769,7 @@
       {
         "name": "بدنيات",
         "qty": 33.2,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 99.6,
         "status": "highlight_red"
@@ -2783,8 +2808,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 25.9,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2792,7 +2817,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 25.8,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 270.9,
         "status": "normal"
@@ -2802,21 +2827,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "14-08-2026",
-    "display_title": "حسبة الخروف - 14/08/2026",
+    "display_title": "14/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "14/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2612.25,
-    "weight_received": 221.09,
-    "weight_cut": 221.09,
-    "waste_loss": 0.0,
+    "weight_received": 243.0,
+    "weight_cut": 242.0,
+    "waste_loss": 1.0,
     "cuts_total_value": 2612.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 70.4,
-        "percentage": "32%",
+        "percentage": "904%",
         "price": 12.847,
         "total": 904.4,
         "status": "primary"
@@ -2824,7 +2850,7 @@
       {
         "name": "شقف",
         "qty": 27.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 20.0,
         "total": 540.0,
         "status": "normal"
@@ -2840,7 +2866,7 @@
       {
         "name": "ريش",
         "qty": 27.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 378.0,
         "status": "highlight_yellow"
@@ -2848,7 +2874,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 31.0,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 372.0,
         "status": "highlight_yellow"
@@ -2856,7 +2882,7 @@
       {
         "name": "بدنيات",
         "qty": 32.4,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 97.2,
         "status": "highlight_red"
@@ -2895,8 +2921,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 21.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -2904,7 +2930,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 23.5,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 246.75,
         "status": "normal"
@@ -2914,21 +2940,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "13-08-2026 ",
-    "display_title": "حسبة الخروف - 13/08/2026",
+    "display_title": "13/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "13/08/2026",
     "batch_label": "",
     "sheep_count": 13.0,
     "price_per_kg": 10.75,
     "invoice_total": 3547.5,
-    "weight_received": 301.09,
-    "weight_cut": 301.09,
-    "waste_loss": 0.0,
+    "weight_received": 330.0,
+    "weight_cut": 329.0,
+    "waste_loss": 1.0,
     "cuts_total_value": 3547.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 96.1,
-        "percentage": "32%",
+        "percentage": "1225%",
         "price": 12.743,
         "total": 1224.6,
         "status": "primary"
@@ -2936,7 +2963,7 @@
       {
         "name": "شقف",
         "qty": 29.5,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 590.0,
         "status": "normal"
@@ -2952,7 +2979,7 @@
       {
         "name": "ريش",
         "qty": 37.2,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 520.8,
         "status": "highlight_yellow"
@@ -2960,7 +2987,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 47.7,
-        "percentage": "16%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 572.4,
         "status": "highlight_yellow"
@@ -2968,7 +2995,7 @@
       {
         "name": "بدنيات",
         "qty": 40.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 120.0,
         "status": "highlight_red"
@@ -2976,7 +3003,7 @@
       {
         "name": "نتر",
         "qty": 4.7,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 14.1,
         "status": "highlight_red"
@@ -3007,8 +3034,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 28.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3016,7 +3043,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 34.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 357.0,
         "status": "normal"
@@ -3026,21 +3053,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "12-08-2026",
-    "display_title": "حسبة الخروف - 12/08/2026",
+    "display_title": "12/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "12/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 9.75,
     "invoice_total": 1506.375,
-    "weight_received": 112.07,
-    "weight_cut": 112.07,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1355.365,
+    "weight_received": 154.5,
+    "weight_cut": 153.3,
+    "waste_loss": 1.2,
+    "cuts_total_value": 1506.375,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 36.0,
-        "percentage": "32%",
+        "percentage": "513%",
         "price": 14.245,
         "total": 512.825,
         "status": "primary"
@@ -3048,23 +3076,23 @@
       {
         "name": "شقف",
         "qty": 13.5,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 270.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.2,
-        "percentage": "0%",
+        "qty": 30.4,
+        "percentage": "20%",
         "price": 5.0,
-        "total": 0.99,
+        "total": 152.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 14.0,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 196.0,
         "status": "highlight_yellow"
@@ -3072,7 +3100,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 13.1,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 12.0,
         "total": 157.2,
         "status": "highlight_yellow"
@@ -3080,7 +3108,7 @@
       {
         "name": "بدنيات",
         "qty": 18.1,
-        "percentage": "16%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 54.3,
         "status": "highlight_red"
@@ -3088,7 +3116,7 @@
       {
         "name": "نتر",
         "qty": 2.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 6.0,
         "status": "highlight_red"
@@ -3096,7 +3124,7 @@
       {
         "name": "كلاوي",
         "qty": 0.67,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 3.35,
         "status": "highlight_yellow"
@@ -3119,8 +3147,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.07,
-        "percentage": "0%",
+        "qty": 11.1,
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3128,7 +3156,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 12.1,
-        "percentage": "11%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 127.05,
         "status": "normal"
@@ -3138,21 +3166,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "11-08-2026",
-    "display_title": "حسبة الخروف - 11/08/2026",
+    "display_title": "11/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "11/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2925.0,
-    "weight_received": 232.38,
-    "weight_cut": 232.38,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2701.745,
+    "weight_received": 300.0,
+    "weight_cut": 299.95,
+    "waste_loss": 0.05,
+    "cuts_total_value": 2925.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 77.25,
-        "percentage": "33%",
+        "percentage": "962%",
         "price": 12.452,
         "total": 961.95,
         "status": "primary"
@@ -3160,23 +3189,23 @@
       {
         "name": "شقف",
         "qty": 23.0,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 460.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.15,
-        "percentage": "0%",
+        "qty": 44.8,
+        "percentage": "15%",
         "price": 5.0,
-        "total": 0.745,
+        "total": 224.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 27.5,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 385.0,
         "status": "highlight_yellow"
@@ -3184,7 +3213,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 36.5,
-        "percentage": "16%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 438.0,
         "status": "highlight_yellow"
@@ -3192,7 +3221,7 @@
       {
         "name": "بدنيات",
         "qty": 33.0,
-        "percentage": "14%",
+        "percentage": "11%",
         "price": 3.0,
         "total": 99.0,
         "status": "highlight_red"
@@ -3208,7 +3237,7 @@
       {
         "name": "كلاوي",
         "qty": 1.3,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 5.0,
         "total": 6.5,
         "status": "highlight_yellow"
@@ -3224,15 +3253,15 @@
       {
         "name": "فتايل",
         "qty": 3.5,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 73.5,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 23.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3240,7 +3269,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 24.1,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 253.05,
         "status": "normal"
@@ -3250,21 +3279,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "10-08-2026",
-    "display_title": "حسبة الخروف - 10/08/2026",
+    "display_title": "10/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "10/08/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.75,
     "invoice_total": 1397.5,
-    "weight_received": 117.24,
-    "weight_cut": 117.24,
-    "waste_loss": 0.0,
+    "weight_received": 130.0,
+    "weight_cut": 129.15,
+    "waste_loss": 0.85,
     "cuts_total_value": 1397.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 38.4,
-        "percentage": "33%",
+        "percentage": "493%",
         "price": 12.849,
         "total": 493.4,
         "status": "primary"
@@ -3272,7 +3302,7 @@
       {
         "name": "شقف",
         "qty": 13.5,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 270.0,
         "status": "normal"
@@ -3288,7 +3318,7 @@
       {
         "name": "ريش",
         "qty": 16.5,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 14.0,
         "total": 231.0,
         "status": "highlight_yellow"
@@ -3296,7 +3326,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 15.1,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 181.2,
         "status": "highlight_yellow"
@@ -3304,7 +3334,7 @@
       {
         "name": "بدنيات",
         "qty": 16.0,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 48.0,
         "status": "highlight_red"
@@ -3343,8 +3373,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 12.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3352,7 +3382,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 13.1,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 10.5,
         "total": 137.55,
         "status": "normal"
@@ -3362,21 +3392,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "09-08-2026",
-    "display_title": "حسبة الخروف - 09/08/2026",
+    "display_title": "09/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "09/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2762.75,
-    "weight_received": 236.33,
-    "weight_cut": 236.33,
-    "waste_loss": 0.0,
+    "weight_received": 257.0,
+    "weight_cut": 255.55,
+    "waste_loss": 1.45,
     "cuts_total_value": 2762.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 78.0,
-        "percentage": "33%",
+        "percentage": "981%",
         "price": 12.578,
         "total": 981.1,
         "status": "primary"
@@ -3384,7 +3415,7 @@
       {
         "name": "شقف",
         "qty": 27.4,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 20.0,
         "total": 548.0,
         "status": "normal"
@@ -3400,7 +3431,7 @@
       {
         "name": "ريش",
         "qty": 29.0,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 406.0,
         "status": "highlight_yellow"
@@ -3408,7 +3439,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 34.5,
-        "percentage": "15%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 414.0,
         "status": "highlight_yellow"
@@ -3416,7 +3447,7 @@
       {
         "name": "بدنيات",
         "qty": 35.4,
-        "percentage": "15%",
+        "percentage": "14%",
         "price": 3.0,
         "total": 106.2,
         "status": "highlight_red"
@@ -3455,8 +3486,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 19.3,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3464,7 +3495,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 23.0,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 241.5,
         "status": "normal"
@@ -3474,21 +3505,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "08-08-2026 2",
-    "display_title": "حسبة الخروف - 08/08/2026",
+    "display_title": "08/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "08/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2703.625,
-    "weight_received": 229.85,
-    "weight_cut": 229.85,
-    "waste_loss": 0.0,
+    "weight_received": 251.5,
+    "weight_cut": 249.77,
+    "waste_loss": 1.73,
     "cuts_total_value": 2703.625,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 72.0,
-        "percentage": "31%",
+        "percentage": "975%",
         "price": 13.537,
         "total": 974.675,
         "status": "primary"
@@ -3496,7 +3528,7 @@
       {
         "name": "شقف",
         "qty": 24.6,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 492.0,
         "status": "normal"
@@ -3512,7 +3544,7 @@
       {
         "name": "ريش",
         "qty": 29.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 406.0,
         "status": "highlight_yellow"
@@ -3520,7 +3552,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 35.0,
-        "percentage": "15%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 420.0,
         "status": "highlight_yellow"
@@ -3528,7 +3560,7 @@
       {
         "name": "بدنيات",
         "qty": 37.0,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 111.0,
         "status": "highlight_red"
@@ -3567,8 +3599,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 20.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3586,21 +3618,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "08-08-2026",
-    "display_title": "حسبة الخروف - 08/08/2026",
+    "display_title": "08/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "08/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2703.625,
-    "weight_received": 219.35,
-    "weight_cut": 219.35,
-    "waste_loss": 0.0,
+    "weight_received": 251.5,
+    "weight_cut": 239.27,
+    "waste_loss": 12.23,
     "cuts_total_value": 2703.625,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.5,
-        "percentage": "28%",
+        "percentage": "975%",
         "price": 15.848,
         "total": 974.675,
         "status": "primary"
@@ -3608,7 +3641,7 @@
       {
         "name": "شقف",
         "qty": 24.6,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 492.0,
         "status": "normal"
@@ -3624,7 +3657,7 @@
       {
         "name": "ريش",
         "qty": 29.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 406.0,
         "status": "highlight_yellow"
@@ -3632,7 +3665,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 35.0,
-        "percentage": "16%",
+        "percentage": "15%",
         "price": 12.0,
         "total": 420.0,
         "status": "highlight_yellow"
@@ -3640,7 +3673,7 @@
       {
         "name": "بدنيات",
         "qty": 37.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 111.0,
         "status": "highlight_red"
@@ -3664,7 +3697,7 @@
       {
         "name": "خصاوي",
         "qty": 3.37,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 16.85,
         "status": "highlight_yellow"
@@ -3679,8 +3712,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 20.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3688,7 +3721,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 21.8,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 228.9,
         "status": "normal"
@@ -3698,21 +3731,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "07-08-2026",
-    "display_title": "حسبة الخروف - 07/08/2026",
+    "display_title": "07/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "07/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2472.5,
-    "weight_received": 221.74,
-    "weight_cut": 221.74,
-    "waste_loss": 0.0,
+    "weight_received": 230.0,
+    "weight_cut": 241.66,
+    "waste_loss": -11.66,
     "cuts_total_value": 2472.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 71.15,
-        "percentage": "32%",
+        "percentage": "798%",
         "price": 11.221,
         "total": 798.35,
         "status": "primary"
@@ -3720,7 +3754,7 @@
       {
         "name": "شقف",
         "qty": 21.15,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 423.0,
         "status": "normal"
@@ -3736,7 +3770,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -3744,7 +3778,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 38.6,
-        "percentage": "17%",
+        "percentage": "16%",
         "price": 12.0,
         "total": 463.2,
         "status": "highlight_yellow"
@@ -3752,7 +3786,7 @@
       {
         "name": "بدنيات",
         "qty": 32.2,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 96.6,
         "status": "highlight_red"
@@ -3760,7 +3794,7 @@
       {
         "name": "نتر",
         "qty": 3.4,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 3.0,
         "total": 10.2,
         "status": "highlight_red"
@@ -3784,15 +3818,15 @@
       {
         "name": "فتايل",
         "qty": 3.4,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 71.4,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 20.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3800,7 +3834,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.9,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 240.45,
         "status": "normal"
@@ -3810,21 +3844,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "06-08-2026 ",
-    "display_title": "حسبة الخروف - 06/08/2026",
+    "display_title": "06/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "06/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2354.25,
-    "weight_received": 198.49,
-    "weight_cut": 198.49,
-    "waste_loss": 0.0,
+    "weight_received": 219.0,
+    "weight_cut": 217.3,
+    "waste_loss": 1.7,
     "cuts_total_value": 2354.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 64.0,
-        "percentage": "32%",
+        "percentage": "854%",
         "price": 13.344,
         "total": 854.025,
         "status": "primary"
@@ -3832,7 +3867,7 @@
       {
         "name": "شقف",
         "qty": 18.0,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 360.0,
         "status": "normal"
@@ -3848,7 +3883,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -3856,7 +3891,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 33.6,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 12.0,
         "total": 403.2,
         "status": "highlight_yellow"
@@ -3864,7 +3899,7 @@
       {
         "name": "بدنيات",
         "qty": 27.1,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 81.3,
         "status": "highlight_red"
@@ -3896,15 +3931,15 @@
       {
         "name": "فتايل",
         "qty": 3.2,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 67.2,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 18.9,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -3912,7 +3947,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 19.75,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 207.375,
         "status": "normal"
@@ -3922,21 +3957,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "04-08-2026 ",
-    "display_title": "حسبة الخروف - 04/08/2026",
+    "display_title": "04/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "04/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.75,
     "invoice_total": 2365.0,
-    "weight_received": 197.0,
-    "weight_cut": 197.0,
-    "waste_loss": 0.0,
+    "weight_received": 220.0,
+    "weight_cut": 217.9,
+    "waste_loss": 2.1,
     "cuts_total_value": 2365.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 51.5,
-        "percentage": "26%",
+        "percentage": "822%",
         "price": 15.969,
         "total": 822.4,
         "status": "primary"
@@ -3944,7 +3980,7 @@
       {
         "name": "شقف",
         "qty": 21.9,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 438.0,
         "status": "normal"
@@ -3960,7 +3996,7 @@
       {
         "name": "ريش",
         "qty": 25.1,
-        "percentage": "13%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 351.4,
         "status": "highlight_yellow"
@@ -3968,7 +4004,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 29.0,
-        "percentage": "15%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 348.0,
         "status": "highlight_yellow"
@@ -3976,7 +4012,7 @@
       {
         "name": "بدنيات",
         "qty": 33.0,
-        "percentage": "17%",
+        "percentage": "15%",
         "price": 3.0,
         "total": 99.0,
         "status": "highlight_red"
@@ -4015,8 +4051,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 21.0,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4024,7 +4060,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 20.4,
-        "percentage": "10%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 214.2,
         "status": "normal"
@@ -4034,21 +4070,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "03-08-2026",
-    "display_title": "حسبة الخروف - 03/08/2026",
+    "display_title": "03/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "03/08/2026",
     "batch_label": "",
     "sheep_count": 9.0,
     "price_per_kg": 10.75,
     "invoice_total": 2182.25,
-    "weight_received": 182.92,
-    "weight_cut": 182.92,
-    "waste_loss": 0.0,
+    "weight_received": 203.0,
+    "weight_cut": 201.83,
+    "waste_loss": 1.17,
     "cuts_total_value": 2182.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 58.4,
-        "percentage": "32%",
+        "percentage": "776%",
         "price": 13.286,
         "total": 775.9,
         "status": "primary"
@@ -4056,7 +4093,7 @@
       {
         "name": "شقف",
         "qty": 20.0,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 400.0,
         "status": "normal"
@@ -4072,7 +4109,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "14%",
+        "percentage": "12%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -4080,7 +4117,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 36.0,
-        "percentage": "20%",
+        "percentage": "18%",
         "price": 12.0,
         "total": 432.0,
         "status": "highlight_yellow"
@@ -4088,7 +4125,7 @@
       {
         "name": "بدنيات",
         "qty": 26.4,
-        "percentage": "14%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 79.2,
         "status": "highlight_red"
@@ -4127,8 +4164,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 19.0,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4146,21 +4183,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "02-08-2026 ",
-    "display_title": "حسبة الخروف - 02/08/2026",
+    "display_title": "02/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "02/08/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2720.25,
-    "weight_received": 224.88,
-    "weight_cut": 224.88,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2545.88,
+    "weight_received": 279.0,
+    "weight_cut": 276.95,
+    "waste_loss": 2.05,
+    "cuts_total_value": 2720.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 71.5,
-        "percentage": "32%",
+        "percentage": "956%",
         "price": 13.371,
         "total": 956.0,
         "status": "primary"
@@ -4168,23 +4206,23 @@
       {
         "name": "شقف",
         "qty": 21.0,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 420.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.13,
-        "percentage": "0%",
+        "qty": 35.0,
+        "percentage": "13%",
         "price": 5.0,
-        "total": 0.63,
+        "total": 175.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 28.0,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 392.0,
         "status": "highlight_yellow"
@@ -4192,7 +4230,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 50.0,
-        "percentage": "22%",
+        "percentage": "18%",
         "price": 12.0,
         "total": 600.0,
         "status": "highlight_yellow"
@@ -4200,7 +4238,7 @@
       {
         "name": "بدنيات",
         "qty": 28.0,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 3.0,
         "total": 84.0,
         "status": "highlight_red"
@@ -4208,7 +4246,7 @@
       {
         "name": "نتر",
         "qty": 8.5,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 25.5,
         "status": "highlight_red"
@@ -4224,7 +4262,7 @@
       {
         "name": "خصاوي",
         "qty": 3.65,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 18.25,
         "status": "highlight_yellow"
@@ -4239,17 +4277,17 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 27.8,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -4258,21 +4296,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "01-08-2026",
-    "display_title": "حسبة الخروف - 01/08/2026",
+    "display_title": "01/08/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "01/08/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 9.75,
     "invoice_total": 1979.25,
-    "weight_received": 150.16,
-    "weight_cut": 150.16,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1805.11,
+    "weight_received": 203.0,
+    "weight_cut": 202.3,
+    "waste_loss": 0.7,
+    "cuts_total_value": 1979.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 53.0,
-        "percentage": "35%",
+        "percentage": "612%",
         "price": 11.545,
         "total": 611.9,
         "status": "primary"
@@ -4280,23 +4319,23 @@
       {
         "name": "شقف",
         "qty": 18.0,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 360.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.17,
-        "percentage": "0%",
+        "qty": 35.0,
+        "percentage": "17%",
         "price": 5.0,
-        "total": 0.86,
+        "total": 175.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 21.5,
-        "percentage": "14%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 301.0,
         "status": "highlight_yellow"
@@ -4304,7 +4343,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 28.9,
-        "percentage": "19%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 346.8,
         "status": "highlight_yellow"
@@ -4312,7 +4351,7 @@
       {
         "name": "بدنيات",
         "qty": 11.6,
-        "percentage": "8%",
+        "percentage": "6%",
         "price": 3.0,
         "total": 34.8,
         "status": "highlight_red"
@@ -4320,7 +4359,7 @@
       {
         "name": "نتر",
         "qty": 4.0,
-        "percentage": "3%",
+        "percentage": "2%",
         "price": 3.0,
         "total": 12.0,
         "status": "highlight_red"
@@ -4336,7 +4375,7 @@
       {
         "name": "خصاوي",
         "qty": 2.3,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 11.5,
         "status": "highlight_yellow"
@@ -4351,8 +4390,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 17.4,
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4360,7 +4399,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 7.5,
-        "percentage": "5%",
+        "percentage": "4%",
         "price": 10.5,
         "total": 78.75,
         "status": "normal"
@@ -4370,21 +4409,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "31-07-2026",
-    "display_title": "حسبة الخروف - 31/07/2026",
+    "display_title": "31/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "31/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2671.5,
-    "weight_received": 426.47,
-    "weight_cut": 426.47,
-    "waste_loss": 0.0,
-    "cuts_total_value": 3571.5,
+    "weight_received": 274.0,
+    "weight_cut": 272.37,
+    "waste_loss": 1.63,
+    "cuts_total_value": 2671.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.0,
-        "percentage": "14%",
+        "percentage": "764%",
         "price": 12.52,
         "total": 763.75,
         "status": "primary"
@@ -4392,23 +4432,23 @@
       {
         "name": "شقف",
         "qty": 26.1,
-        "percentage": "6%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 522.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 225.0,
-        "percentage": "53%",
+        "qty": 45.0,
+        "percentage": "17%",
         "price": 5.0,
-        "total": 1125.0,
+        "total": 225.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 26.6,
-        "percentage": "6%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 372.4,
         "status": "highlight_yellow"
@@ -4416,7 +4456,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 31.6,
-        "percentage": "7%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 379.2,
         "status": "highlight_yellow"
@@ -4424,7 +4464,7 @@
       {
         "name": "بدنيات",
         "qty": 21.0,
-        "percentage": "5%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 63.0,
         "status": "highlight_red"
@@ -4432,7 +4472,7 @@
       {
         "name": "نتر",
         "qty": 4.7,
-        "percentage": "1%",
+        "percentage": "2%",
         "price": 3.0,
         "total": 14.1,
         "status": "highlight_red"
@@ -4440,7 +4480,7 @@
       {
         "name": "كلاوي",
         "qty": 1.4,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 7.0,
         "status": "highlight_yellow"
@@ -4463,8 +4503,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.1,
-        "percentage": "0%",
+        "qty": 26.0,
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4472,7 +4512,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.0,
-        "percentage": "5%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 231.0,
         "status": "normal"
@@ -4482,21 +4522,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "30-07-2026",
-    "display_title": "حسبة الخروف - 30/07/2026",
+    "display_title": "30/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "30/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2515.5,
-    "weight_received": 196.48,
-    "weight_cut": 196.48,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2321.265,
+    "weight_received": 258.0,
+    "weight_cut": 255.35,
+    "waste_loss": 2.65,
+    "cuts_total_value": 2515.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 63.0,
-        "percentage": "32%",
+        "percentage": "808%",
         "price": 12.821,
         "total": 807.75,
         "status": "primary"
@@ -4504,23 +4545,23 @@
       {
         "name": "شقف",
         "qty": 20.5,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 410.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.15,
-        "percentage": "0%",
+        "qty": 39.0,
+        "percentage": "15%",
         "price": 5.0,
-        "total": 0.765,
+        "total": 195.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 26.0,
-        "percentage": "13%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 364.0,
         "status": "highlight_yellow"
@@ -4528,7 +4569,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 31.0,
-        "percentage": "16%",
+        "percentage": "12%",
         "price": 12.0,
         "total": 372.0,
         "status": "highlight_yellow"
@@ -4536,7 +4577,7 @@
       {
         "name": "بدنيات",
         "qty": 20.5,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 61.5,
         "status": "highlight_red"
@@ -4544,7 +4585,7 @@
       {
         "name": "نتر",
         "qty": 8.0,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 24.0,
         "status": "highlight_red"
@@ -4575,8 +4616,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.08,
-        "percentage": "0%",
+        "qty": 20.1,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4584,7 +4625,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 231.0,
         "status": "normal"
@@ -4594,21 +4635,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "29-07-2026",
-    "display_title": "حسبة الخروف - 29/07/2026",
+    "display_title": "29/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "29/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2525.25,
-    "weight_received": 196.78,
-    "weight_cut": 196.78,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2319.055,
+    "weight_received": 259.0,
+    "weight_cut": 256.95,
+    "waste_loss": 2.05,
+    "cuts_total_value": 2525.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 67.9,
-        "percentage": "35%",
+        "percentage": "887%",
         "price": 13.062,
         "total": 886.9,
         "status": "primary"
@@ -4616,23 +4658,23 @@
       {
         "name": "شقف",
         "qty": 21.5,
-        "percentage": "11%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 430.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 0.16,
-        "percentage": "0%",
+        "qty": 41.4,
+        "percentage": "16%",
         "price": 5.0,
-        "total": 0.805,
+        "total": 207.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 14.6,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 14.0,
         "total": 204.4,
         "status": "highlight_yellow"
@@ -4640,7 +4682,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 35.0,
-        "percentage": "18%",
+        "percentage": "14%",
         "price": 12.0,
         "total": 420.0,
         "status": "highlight_yellow"
@@ -4648,7 +4690,7 @@
       {
         "name": "بدنيات",
         "qty": 21.5,
-        "percentage": "11%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 64.5,
         "status": "highlight_red"
@@ -4656,7 +4698,7 @@
       {
         "name": "نتر",
         "qty": 8.0,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 24.0,
         "status": "highlight_red"
@@ -4687,8 +4729,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.07,
-        "percentage": "0%",
+        "qty": 19.0,
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4696,7 +4738,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 22.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 231.0,
         "status": "normal"
@@ -4706,21 +4748,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "28-07-2026 ",
-    "display_title": "حسبة الخروف - 28/07/2026",
+    "display_title": "28/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "28/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2577.9,
-    "weight_received": 270.25,
+    "weight_received": 264.4,
     "weight_cut": 270.25,
-    "waste_loss": 0.0,
+    "waste_loss": -5.85,
     "cuts_total_value": 2577.9,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 70.0,
-        "percentage": "26%",
+        "percentage": "771%",
         "price": 11.011,
         "total": 770.75,
         "status": "primary"
@@ -4818,21 +4861,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "27-07-2026",
-    "display_title": "حسبة الخروف - 27/07/2026",
+    "display_title": "27/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "27/07/2026",
     "batch_label": "",
     "sheep_count": 6.0,
     "price_per_kg": 9.75,
     "invoice_total": 1495.65,
-    "weight_received": 256.89,
-    "weight_cut": 256.89,
+    "weight_received": 153.4,
+    "weight_cut": 153.4,
     "waste_loss": 0.0,
-    "cuts_total_value": 2077.65,
+    "cuts_total_value": 1495.65,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 36.0,
-        "percentage": "14%",
+        "percentage": "411%",
         "price": 11.421,
         "total": 411.15,
         "status": "primary"
@@ -4840,23 +4884,23 @@
       {
         "name": "شقف",
         "qty": 15.4,
-        "percentage": "6%",
+        "percentage": "10%",
         "price": 20.0,
         "total": 308.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 139.4,
-        "percentage": "54%",
+        "qty": 23.0,
+        "percentage": "15%",
         "price": 5.0,
-        "total": 697.0,
+        "total": 115.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 14.8,
-        "percentage": "6%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 207.2,
         "status": "highlight_yellow"
@@ -4864,7 +4908,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 19.5,
-        "percentage": "8%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 234.0,
         "status": "highlight_yellow"
@@ -4872,7 +4916,7 @@
       {
         "name": "بدنيات",
         "qty": 12.5,
-        "percentage": "5%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 37.5,
         "status": "highlight_red"
@@ -4888,7 +4932,7 @@
       {
         "name": "كلاوي",
         "qty": 0.8,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 4.0,
         "status": "highlight_yellow"
@@ -4904,15 +4948,15 @@
       {
         "name": "فتايل",
         "qty": 1.0,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 21.0,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 0.09,
-        "percentage": "0%",
+        "qty": 13.0,
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -4920,7 +4964,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 13.6,
-        "percentage": "5%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 142.8,
         "status": "normal"
@@ -4930,21 +4974,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "26-07-2026",
-    "display_title": "حسبة الخروف - 26/07/2026",
+    "display_title": "26/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "26/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2535.0,
-    "weight_received": 258.9,
+    "weight_received": 260.0,
     "weight_cut": 258.9,
-    "waste_loss": 0.0,
+    "waste_loss": 1.1,
     "cuts_total_value": 2535.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 58.9,
-        "percentage": "23%",
+        "percentage": "828%",
         "price": 14.055,
         "total": 827.85,
         "status": "primary"
@@ -5042,21 +5087,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "25-07-2026 ",
-    "display_title": "حسبة الخروف - 25/07/2026",
+    "display_title": "25/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "25/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2447.25,
-    "weight_received": 248.4,
+    "weight_received": 251.0,
     "weight_cut": 248.4,
-    "waste_loss": 0.0,
+    "waste_loss": 2.6,
     "cuts_total_value": 2447.25,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 52.4,
-        "percentage": "21%",
+        "percentage": "794%",
         "price": 15.145,
         "total": 793.6,
         "status": "primary"
@@ -5154,21 +5200,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "24-07-2026",
-    "display_title": "حسبة الخروف - 24/07/2026",
+    "display_title": "24/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "24/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2491.125,
-    "weight_received": 253.25,
+    "weight_received": 255.5,
     "weight_cut": 253.25,
-    "waste_loss": 0.0,
+    "waste_loss": 2.25,
     "cuts_total_value": 2491.125,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 59.7,
-        "percentage": "24%",
+        "percentage": "773%",
         "price": 12.944,
         "total": 772.775,
         "status": "primary"
@@ -5266,21 +5313,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "22-07-2026",
-    "display_title": "حسبة الخروف - 22/07/2026",
+    "display_title": "22/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "22/07/2026",
     "batch_label": "",
     "sheep_count": 12.0,
     "price_per_kg": 9.75,
     "invoice_total": 3061.5,
-    "weight_received": 268.2,
-    "weight_cut": 268.2,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2956.5,
+    "weight_received": 314.0,
+    "weight_cut": 303.2,
+    "waste_loss": 10.8,
+    "cuts_total_value": 3061.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 93.0,
-        "percentage": "35%",
+        "percentage": "1318%",
         "price": 14.174,
         "total": 1318.2,
         "status": "primary"
@@ -5295,16 +5343,16 @@
       },
       {
         "name": "لية",
-        "qty": 20.0,
-        "percentage": "7%",
+        "qty": 41.0,
+        "percentage": "14%",
         "price": 5.0,
-        "total": 100.0,
+        "total": 205.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 28.5,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 399.0,
         "status": "highlight_yellow"
@@ -5312,7 +5360,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 32.3,
-        "percentage": "12%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 387.6,
         "status": "highlight_yellow"
@@ -5328,7 +5376,7 @@
       {
         "name": "نتر",
         "qty": 24.0,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 72.0,
         "status": "highlight_red"
@@ -5359,8 +5407,8 @@
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 8.3,
-        "percentage": "3%",
+        "qty": 22.3,
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -5368,7 +5416,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 16.0,
-        "percentage": "6%",
+        "percentage": "5%",
         "price": 10.5,
         "total": 168.0,
         "status": "normal"
@@ -5378,21 +5426,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "21-07-2026",
-    "display_title": "حسبة الخروف - 21/07/2026",
+    "display_title": "21/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "21/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2437.5,
-    "weight_received": 241.05,
+    "weight_received": 250.0,
     "weight_cut": 241.05,
-    "waste_loss": 0.0,
+    "waste_loss": 8.95,
     "cuts_total_value": 2437.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 70.5,
-        "percentage": "29%",
+        "percentage": "1072%",
         "price": 15.21,
         "total": 1072.3,
         "status": "primary"
@@ -5490,111 +5539,112 @@
   {
     "type": "lamb_report",
     "sheet_name": "مقارنة",
-    "display_title": "حسبة الخروف - مقارنة",
+    "display_title": "مقارنة",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "مقارنة",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2437.5,
-    "weight_received": 131.7,
-    "weight_cut": 131.7,
+    "weight_received": 0.0,
+    "weight_cut": 0.0,
     "waste_loss": 0.0,
-    "cuts_total_value": 210.71,
+    "cuts_total_value": 0.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 70.5,
-        "percentage": "54%",
-        "price": 1.101,
-        "total": 77.6,
+        "qty": 0.0,
+        "percentage": "70%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "primary"
       },
       {
         "name": "شقف",
-        "qty": 11.0,
-        "percentage": "8%",
-        "price": 1.818,
-        "total": 20.0,
+        "qty": 0.0,
+        "percentage": "11%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 1.2,
-        "percentage": "1%",
-        "price": 5.0,
-        "total": 6.0,
+        "qty": 0.0,
+        "percentage": "36%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "normal"
       },
       {
         "name": "ريش",
-        "qty": 0.2,
-        "percentage": "0%",
-        "price": 131.0,
-        "total": 26.2,
+        "qty": 0.0,
+        "percentage": "26%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 27.0,
-        "percentage": "21%",
-        "price": 1.037,
-        "total": 28.0,
+        "qty": 0.0,
+        "percentage": "27%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 1.9,
-        "percentage": "1%",
-        "price": 13.263,
-        "total": 25.2,
+        "qty": 0.0,
+        "percentage": "25%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
-        "qty": 2.1,
+        "qty": 0.0,
         "percentage": "2%",
-        "price": 3.938,
-        "total": 8.27,
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_red"
       },
       {
         "name": "كلاوي",
-        "qty": 0.1,
-        "percentage": "0%",
-        "price": 13.5,
-        "total": 1.35,
+        "qty": 0.0,
+        "percentage": "1%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "خصاوي",
-        "qty": 2.3,
+        "qty": 0.0,
         "percentage": "2%",
-        "price": 1.261,
-        "total": 2.9,
+        "price": 0.0,
+        "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "فتايل",
-        "qty": 2.0,
+        "qty": 0.0,
         "percentage": "2%",
-        "price": 1.345,
-        "total": 2.69,
+        "price": 0.0,
+        "total": 0.0,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
-        "qty": 8.3,
-        "percentage": "6%",
+        "qty": 0.0,
+        "percentage": "25%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 5.1,
-        "percentage": "4%",
-        "price": 2.451,
-        "total": 12.5,
+        "qty": 0.0,
+        "percentage": "12%",
+        "price": 0.0,
+        "total": 0.0,
         "status": "normal"
       }
     ]
@@ -5602,29 +5652,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "18-07-2026",
-    "display_title": "حسبة الخروف - 18/07/2026",
+    "display_title": "18/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "18/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2418.0,
-    "weight_received": 285.41,
-    "weight_cut": 285.41,
-    "waste_loss": 0.0,
+    "weight_received": 248.0,
+    "weight_cut": 246.51,
+    "waste_loss": 1.49,
     "cuts_total_value": 2418.0,
     "cuts": [
       {
-        "name": "عروق + عرقيب + عظم",
-        "qty": 25.9,
-        "percentage": "9%",
-        "price": 0.0,
-        "total": 0.0,
-        "status": "normal"
-      },
-      {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 77.6,
-        "percentage": "27%",
+        "percentage": "918%",
         "price": 11.823,
         "total": 917.5,
         "status": "primary"
@@ -5632,7 +5675,7 @@
       {
         "name": "شقف",
         "qty": 20.0,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 400.0,
         "status": "normal"
@@ -5640,7 +5683,7 @@
       {
         "name": "لية",
         "qty": 35.0,
-        "percentage": "12%",
+        "percentage": "14%",
         "price": 5.0,
         "total": 175.0,
         "status": "normal"
@@ -5648,7 +5691,7 @@
       {
         "name": "ريش",
         "qty": 26.0,
-        "percentage": "9%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 364.0,
         "status": "highlight_yellow"
@@ -5656,7 +5699,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 28.0,
-        "percentage": "10%",
+        "percentage": "11%",
         "price": 12.0,
         "total": 336.0,
         "status": "highlight_yellow"
@@ -5664,7 +5707,7 @@
       {
         "name": "بدنيات",
         "qty": 23.3,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 3.0,
         "total": 69.9,
         "status": "highlight_red"
@@ -5680,7 +5723,7 @@
       {
         "name": "كلاوي",
         "qty": 1.25,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 6.25,
         "status": "highlight_yellow"
@@ -5704,16 +5747,16 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 16.4,
-        "percentage": "6%",
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -5730,29 +5773,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "17-07-2026",
-    "display_title": "حسبة الخروف - 17/07/2026",
+    "display_title": "17/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "17/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2544.75,
-    "weight_received": 317.7,
-    "weight_cut": 317.7,
-    "waste_loss": 0.0,
+    "weight_received": 261.0,
+    "weight_cut": 257.8,
+    "waste_loss": 3.2,
     "cuts_total_value": 2544.75,
     "cuts": [
       {
-        "name": "عروق + عرقيب + عظم",
-        "qty": 25.9,
-        "percentage": "8%",
-        "price": 0.0,
-        "total": 0.0,
-        "status": "normal"
-      },
-      {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 73.1,
-        "percentage": "23%",
+        "percentage": "1003%",
         "price": 13.727,
         "total": 1003.45,
         "status": "primary"
@@ -5760,7 +5796,7 @@
       {
         "name": "شقف",
         "qty": 20.0,
-        "percentage": "6%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 400.0,
         "status": "normal"
@@ -5768,7 +5804,7 @@
       {
         "name": "لية",
         "qty": 40.6,
-        "percentage": "13%",
+        "percentage": "16%",
         "price": 5.0,
         "total": 203.0,
         "status": "normal"
@@ -5776,7 +5812,7 @@
       {
         "name": "ريش",
         "qty": 25.0,
-        "percentage": "8%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 350.0,
         "status": "highlight_yellow"
@@ -5784,7 +5820,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 26.35,
-        "percentage": "8%",
+        "percentage": "10%",
         "price": 12.0,
         "total": 316.2,
         "status": "highlight_yellow"
@@ -5792,7 +5828,7 @@
       {
         "name": "بدنيات",
         "qty": 29.7,
-        "percentage": "9%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 89.1,
         "status": "highlight_red"
@@ -5823,32 +5859,32 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 17.5,
-        "percentage": "6%",
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "4%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 13.1,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 10.5,
         "total": 137.55,
         "status": "normal"
@@ -5858,29 +5894,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "16-07-2026",
-    "display_title": "حسبة الخروف - 16/07/2026",
+    "display_title": "16/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "16/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2613.0,
-    "weight_received": 324.9,
-    "weight_cut": 324.9,
-    "waste_loss": 0.0,
+    "weight_received": 268.0,
+    "weight_cut": 265.0,
+    "waste_loss": 3.0,
     "cuts_total_value": 2613.0,
     "cuts": [
       {
-        "name": "عروق + عرقيب + عظم",
-        "qty": 25.9,
-        "percentage": "8%",
-        "price": 0.0,
-        "total": 0.0,
-        "status": "normal"
-      },
-      {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 75.4,
-        "percentage": "23%",
+        "percentage": "1073%",
         "price": 14.225,
         "total": 1072.6,
         "status": "primary"
@@ -5888,7 +5917,7 @@
       {
         "name": "شقف",
         "qty": 19.0,
-        "percentage": "6%",
+        "percentage": "7%",
         "price": 20.0,
         "total": 380.0,
         "status": "normal"
@@ -5896,7 +5925,7 @@
       {
         "name": "لية",
         "qty": 45.0,
-        "percentage": "14%",
+        "percentage": "17%",
         "price": 5.0,
         "total": 225.0,
         "status": "normal"
@@ -5904,7 +5933,7 @@
       {
         "name": "ريش",
         "qty": 28.9,
-        "percentage": "9%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 404.6,
         "status": "highlight_yellow"
@@ -5912,7 +5941,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 23.9,
-        "percentage": "7%",
+        "percentage": "9%",
         "price": 12.0,
         "total": 286.8,
         "status": "highlight_yellow"
@@ -5920,7 +5949,7 @@
       {
         "name": "بدنيات",
         "qty": 34.4,
-        "percentage": "11%",
+        "percentage": "13%",
         "price": 3.0,
         "total": 103.2,
         "status": "highlight_red"
@@ -5951,25 +5980,25 @@
       },
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 21.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "primary"
       },
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 16.8,
-        "percentage": "5%",
+        "percentage": "6%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "4%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -5986,21 +6015,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "15-07-2026",
-    "display_title": "حسبة الخروف - 15/07/2026",
+    "display_title": "15/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "15/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.75,
     "invoice_total": 2505.75,
-    "weight_received": 266.2,
-    "weight_cut": 266.2,
-    "waste_loss": 0.0,
+    "weight_received": 257.0,
+    "weight_cut": 253.2,
+    "waste_loss": 3.8,
     "cuts_total_value": 2505.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 74.5,
-        "percentage": "28%",
+        "percentage": "981%",
         "price": 13.168,
         "total": 981.05,
         "status": "primary"
@@ -6016,7 +6046,7 @@
       {
         "name": "لية",
         "qty": 46.0,
-        "percentage": "17%",
+        "percentage": "18%",
         "price": 5.0,
         "total": 230.0,
         "status": "normal"
@@ -6024,7 +6054,7 @@
       {
         "name": "ريش",
         "qty": 24.5,
-        "percentage": "9%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 343.0,
         "status": "highlight_yellow"
@@ -6032,7 +6062,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 19.5,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 234.0,
         "status": "highlight_yellow"
@@ -6048,7 +6078,7 @@
       {
         "name": "نتر",
         "qty": 14.3,
-        "percentage": "5%",
+        "percentage": "6%",
         "price": 3.0,
         "total": 42.9,
         "status": "highlight_red"
@@ -6056,7 +6086,7 @@
       {
         "name": "كلاوي",
         "qty": 1.29,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 6.45,
         "status": "highlight_yellow"
@@ -6087,9 +6117,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -6106,21 +6136,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "14-07-2026",
-    "display_title": "حسبة الخروف - 14/07/2026",
+    "display_title": "14/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "14/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2375.0,
-    "weight_received": 281.5,
-    "weight_cut": 281.5,
-    "waste_loss": 0.0,
+    "weight_received": 250.0,
+    "weight_cut": 247.5,
+    "waste_loss": 2.5,
     "cuts_total_value": 2375.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 87.5,
-        "percentage": "31%",
+        "percentage": "1224%",
         "price": 13.986,
         "total": 1223.75,
         "status": "primary"
@@ -6136,7 +6167,7 @@
       {
         "name": "لية",
         "qty": 34.4,
-        "percentage": "12%",
+        "percentage": "14%",
         "price": 5.0,
         "total": 172.0,
         "status": "normal"
@@ -6144,7 +6175,7 @@
       {
         "name": "ريش",
         "qty": 27.3,
-        "percentage": "10%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 382.2,
         "status": "highlight_yellow"
@@ -6152,7 +6183,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 19.15,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 229.8,
         "status": "highlight_yellow"
@@ -6160,7 +6191,7 @@
       {
         "name": "بدنيات",
         "qty": 30.8,
-        "percentage": "11%",
+        "percentage": "12%",
         "price": 3.0,
         "total": 92.4,
         "status": "highlight_red"
@@ -6168,7 +6199,7 @@
       {
         "name": "نتر",
         "qty": 9.5,
-        "percentage": "3%",
+        "percentage": "4%",
         "price": 3.0,
         "total": 28.5,
         "status": "highlight_red"
@@ -6176,7 +6207,7 @@
       {
         "name": "كلاوي",
         "qty": 1.38,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 6.9,
         "status": "highlight_yellow"
@@ -6191,32 +6222,32 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 20.4,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 6.2,
-        "percentage": "2%",
+        "percentage": "3%",
         "price": 10.5,
         "total": 65.1,
         "status": "normal"
@@ -6226,21 +6257,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "13-07-2026",
-    "display_title": "حسبة الخروف - 13/07/2026",
+    "display_title": "13/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "13/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2403.5,
-    "weight_received": 284.26,
-    "weight_cut": 284.26,
-    "waste_loss": 0.0,
+    "weight_received": 253.0,
+    "weight_cut": 250.26,
+    "waste_loss": 2.74,
     "cuts_total_value": 2403.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 111.3,
-        "percentage": "39%",
+        "percentage": "1291%",
         "price": 11.599,
         "total": 1290.95,
         "status": "primary"
@@ -6256,7 +6288,7 @@
       {
         "name": "لية",
         "qty": 39.0,
-        "percentage": "14%",
+        "percentage": "16%",
         "price": 5.0,
         "total": 195.0,
         "status": "normal"
@@ -6264,7 +6296,7 @@
       {
         "name": "ريش",
         "qty": 24.6,
-        "percentage": "9%",
+        "percentage": "10%",
         "price": 14.0,
         "total": 344.4,
         "status": "highlight_yellow"
@@ -6280,7 +6312,7 @@
       {
         "name": "بدنيات",
         "qty": 11.4,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 3.0,
         "total": 34.2,
         "status": "highlight_red"
@@ -6288,7 +6320,7 @@
       {
         "name": "نتر",
         "qty": 9.5,
-        "percentage": "3%",
+        "percentage": "4%",
         "price": 3.0,
         "total": 28.5,
         "status": "highlight_red"
@@ -6296,7 +6328,7 @@
       {
         "name": "كلاوي",
         "qty": 1.41,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 7.05,
         "status": "highlight_yellow"
@@ -6311,9 +6343,9 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
@@ -6327,16 +6359,16 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 12.4,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 10.5,
         "total": 130.2,
         "status": "normal"
@@ -6346,21 +6378,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "11-07-2026",
-    "display_title": "حسبة الخروف - 11/07/2026",
+    "display_title": "11/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "11/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2384.5,
-    "weight_received": 280.49,
-    "weight_cut": 280.49,
-    "waste_loss": 0.0,
+    "weight_received": 251.0,
+    "weight_cut": 246.49,
+    "waste_loss": 4.51,
     "cuts_total_value": 2384.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 82.8,
-        "percentage": "30%",
+        "percentage": "1010%",
         "price": 12.197,
         "total": 1009.9,
         "status": "primary"
@@ -6368,7 +6401,7 @@
       {
         "name": "شقف",
         "qty": 12.0,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 20.0,
         "total": 240.0,
         "status": "normal"
@@ -6376,7 +6409,7 @@
       {
         "name": "لية",
         "qty": 39.2,
-        "percentage": "14%",
+        "percentage": "16%",
         "price": 5.0,
         "total": 196.0,
         "status": "normal"
@@ -6384,7 +6417,7 @@
       {
         "name": "ريش",
         "qty": 26.0,
-        "percentage": "9%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 364.0,
         "status": "highlight_yellow"
@@ -6392,7 +6425,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 33.0,
-        "percentage": "12%",
+        "percentage": "13%",
         "price": 12.0,
         "total": 396.0,
         "status": "highlight_yellow"
@@ -6400,7 +6433,7 @@
       {
         "name": "بدنيات",
         "qty": 21.7,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 3.0,
         "total": 65.1,
         "status": "highlight_red"
@@ -6408,7 +6441,7 @@
       {
         "name": "نتر",
         "qty": 11.4,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 3.0,
         "total": 34.2,
         "status": "highlight_red"
@@ -6416,7 +6449,7 @@
       {
         "name": "كلاوي",
         "qty": 1.39,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 6.95,
         "status": "highlight_yellow"
@@ -6431,9 +6464,9 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
@@ -6447,9 +6480,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -6466,21 +6499,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "09-07-2026",
-    "display_title": "حسبة الخروف - 09/07/2026",
+    "display_title": "09/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "09/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2451.0,
-    "weight_received": 267.0,
-    "weight_cut": 267.0,
-    "waste_loss": 0.0,
+    "weight_received": 258.0,
+    "weight_cut": 254.0,
+    "waste_loss": 4.0,
     "cuts_total_value": 2451.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 99.15,
-        "percentage": "37%",
+        "percentage": "1038%",
         "price": 10.474,
         "total": 1038.5,
         "status": "primary"
@@ -6488,7 +6522,7 @@
       {
         "name": "شقف",
         "qty": 27.0,
-        "percentage": "10%",
+        "percentage": "11%",
         "price": 20.0,
         "total": 540.0,
         "status": "normal"
@@ -6496,7 +6530,7 @@
       {
         "name": "لية",
         "qty": 38.7,
-        "percentage": "14%",
+        "percentage": "15%",
         "price": 5.0,
         "total": 193.5,
         "status": "normal"
@@ -6520,7 +6554,7 @@
       {
         "name": "بدنيات",
         "qty": 14.0,
-        "percentage": "5%",
+        "percentage": "6%",
         "price": 3.0,
         "total": 42.0,
         "status": "highlight_red"
@@ -6528,7 +6562,7 @@
       {
         "name": "نتر",
         "qty": 12.0,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 3.0,
         "total": 36.0,
         "status": "highlight_red"
@@ -6567,9 +6601,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -6586,21 +6620,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "08-07-2026",
-    "display_title": "حسبة الخروف - 08/07/2026",
+    "display_title": "08/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "08/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2356.0,
-    "weight_received": 282.66,
-    "weight_cut": 282.66,
-    "waste_loss": 0.0,
+    "weight_received": 248.0,
+    "weight_cut": 244.66,
+    "waste_loss": 3.34,
     "cuts_total_value": 2356.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 109.5,
-        "percentage": "39%",
+        "percentage": "1246%",
         "price": 11.382,
         "total": 1246.35,
         "status": "primary"
@@ -6616,7 +6651,7 @@
       {
         "name": "لية",
         "qty": 35.6,
-        "percentage": "13%",
+        "percentage": "15%",
         "price": 5.0,
         "total": 178.0,
         "status": "normal"
@@ -6624,7 +6659,7 @@
       {
         "name": "ريش",
         "qty": 26.9,
-        "percentage": "10%",
+        "percentage": "11%",
         "price": 14.0,
         "total": 376.6,
         "status": "highlight_yellow"
@@ -6632,23 +6667,23 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 19.7,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 12.0,
         "total": 236.4,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 4.0,
-        "percentage": "1%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 4.0,
         "total": 0.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 22.6,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 2.0,
         "total": 45.2,
         "status": "highlight_red"
@@ -6671,25 +6706,25 @@
       },
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "primary"
       },
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 11.5,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -6706,37 +6741,38 @@
   {
     "type": "lamb_report",
     "sheet_name": "07-07-2026",
-    "display_title": "حسبة الخروف - 07/07/2026",
+    "display_title": "07/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "07/07/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 9.5,
     "invoice_total": 1258.75,
-    "weight_received": 194.37,
-    "weight_cut": 194.37,
-    "waste_loss": 0.0,
+    "weight_received": 132.5,
+    "weight_cut": 129.87,
+    "waste_loss": 2.63,
     "cuts_total_value": 1258.75,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 55.4,
-        "percentage": "29%",
+        "percentage": "847%",
         "price": 15.292,
         "total": 847.2,
         "status": "primary"
       },
       {
         "name": "شقف",
-        "qty": 20.0,
-        "percentage": "10%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 20.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "لية",
         "qty": 19.5,
-        "percentage": "10%",
+        "percentage": "15%",
         "price": 5.0,
         "total": 97.5,
         "status": "normal"
@@ -6744,7 +6780,7 @@
       {
         "name": "ريش",
         "qty": 11.5,
-        "percentage": "6%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 161.0,
         "status": "highlight_yellow"
@@ -6752,7 +6788,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 6.4,
-        "percentage": "3%",
+        "percentage": "5%",
         "price": 12.0,
         "total": 76.8,
         "status": "highlight_yellow"
@@ -6760,7 +6796,7 @@
       {
         "name": "بدنيات",
         "qty": 11.7,
-        "percentage": "6%",
+        "percentage": "9%",
         "price": 4.0,
         "total": 46.8,
         "status": "highlight_red"
@@ -6768,7 +6804,7 @@
       {
         "name": "نتر",
         "qty": 9.8,
-        "percentage": "5%",
+        "percentage": "8%",
         "price": 2.0,
         "total": 19.6,
         "status": "highlight_red"
@@ -6776,7 +6812,7 @@
       {
         "name": "كلاوي",
         "qty": 0.87,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 4.35,
         "status": "highlight_yellow"
@@ -6791,33 +6827,33 @@
       },
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 21.0,
-        "percentage": "11%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "primary"
       },
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 13.6,
-        "percentage": "7%",
+        "percentage": "10%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -6826,21 +6862,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "06-07-2026",
-    "display_title": "حسبة الخروف - 06/07/2026",
+    "display_title": "06/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "06/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2356.0,
-    "weight_received": 278.76,
-    "weight_cut": 278.76,
-    "waste_loss": 0.0,
+    "weight_received": 248.0,
+    "weight_cut": 244.76,
+    "waste_loss": 3.24,
     "cuts_total_value": 2356.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 95.9,
-        "percentage": "34%",
+        "percentage": "1285%",
         "price": 13.404,
         "total": 1285.4,
         "status": "primary"
@@ -6856,7 +6893,7 @@
       {
         "name": "لية",
         "qty": 35.2,
-        "percentage": "13%",
+        "percentage": "14%",
         "price": 5.0,
         "total": 176.0,
         "status": "normal"
@@ -6864,7 +6901,7 @@
       {
         "name": "ريش",
         "qty": 23.0,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 14.0,
         "total": 322.0,
         "status": "highlight_yellow"
@@ -6880,7 +6917,7 @@
       {
         "name": "بدنيات",
         "qty": 22.6,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 4.0,
         "total": 90.4,
         "status": "highlight_red"
@@ -6888,7 +6925,7 @@
       {
         "name": "نتر",
         "qty": 12.5,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 2.0,
         "total": 25.0,
         "status": "highlight_red"
@@ -6896,7 +6933,7 @@
       {
         "name": "كلاوي",
         "qty": 1.36,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 5.0,
         "total": 6.8,
         "status": "highlight_yellow"
@@ -6911,9 +6948,9 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "8%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
@@ -6927,9 +6964,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -6946,21 +6983,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "05-07-2026 ",
-    "display_title": "حسبة الخروف - 05/07/2026",
+    "display_title": "05/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "05/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2337.0,
-    "weight_received": 229.45,
-    "weight_cut": 229.45,
-    "waste_loss": 0.0,
+    "weight_received": 246.0,
+    "weight_cut": 242.35,
+    "waste_loss": 3.65,
     "cuts_total_value": 2052.1,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 40.2,
-        "percentage": "18%",
+        "percentage": "471%",
         "price": 11.71,
         "total": 470.75,
         "status": "primary"
@@ -6968,7 +7006,7 @@
       {
         "name": "شقف",
         "qty": 17.0,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 340.0,
         "status": "normal"
@@ -6976,7 +7014,7 @@
       {
         "name": "لية",
         "qty": 37.5,
-        "percentage": "16%",
+        "percentage": "17%",
         "price": 5.0,
         "total": 187.5,
         "status": "normal"
@@ -7000,7 +7038,7 @@
       {
         "name": "بدنيات",
         "qty": 26.0,
-        "percentage": "11%",
+        "percentage": "12%",
         "price": 4.0,
         "total": 104.0,
         "status": "highlight_red"
@@ -7032,7 +7070,7 @@
       {
         "name": "فتايل",
         "qty": 10.0,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 21.0,
         "total": 210.0,
         "status": "normal"
@@ -7047,9 +7085,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7066,21 +7104,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "04-07-2026",
-    "display_title": "حسبة الخروف - 04/07/2026",
+    "display_title": "04/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "04/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 9.5,
     "invoice_total": 2375.0,
-    "weight_received": 281.04,
-    "weight_cut": 281.04,
-    "waste_loss": 0.0,
+    "weight_received": 250.0,
+    "weight_cut": 247.04,
+    "waste_loss": 2.96,
     "cuts_total_value": 2375.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 42.3,
-        "percentage": "15%",
+        "percentage": "3%",
         "price": 0.079,
         "total": 3.36,
         "status": "primary"
@@ -7088,7 +7127,7 @@
       {
         "name": "شقف",
         "qty": 60.0,
-        "percentage": "21%",
+        "percentage": "24%",
         "price": 20.0,
         "total": 1200.0,
         "status": "normal"
@@ -7096,7 +7135,7 @@
       {
         "name": "لية",
         "qty": 40.3,
-        "percentage": "14%",
+        "percentage": "16%",
         "price": 5.0,
         "total": 201.5,
         "status": "normal"
@@ -7104,7 +7143,7 @@
       {
         "name": "ريش",
         "qty": 27.0,
-        "percentage": "10%",
+        "percentage": "11%",
         "price": 15.0,
         "total": 405.0,
         "status": "highlight_yellow"
@@ -7112,7 +7151,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 21.3,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 13.0,
         "total": 276.9,
         "status": "highlight_yellow"
@@ -7120,7 +7159,7 @@
       {
         "name": "بدنيات",
         "qty": 28.8,
-        "percentage": "10%",
+        "percentage": "12%",
         "price": 5.0,
         "total": 144.0,
         "status": "highlight_red"
@@ -7136,7 +7175,7 @@
       {
         "name": "كلاوي",
         "qty": 1.4,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 6.0,
         "total": 8.4,
         "status": "highlight_yellow"
@@ -7151,9 +7190,9 @@
       },
       {
         "name": "فتايل",
-        "qty": 21.0,
-        "percentage": "7%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 21.0,
         "total": 0.0,
         "status": "normal"
       },
@@ -7167,16 +7206,16 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 9.7,
-        "percentage": "3%",
+        "percentage": "4%",
         "price": 10.5,
         "total": 101.85,
         "status": "normal"
@@ -7186,21 +7225,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "01-07-2026",
-    "display_title": "حسبة الخروف - 01/07/2026",
+    "display_title": "01/07/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "01/07/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2286.0,
-    "weight_received": 247.3,
-    "weight_cut": 247.3,
-    "waste_loss": 0.0,
+    "weight_received": 228.6,
+    "weight_cut": 253.5,
+    "waste_loss": -24.9,
     "cuts_total_value": 2286.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 82.7,
-        "percentage": "33%",
+        "percentage": "682%",
         "price": 8.242,
         "total": 681.6,
         "status": "primary"
@@ -7224,7 +7264,7 @@
       {
         "name": "ريش",
         "qty": 18.9,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 15.0,
         "total": 283.5,
         "status": "highlight_yellow"
@@ -7239,16 +7279,16 @@
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "2%",
-        "price": 24.2,
+        "qty": 24.2,
+        "percentage": "10%",
+        "price": 5.0,
         "total": 121.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 13.9,
-        "percentage": "6%",
+        "percentage": "5%",
         "price": 3.0,
         "total": 41.7,
         "status": "highlight_red"
@@ -7287,9 +7327,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7306,21 +7346,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "28-06-2026",
-    "display_title": "حسبة الخروف - 28/06/2026",
+    "display_title": "28/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "28/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2270.0,
-    "weight_received": 239.58,
-    "weight_cut": 239.58,
-    "waste_loss": 0.0,
+    "weight_received": 227.0,
+    "weight_cut": 226.58,
+    "waste_loss": 0.42,
     "cuts_total_value": 2270.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 58.3,
-        "percentage": "24%",
+        "percentage": "710%",
         "price": 12.177,
         "total": 709.93,
         "status": "primary"
@@ -7328,7 +7369,7 @@
       {
         "name": "شقف",
         "qty": 17.9,
-        "percentage": "7%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 358.0,
         "status": "normal"
@@ -7336,7 +7377,7 @@
       {
         "name": "لية",
         "qty": 31.0,
-        "percentage": "13%",
+        "percentage": "14%",
         "price": 5.0,
         "total": 155.0,
         "status": "normal"
@@ -7344,7 +7385,7 @@
       {
         "name": "ريش",
         "qty": 19.7,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 15.0,
         "total": 295.5,
         "status": "highlight_yellow"
@@ -7352,7 +7393,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 36.92,
-        "percentage": "15%",
+        "percentage": "16%",
         "price": 13.0,
         "total": 479.96,
         "status": "highlight_yellow"
@@ -7368,7 +7409,7 @@
       {
         "name": "نتر",
         "qty": 12.6,
-        "percentage": "5%",
+        "percentage": "6%",
         "price": 3.0,
         "total": 37.8,
         "status": "highlight_red"
@@ -7407,9 +7448,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "5%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7426,21 +7467,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "27-06-2026",
-    "display_title": "حسبة الخروف - 27/06/2026",
+    "display_title": "27/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "27/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2256.0,
-    "weight_received": 235.02,
-    "weight_cut": 235.02,
-    "waste_loss": 0.0,
+    "weight_received": 225.6,
+    "weight_cut": 222.02,
+    "waste_loss": 3.58,
     "cuts_total_value": 2256.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 58.1,
-        "percentage": "25%",
+        "percentage": "742%",
         "price": 12.771,
         "total": 741.98,
         "status": "primary"
@@ -7456,7 +7498,7 @@
       {
         "name": "لية",
         "qty": 28.1,
-        "percentage": "12%",
+        "percentage": "13%",
         "price": 5.0,
         "total": 140.5,
         "status": "normal"
@@ -7464,7 +7506,7 @@
       {
         "name": "ريش",
         "qty": 19.2,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 15.0,
         "total": 288.0,
         "status": "highlight_yellow"
@@ -7472,7 +7514,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 37.2,
-        "percentage": "16%",
+        "percentage": "17%",
         "price": 13.0,
         "total": 483.6,
         "status": "highlight_yellow"
@@ -7480,7 +7522,7 @@
       {
         "name": "بدنيات",
         "qty": 26.6,
-        "percentage": "11%",
+        "percentage": "12%",
         "price": 5.0,
         "total": 133.0,
         "status": "highlight_red"
@@ -7527,9 +7569,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7546,21 +7588,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "26-06-2026",
-    "display_title": "حسبة الخروف - 26/06/2026",
+    "display_title": "26/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "26/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2202.0,
-    "weight_received": 169.43,
-    "weight_cut": 169.43,
-    "waste_loss": 0.0,
+    "weight_received": 220.2,
+    "weight_cut": 215.93,
+    "waste_loss": 4.27,
     "cuts_total_value": 1680.15,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 26.8,
-        "percentage": "16%",
+        "percentage": "292%",
         "price": 10.913,
         "total": 292.47,
         "status": "primary"
@@ -7592,16 +7635,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 37.6,
-        "percentage": "22%",
+        "percentage": "23%",
         "price": 13.0,
         "total": 488.8,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "3%",
-        "price": 14.5,
+        "qty": 14.5,
+        "percentage": "9%",
+        "price": 5.0,
         "total": 72.5,
         "status": "highlight_red"
       },
@@ -7647,9 +7690,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "8%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       }
@@ -7658,21 +7701,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "25-06-2026",
-    "display_title": "حسبة الخروف - 25/06/2026",
+    "display_title": "25/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "25/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2270.0,
-    "weight_received": 225.09,
-    "weight_cut": 225.09,
-    "waste_loss": 0.0,
+    "weight_received": 227.0,
+    "weight_cut": 223.69,
+    "waste_loss": 3.31,
     "cuts_total_value": 2270.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 53.7,
-        "percentage": "24%",
+        "percentage": "641%",
         "price": 11.935,
         "total": 640.91,
         "status": "primary"
@@ -7711,9 +7755,9 @@
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "2%",
-        "price": 16.6,
+        "qty": 16.6,
+        "percentage": "7%",
+        "price": 5.0,
         "total": 83.0,
         "status": "highlight_red"
       },
@@ -7759,9 +7803,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7778,21 +7822,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "24-06-2026",
-    "display_title": "حسبة الخروف - 24/06/2026",
+    "display_title": "24/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "24/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.0,
     "invoice_total": 2270.0,
-    "weight_received": 224.95,
-    "weight_cut": 224.95,
-    "waste_loss": 0.0,
+    "weight_received": 227.0,
+    "weight_cut": 222.65,
+    "waste_loss": 4.35,
     "cuts_total_value": 2270.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 59.0,
-        "percentage": "26%",
+        "percentage": "823%",
         "price": 13.948,
         "total": 822.95,
         "status": "primary"
@@ -7800,7 +7845,7 @@
       {
         "name": "شقف",
         "qty": 19.0,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 380.0,
         "status": "normal"
@@ -7831,9 +7876,9 @@
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "2%",
-        "price": 15.7,
+        "qty": 15.7,
+        "percentage": "7%",
+        "price": 5.0,
         "total": 78.5,
         "status": "highlight_red"
       },
@@ -7879,9 +7924,9 @@
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
@@ -7898,21 +7943,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "23-06-2026 (2)",
-    "display_title": "حسبة الخروف - 23/06/2026 (دفعة 2)",
+    "display_title": "23/06/2026 - دفعة 2",
+    "sub_title": "دفعة 2 • حسبة الخروف",
     "date": "23/06/2026",
     "batch_label": "دفعة 2",
     "sheep_count": 5.0,
     "price_per_kg": 9.75,
     "invoice_total": 1238.25,
-    "weight_received": 114.97,
-    "weight_cut": 114.97,
-    "waste_loss": 0.0,
+    "weight_received": 127.0,
+    "weight_cut": 125.63,
+    "waste_loss": 1.37,
     "cuts_total_value": 912.02,
     "cuts": [
       {
         "name": "شقف",
         "qty": 13.1,
-        "percentage": "11%",
+        "percentage": "14%",
         "price": 20.0,
         "total": 262.0,
         "status": "normal"
@@ -7920,7 +7966,7 @@
       {
         "name": "لية",
         "qty": 19.8,
-        "percentage": "17%",
+        "percentage": "21%",
         "price": 5.0,
         "total": 99.0,
         "status": "normal"
@@ -7928,7 +7974,7 @@
       {
         "name": "ريش",
         "qty": 11.5,
-        "percentage": "10%",
+        "percentage": "12%",
         "price": 15.0,
         "total": 172.5,
         "status": "highlight_yellow"
@@ -7936,23 +7982,23 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 20.3,
-        "percentage": "18%",
+        "percentage": "21%",
         "price": 13.0,
         "total": 263.9,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "4%",
-        "price": 9.4,
+        "qty": 9.4,
+        "percentage": "10%",
+        "price": 5.0,
         "total": 47.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 6.8,
-        "percentage": "6%",
+        "percentage": "7%",
         "price": 3.0,
         "total": 20.4,
         "status": "highlight_red"
@@ -7976,7 +8022,7 @@
       {
         "name": "فتايل",
         "qty": 1.68,
-        "percentage": "1%",
+        "percentage": "2%",
         "price": 21.0,
         "total": 35.28,
         "status": "normal"
@@ -7984,24 +8030,24 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 11.3,
-        "percentage": "10%",
+        "percentage": "12%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "11%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "9%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -8010,37 +8056,38 @@
   {
     "type": "lamb_report",
     "sheet_name": "23-06-2026",
-    "display_title": "حسبة الخروف - 23/06/2026",
+    "display_title": "23/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "23/06/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.0,
     "invoice_total": 1125.0,
-    "weight_received": 97.11,
-    "weight_cut": 97.11,
-    "waste_loss": 0.0,
-    "cuts_total_value": 783.02,
+    "weight_received": 112.5,
+    "weight_cut": 111.07,
+    "waste_loss": 1.43,
+    "cuts_total_value": 835.82,
     "cuts": [
       {
         "name": "شقف",
         "qty": 11.5,
-        "percentage": "12%",
+        "percentage": "13%",
         "price": 20.0,
         "total": 230.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 2.64,
+        "qty": 13.2,
         "percentage": "3%",
         "price": 5.0,
-        "total": 13.2,
+        "total": 66.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 10.0,
-        "percentage": "10%",
+        "percentage": "12%",
         "price": 15.0,
         "total": 150.0,
         "status": "highlight_yellow"
@@ -8048,23 +8095,23 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 22.4,
-        "percentage": "23%",
+        "percentage": "26%",
         "price": 13.0,
         "total": 291.2,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "5%",
-        "price": 6.2,
+        "qty": 6.2,
+        "percentage": "7%",
+        "price": 5.0,
         "total": 31.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 7.3,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 3.0,
         "total": 21.9,
         "status": "highlight_red"
@@ -8080,7 +8127,7 @@
       {
         "name": "خصاوي",
         "qty": 1.45,
-        "percentage": "1%",
+        "percentage": "2%",
         "price": 6.0,
         "total": 8.7,
         "status": "highlight_yellow"
@@ -8096,24 +8143,24 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 10.9,
-        "percentage": "11%",
+        "percentage": "13%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "13%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "11%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -8122,61 +8169,62 @@
   {
     "type": "lamb_report",
     "sheet_name": "22-06-2026",
-    "display_title": "حسبة الخروف - 22/06/2026",
+    "display_title": "22/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "22/06/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.0,
     "invoice_total": 1155.0,
-    "weight_received": 76.13,
-    "weight_cut": 76.13,
-    "waste_loss": 0.0,
-    "cuts_total_value": 366.59,
+    "weight_received": 115.5,
+    "weight_cut": 115.39,
+    "waste_loss": 0.11,
+    "cuts_total_value": 421.39,
     "cuts": [
       {
         "name": "شقف",
         "qty": 10.0,
-        "percentage": "13%",
+        "percentage": "22%",
         "price": 20.0,
         "total": 200.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 2.74,
-        "percentage": "4%",
+        "qty": 13.7,
+        "percentage": "3%",
         "price": 5.0,
-        "total": 13.7,
+        "total": 68.5,
         "status": "normal"
       },
       {
         "name": "ريش",
-        "qty": 15.0,
-        "percentage": "20%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 15.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 6.5,
-        "percentage": "9%",
+        "percentage": "14%",
         "price": 13.0,
         "total": 84.5,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "7%",
-        "price": 2.8,
+        "qty": 2.8,
+        "percentage": "6%",
+        "price": 5.0,
         "total": 14.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 1.6,
-        "percentage": "2%",
+        "percentage": "3%",
         "price": 3.0,
         "total": 4.8,
         "status": "highlight_red"
@@ -8184,7 +8232,7 @@
       {
         "name": "كلاوي",
         "qty": 0.83,
-        "percentage": "1%",
+        "percentage": "2%",
         "price": 6.0,
         "total": 4.98,
         "status": "highlight_yellow"
@@ -8192,7 +8240,7 @@
       {
         "name": "خصاوي",
         "qty": 1.31,
-        "percentage": "2%",
+        "percentage": "3%",
         "price": 6.0,
         "total": 7.86,
         "status": "highlight_yellow"
@@ -8200,7 +8248,7 @@
       {
         "name": "فتايل",
         "qty": 1.75,
-        "percentage": "2%",
+        "percentage": "4%",
         "price": 21.0,
         "total": 36.75,
         "status": "normal"
@@ -8208,24 +8256,24 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 7.9,
-        "percentage": "10%",
+        "percentage": "17%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "17%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "14%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -8234,61 +8282,62 @@
   {
     "type": "lamb_report",
     "sheet_name": "21-06-2026 ",
-    "display_title": "حسبة الخروف - 21/06/2026",
+    "display_title": "21/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "21/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.25,
     "invoice_total": 2472.812,
-    "weight_received": 136.99,
-    "weight_cut": 136.99,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1193.29,
+    "weight_received": 241.25,
+    "weight_cut": 236.69,
+    "waste_loss": 4.56,
+    "cuts_total_value": 1289.29,
     "cuts": [
       {
         "name": "شقف",
         "qty": 33.0,
-        "percentage": "24%",
+        "percentage": "29%",
         "price": 20.0,
         "total": 660.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 4.8,
-        "percentage": "4%",
+        "qty": 24.0,
+        "percentage": "5%",
         "price": 5.0,
-        "total": 24.0,
+        "total": 120.0,
         "status": "normal"
       },
       {
         "name": "ريش",
-        "qty": 15.0,
-        "percentage": "11%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 15.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 25.75,
-        "percentage": "19%",
+        "percentage": "23%",
         "price": 13.0,
         "total": 334.75,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "4%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 5.0,
         "total": 0.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 8.5,
-        "percentage": "6%",
+        "percentage": "8%",
         "price": 3.0,
         "total": 25.5,
         "status": "highlight_red"
@@ -8296,7 +8345,7 @@
       {
         "name": "كلاوي",
         "qty": 1.84,
-        "percentage": "1%",
+        "percentage": "2%",
         "price": 6.0,
         "total": 11.04,
         "status": "highlight_yellow"
@@ -8304,7 +8353,7 @@
       {
         "name": "خصاوي",
         "qty": 3.4,
-        "percentage": "2%",
+        "percentage": "3%",
         "price": 6.0,
         "total": 20.4,
         "status": "highlight_yellow"
@@ -8312,7 +8361,7 @@
       {
         "name": "فتايل",
         "qty": 5.6,
-        "percentage": "4%",
+        "percentage": "5%",
         "price": 21.0,
         "total": 117.6,
         "status": "normal"
@@ -8320,24 +8369,24 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 10.6,
-        "percentage": "8%",
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
-        "qty": 13.0,
-        "percentage": "9%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 13.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "8%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -8346,21 +8395,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "تحويل الى خلدا",
-    "display_title": "حسبة الخروف - تحويل الى خلدا",
+    "display_title": "تحويل الى خلدا",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "تحويل الى خلدا",
     "batch_label": "",
     "sheep_count": 0.0,
     "price_per_kg": 10.25,
     "invoice_total": 222.579,
-    "weight_received": 53.82,
-    "weight_cut": 53.82,
-    "waste_loss": 0.0,
+    "weight_received": 21.715,
+    "weight_cut": 21.715,
+    "waste_loss": 21.715,
     "cuts_total_value": 222.579,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 9.37,
-        "percentage": "17%",
+        "percentage": "98%",
         "price": 10.452,
         "total": 97.879,
         "status": "primary"
@@ -8368,7 +8418,7 @@
       {
         "name": "شقف",
         "qty": 2.4,
-        "percentage": "4%",
+        "percentage": "11%",
         "price": 20.0,
         "total": 48.0,
         "status": "normal"
@@ -8376,40 +8426,40 @@
       {
         "name": "لية",
         "qty": 2.5,
-        "percentage": "5%",
+        "percentage": "12%",
         "price": 5.0,
         "total": 12.5,
         "status": "normal"
       },
       {
         "name": "ريش",
-        "qty": 15.0,
-        "percentage": "28%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 15.0,
         "total": 0.0,
         "status": "highlight_yellow"
       },
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 1.4,
-        "percentage": "3%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 18.2,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "9%",
-        "price": 1.4,
+        "qty": 1.4,
+        "percentage": "6%",
+        "price": 5.0,
         "total": 7.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
-        "qty": 3.0,
-        "percentage": "6%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 3.0,
         "total": 0.0,
         "status": "highlight_red"
       },
@@ -8424,7 +8474,7 @@
       {
         "name": "خصاوي",
         "qty": 0.15,
-        "percentage": "0%",
+        "percentage": "1%",
         "price": 6.0,
         "total": 0.9,
         "status": "highlight_yellow"
@@ -8440,7 +8490,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 1.7,
-        "percentage": "3%",
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -8448,16 +8498,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 2.4,
-        "percentage": "4%",
+        "percentage": "11%",
         "price": 13.0,
         "total": 31.2,
         "status": "highlight_yellow"
       },
       {
         "name": "اضلاع خروف 500غرام",
-        "qty": 10.5,
-        "percentage": "20%",
-        "price": 0.0,
+        "qty": 0.0,
+        "percentage": "0%",
+        "price": 10.5,
         "total": 0.0,
         "status": "normal"
       }
@@ -8466,21 +8516,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "20-06-2026",
-    "display_title": "حسبة الخروف - 20/06/2026",
+    "display_title": "20/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "20/06/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.25,
     "invoice_total": 1182.85,
-    "weight_received": 96.37,
-    "weight_cut": 96.37,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1122.85,
+    "weight_received": 115.4,
+    "weight_cut": 113.57,
+    "waste_loss": 1.5,
+    "cuts_total_value": 1182.85,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 27.4,
-        "percentage": "28%",
+        "percentage": "397%",
         "price": 14.496,
         "total": 397.18,
         "status": "primary"
@@ -8488,23 +8539,23 @@
       {
         "name": "شقف",
         "qty": 9.2,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 184.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 3.0,
+        "qty": 15.0,
         "percentage": "3%",
         "price": 5.0,
-        "total": 15.0,
+        "total": 75.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 8.0,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 15.0,
         "total": 120.0,
         "status": "highlight_yellow"
@@ -8512,23 +8563,23 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 11.1,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 13.0,
         "total": 144.3,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "5%",
-        "price": 10.2,
+        "qty": 10.2,
+        "percentage": "9%",
+        "price": 5.0,
         "total": 51.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 6.1,
-        "percentage": "6%",
+        "percentage": "5%",
         "price": 3.0,
         "total": 18.3,
         "status": "highlight_red"
@@ -8552,7 +8603,7 @@
       {
         "name": "فتايل",
         "qty": 1.55,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 32.55,
         "status": "normal"
@@ -8560,7 +8611,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 10.3,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -8568,7 +8619,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 6.2,
-        "percentage": "6%",
+        "percentage": "5%",
         "price": 13.0,
         "total": 80.6,
         "status": "highlight_yellow"
@@ -8576,7 +8627,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 6.4,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 10.5,
         "total": 67.2,
         "status": "normal"
@@ -8586,21 +8637,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "19-06-2026 ",
-    "display_title": "حسبة الخروف - 19/06/2026",
+    "display_title": "19/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "19/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.25,
     "invoice_total": 2439.5,
-    "weight_received": 222.14,
-    "weight_cut": 222.14,
-    "waste_loss": 0.0,
+    "weight_received": 238.0,
+    "weight_cut": 234.64,
+    "waste_loss": 3.1,
     "cuts_total_value": 2439.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 58.2,
-        "percentage": "26%",
+        "percentage": "738%",
         "price": 12.683,
         "total": 738.16,
         "status": "primary"
@@ -8608,7 +8660,7 @@
       {
         "name": "شقف",
         "qty": 19.1,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 382.0,
         "status": "normal"
@@ -8616,7 +8668,7 @@
       {
         "name": "لية",
         "qty": 33.6,
-        "percentage": "15%",
+        "percentage": "14%",
         "price": 5.0,
         "total": 168.0,
         "status": "normal"
@@ -8624,7 +8676,7 @@
       {
         "name": "ريش",
         "qty": 24.3,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 15.0,
         "total": 364.5,
         "status": "highlight_yellow"
@@ -8632,16 +8684,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 14.8,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 192.4,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "2%",
-        "price": 17.5,
+        "qty": 17.5,
+        "percentage": "7%",
+        "price": 5.0,
         "total": 87.5,
         "status": "highlight_red"
       },
@@ -8680,7 +8732,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 19.2,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -8688,7 +8740,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 14.7,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 191.1,
         "status": "highlight_yellow"
@@ -8696,7 +8748,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 19.4,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 203.7,
         "status": "normal"
@@ -8706,21 +8758,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "18-06-2026",
-    "display_title": "حسبة الخروف - 18/06/2026",
+    "display_title": "18/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "18/06/2026",
     "batch_label": "",
     "sheep_count": 5.0,
     "price_per_kg": 10.0,
     "invoice_total": 1251.0,
-    "weight_received": 97.81,
-    "weight_cut": 97.81,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1132.0,
+    "weight_received": 125.1,
+    "weight_cut": 122.85,
+    "waste_loss": 2.25,
+    "cuts_total_value": 1251.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 25.25,
-        "percentage": "26%",
+        "percentage": "375%",
         "price": 14.867,
         "total": 375.4,
         "status": "primary"
@@ -8728,23 +8781,23 @@
       {
         "name": "شقف",
         "qty": 11.3,
-        "percentage": "12%",
+        "percentage": "9%",
         "price": 20.0,
         "total": 226.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 4.76,
+        "qty": 23.8,
         "percentage": "5%",
-        "price": 5.0,
-        "total": 23.8,
+        "price": 6.0,
+        "total": 142.8,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 8.15,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 15.0,
         "total": 122.25,
         "status": "highlight_yellow"
@@ -8752,23 +8805,23 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 3.5,
-        "percentage": "4%",
+        "percentage": "3%",
         "price": 13.0,
         "total": 45.5,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "5%",
-        "price": 11.0,
+        "qty": 11.0,
+        "percentage": "9%",
+        "price": 5.0,
         "total": 55.0,
         "status": "highlight_red"
       },
       {
         "name": "نتر",
         "qty": 7.0,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 3.0,
         "total": 21.0,
         "status": "highlight_red"
@@ -8784,7 +8837,7 @@
       {
         "name": "خصاوي",
         "qty": 1.48,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 6.0,
         "total": 8.88,
         "status": "highlight_yellow"
@@ -8792,7 +8845,7 @@
       {
         "name": "فتايل",
         "qty": 1.6,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 33.6,
         "status": "normal"
@@ -8800,7 +8853,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 10.3,
-        "percentage": "11%",
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -8808,7 +8861,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 7.75,
-        "percentage": "8%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 100.75,
         "status": "highlight_yellow"
@@ -8816,7 +8869,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 11.0,
-        "percentage": "11%",
+        "percentage": "9%",
         "price": 10.5,
         "total": 115.5,
         "status": "normal"
@@ -8826,22 +8879,23 @@
   {
     "type": "lamb_report",
     "sheet_name": "17-06-2026 ",
-    "display_title": "حسبة الخروف - 17/06/2026",
+    "display_title": "17/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "17/06/2026",
     "batch_label": "",
     "sheep_count": 3.0,
     "price_per_kg": 10.0,
     "invoice_total": 789.0,
-    "weight_received": 69.88,
-    "weight_cut": 69.88,
-    "waste_loss": 0.0,
-    "cuts_total_value": 773.7,
+    "weight_received": 78.9,
+    "weight_cut": 77.46,
+    "waste_loss": 1.05,
+    "cuts_total_value": 789.0,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
-        "qty": 14.07,
-        "percentage": "20%",
-        "price": 19.4,
+        "qty": 19.4,
+        "percentage": "273%",
+        "price": 14.072,
         "total": 272.99,
         "status": "primary"
       },
@@ -8856,15 +8910,15 @@
       {
         "name": "لية",
         "qty": 15.3,
-        "percentage": "22%",
-        "price": 5.0,
-        "total": 76.5,
+        "percentage": "20%",
+        "price": 6.0,
+        "total": 91.8,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 5.75,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 15.0,
         "total": 86.25,
         "status": "highlight_yellow"
@@ -8872,16 +8926,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 5.5,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 13.0,
         "total": 71.5,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "7%",
-        "price": 7.25,
+        "qty": 7.25,
+        "percentage": "9%",
+        "price": 5.0,
         "total": 36.25,
         "status": "highlight_red"
       },
@@ -8920,7 +8974,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 6.2,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -8936,7 +8990,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 5.6,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 10.5,
         "total": 58.8,
         "status": "normal"
@@ -8946,21 +9000,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "16-06-2026",
-    "display_title": "حسبة الخروف - 16/06/2026",
+    "display_title": "16/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "16/06/2026",
     "batch_label": "",
     "sheep_count": 8.0,
     "price_per_kg": 10.5,
     "invoice_total": 2005.5,
-    "weight_received": 168.84,
-    "weight_cut": 168.84,
-    "waste_loss": 0.0,
-    "cuts_total_value": 1976.7,
+    "weight_received": 191.0,
+    "weight_cut": 187.04,
+    "waste_loss": 3.1,
+    "cuts_total_value": 2005.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 43.9,
-        "percentage": "26%",
+        "percentage": "693%",
         "price": 15.78,
         "total": 692.76,
         "status": "primary"
@@ -8968,7 +9023,7 @@
       {
         "name": "شقف",
         "qty": 14.4,
-        "percentage": "9%",
+        "percentage": "8%",
         "price": 20.0,
         "total": 288.0,
         "status": "normal"
@@ -8976,15 +9031,15 @@
       {
         "name": "لية",
         "qty": 28.8,
-        "percentage": "17%",
-        "price": 5.0,
-        "total": 144.0,
+        "percentage": "15%",
+        "price": 6.0,
+        "total": 172.8,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 18.6,
-        "percentage": "11%",
+        "percentage": "10%",
         "price": 15.0,
         "total": 279.0,
         "status": "highlight_yellow"
@@ -8992,16 +9047,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 11.1,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 144.3,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "3%",
-        "price": 23.2,
+        "qty": 23.2,
+        "percentage": "12%",
+        "price": 5.0,
         "total": 116.0,
         "status": "highlight_red"
       },
@@ -9016,7 +9071,7 @@
       {
         "name": "كلاوي",
         "qty": 0.93,
-        "percentage": "1%",
+        "percentage": "0%",
         "price": 6.0,
         "total": 5.58,
         "status": "highlight_yellow"
@@ -9040,7 +9095,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 13.6,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -9056,7 +9111,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 13.1,
-        "percentage": "8%",
+        "percentage": "7%",
         "price": 10.5,
         "total": 137.55,
         "status": "normal"
@@ -9066,21 +9121,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "15-06-2026",
-    "display_title": "حسبة الخروف - 15/06/2026",
+    "display_title": "15/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "15/06/2026",
     "batch_label": "",
     "sheep_count": 10.0,
     "price_per_kg": 10.5,
     "invoice_total": 2467.5,
-    "weight_received": 184.95,
-    "weight_cut": 184.95,
-    "waste_loss": 0.0,
-    "cuts_total_value": 2264.0,
+    "weight_received": 235.0,
+    "weight_cut": 231.25,
+    "waste_loss": 3.6,
+    "cuts_total_value": 2467.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 61.0,
-        "percentage": "33%",
+        "percentage": "838%",
         "price": 13.746,
         "total": 838.5,
         "status": "primary"
@@ -9088,23 +9144,23 @@
       {
         "name": "شقف",
         "qty": 13.0,
-        "percentage": "7%",
+        "percentage": "6%",
         "price": 20.0,
         "total": 260.0,
         "status": "normal"
       },
       {
         "name": "لية",
-        "qty": 3.7,
-        "percentage": "2%",
-        "price": 5.0,
-        "total": 18.5,
+        "qty": 37.0,
+        "percentage": "4%",
+        "price": 6.0,
+        "total": 222.0,
         "status": "normal"
       },
       {
         "name": "ريش",
         "qty": 23.0,
-        "percentage": "12%",
+        "percentage": "10%",
         "price": 15.0,
         "total": 345.0,
         "status": "highlight_yellow"
@@ -9112,16 +9168,16 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 14.0,
-        "percentage": "8%",
+        "percentage": "6%",
         "price": 13.0,
         "total": 182.0,
         "status": "highlight_yellow"
       },
       {
         "name": "بدنيات",
-        "qty": 5.0,
-        "percentage": "3%",
-        "price": 18.0,
+        "qty": 18.0,
+        "percentage": "8%",
+        "price": 5.0,
         "total": 90.0,
         "status": "highlight_red"
       },
@@ -9152,7 +9208,7 @@
       {
         "name": "فتايل",
         "qty": 3.0,
-        "percentage": "2%",
+        "percentage": "1%",
         "price": 21.0,
         "total": 63.0,
         "status": "normal"
@@ -9160,7 +9216,7 @@
       {
         "name": "عروق + عرقيب + عظم",
         "qty": 16.2,
-        "percentage": "9%",
+        "percentage": "7%",
         "price": 0.0,
         "total": 0.0,
         "status": "normal"
@@ -9168,7 +9224,7 @@
       {
         "name": "رفالات + قص مجروم + زوايد",
         "qty": 17.6,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 13.0,
         "total": 228.8,
         "status": "highlight_yellow"
@@ -9176,7 +9232,7 @@
       {
         "name": "اضلاع خروف 500غرام",
         "qty": 19.0,
-        "percentage": "10%",
+        "percentage": "8%",
         "price": 10.5,
         "total": 199.5,
         "status": "normal"
@@ -9186,21 +9242,22 @@
   {
     "type": "lamb_report",
     "sheet_name": "14-06-2026",
-    "display_title": "حسبة الخروف - 14/06/2026",
+    "display_title": "14/06/2026",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "14/06/2026",
     "batch_label": "",
     "sheep_count": 7.0,
     "price_per_kg": 10.5,
     "invoice_total": 1669.5,
-    "weight_received": 156.54,
-    "weight_cut": 156.54,
-    "waste_loss": 0.0,
+    "weight_received": 159.0,
+    "weight_cut": 156.55,
+    "waste_loss": 2.45,
     "cuts_total_value": 1669.5,
     "cuts": [
       {
         "name": "كتف + فخد + رقاب + قطع الشيف",
         "qty": 39.46,
-        "percentage": "25%",
+        "percentage": "640%",
         "price": 16.221,
         "total": 640.1,
         "status": "primary"
@@ -9306,7 +9363,8 @@
   {
     "type": "lamb_report",
     "sheet_name": "Sheet1",
-    "display_title": "حسبة الخروف - Sheet1",
+    "display_title": "Sheet1",
+    "sub_title": "حسبة تفصيل وتقطيع الخروف",
     "date": "Sheet1",
     "batch_label": "",
     "sheep_count": 0.0,
@@ -9337,7 +9395,7 @@
         "name": "لية",
         "qty": 0.0,
         "percentage": "0%",
-        "price": 5.0,
+        "price": 0.0,
         "total": 0.0,
         "status": "normal"
       },

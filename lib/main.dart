@@ -9,8 +9,8 @@ void main() {
 
 class MarkaziaColors {
   static const Color orange = Color(0xFFFF9C00); // لون المركزية المعتمد
-  static const Color dark = Color(0xFF18181B);   // فحمى داكن متناسق
-  static const Color bg = Color(0xFFFBF9F5);     // خلفية كريمية مريحة
+  static const Color dark = Color(0xFF18181B);   // فحمى داكن
+  static const Color bg = Color(0xFFFBF9F5);     // خلفية كريمية
 }
 
 class CostingApp extends StatelessWidget {
@@ -177,7 +177,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ],
             ),
             const Spacer(),
-            // بادج مدير قسم التكاليف (أ. أحمد الخضري)
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
               decoration: BoxDecoration(
@@ -216,7 +215,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
       ),
       body: Row(
         children: [
-          // شريط تنقل ذو حجم ثابت ومغلق هندسياً
           SizedBox(
             width: 92,
             child: NavigationRail(
@@ -272,21 +270,16 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // 1. شجرة التكاليف - منسقة ومنظمة بدقة 3 خانات وميزة فتح الخلطات المعيارية
+  // 1. شجرة التكاليف - التكلفة الحقيقية ظاهرة ومقربة لـ 3 منازل
   Widget _buildRecipesTab() {
     return _UniversalSearchList(
       items: _recipes,
       titleKey: 'name',
       subtitleBuilder: (item) => 'كود: ${item['code']} | فئة: ${item['category']}',
       costBuilder: (item) => ((item['total_cost'] ?? 0.0) as num).toDouble(),
-      marginBuilder: (item) {
-        final p = ((item['food_cost_percentage'] ?? 0.0) as num).toDouble();
-        return p > 0 ? (p / 100.0) : null;
-      },
       detailBuilder: (item) {
         final ings = item['ingredients'] as List? ?? [];
-        final sellingP = ((item['selling_price'] ?? 0.0) as num).toDouble();
-        final foodCostPct = ((item['food_cost_percentage'] ?? 0.0) as num).toDouble();
+        final cost = ((item['total_cost'] ?? 0.0) as num).toDouble();
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -300,42 +293,37 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Row(
                   children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(item['name'],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(item['name'],
                               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Text('التكلفة: ${((item['total_cost'] ?? 0.0) as num).toStringAsFixed(3)} د.أ',
-                                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                            if (sellingP > 0)
-                              Text('سعر البيع: ${sellingP.toStringAsFixed(3)} د.أ',
-                                  style: TextStyle(fontSize: 13, color: Colors.grey.shade600)),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    Wrap(
-                      spacing: 12,
-                      runSpacing: 8,
-                      children: [
-                        buildCopyBadge(context, label: 'كود الطبخة', code: item['code']),
-                        if (item['odoo_code'].toString().isNotEmpty)
-                          buildCopyBadge(context, label: 'كود أودو', code: item['odoo_code']),
-                        if (foodCostPct > 0)
-                          Chip(
-                            label: Text('نسبة التكلفة: ${foodCostPct.toStringAsFixed(1)}%',
-                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
-                            backgroundColor: const Color(0xFFFFF7ED),
-                            side: const BorderSide(color: MarkaziaColors.orange),
+                          const SizedBox(height: 10),
+                          Wrap(
+                            spacing: 12,
+                            runSpacing: 8,
+                            children: [
+                              buildCopyBadge(context, label: 'كود الطبخة', code: item['code']),
+                              if (item['odoo_code'].toString().isNotEmpty)
+                                buildCopyBadge(context, label: 'كود أودو', code: item['odoo_code']),
+                              Chip(
+                                label: Text('الفئة: ${item['category']}', style: const TextStyle(fontSize: 12)),
+                                backgroundColor: const Color(0xFFF8FAFC),
+                              ),
+                            ],
                           ),
+                        ],
+                      ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text('${cost.toStringAsFixed(3)} د.أ',
+                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: MarkaziaColors.orange)),
+                        const Text('التكلفة الإجمالية للصنف', style: TextStyle(fontSize: 12, color: Colors.grey)),
                       ],
                     ),
                   ],
@@ -450,7 +438,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // 2. وجبات الموظفين - مجمعة ومطابقة بدقة مع دليل أودو مع استعادة كامل التنسيق الفاخر
+  // 2. وجبات الموظفين - مجمعة بدقة بالكامل
   Widget _buildStaffMealsTab() {
     return _UniversalSearchList(
       items: _staffMeals,
@@ -616,7 +604,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // 3. طلبات مارت - عناوين نظيفة وأرقام دقيقة
+  // 3. طلبات مارت - عنوان نظيف بدون أقواس وجدول مطابق للصورة 3 تماماً
   Widget _buildTalabatTab() {
     if (_talabatSheets.isEmpty) {
       return const Center(
@@ -627,11 +615,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
     return _UniversalSearchList(
       items: _talabatSheets,
       titleKey: 'display_title',
-      subtitleBuilder: (item) {
-        final b = item['batch_label'] ?? '';
-        final isL = item['type'] == 'lamb_report';
-        return isL ? '${item['date']} • $b • حسبة الخروف' : '${item['date']} • كشف مبيعات';
-      },
+      subtitleBuilder: (item) => item['sub_title'] ?? item['date'] ?? '',
       costBuilder: (item) {
         if (item['type'] == 'lamb_report') {
           return ((item['invoice_total'] ?? item['cuts_total_value'] ?? 0.0) as num).toDouble();
@@ -674,7 +658,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('${data['display_title']}',
-                            style: const TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                         const Text('المطابقة الرسمية الديناميكية للفاتورة والأوزان والقطعيات', style: TextStyle(fontSize: 12, color: Colors.black54)),
                       ],
                     ),
