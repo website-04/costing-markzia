@@ -7,17 +7,10 @@ void main() {
   runApp(const CostingApp());
 }
 
-// لوحة ألوان المركزية الكلاسيكية المريحة للعين
-class MarkaziaTheme {
-  static const Color primaryOrange =
-      Color(0xFFEA8600); // برتقالي المركزية الذهبي الدافئ
-  static const Color primaryDark = Color(0xFFC76F00);
-  static const Color darkBar = Color(0xFF1E293B); // كحلي فحمى أنيق
-  static const Color bgCream = Color(0xFFFAF8F5); // خلفية عاجية مريحة للعين
-  static const Color cardBg = Colors.white;
-  static const Color textMain = Color(0xFF1E293B);
-  static const Color textSub = Color(0xFF64748B);
-  static const Color borderWarm = Color(0xFFEADBCE);
+class MarkaziaColors {
+  static const Color orange = Color(0xFFFF9C00); // لونك المعتمد #FF9C00
+  static const Color dark = Color(0xFF18181B);   // فحمى ماتريال فخم
+  static const Color bg = Color(0xFFFBF9F5);     // خلفية كريمية راقية ومريحة للعين
 }
 
 class CostingApp extends StatelessWidget {
@@ -31,11 +24,12 @@ class CostingApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: 'Segoe UI',
-        scaffoldBackgroundColor: MarkaziaTheme.bgCream,
+        scaffoldBackgroundColor: MarkaziaColors.bg,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: MarkaziaTheme.primaryOrange,
-          primary: MarkaziaTheme.primaryOrange,
-          surface: MarkaziaTheme.bgCream,
+          seedColor: MarkaziaColors.orange,
+          primary: MarkaziaColors.orange,
+          secondary: MarkaziaColors.orange,
+          surface: Colors.white,
           brightness: Brightness.light,
         ),
       ),
@@ -47,7 +41,6 @@ class CostingApp extends StatelessWidget {
   }
 }
 
-// دالة نسخ الأكواد مع إشعار أنيق
 void copyCode(BuildContext context, String code, String label) {
   if (code.isEmpty || code.toLowerCase() == 'nan') return;
   Clipboard.setData(ClipboardData(text: code));
@@ -56,46 +49,38 @@ void copyCode(BuildContext context, String code, String label) {
     SnackBar(
       content: Row(
         children: [
-          const Icon(Icons.check_circle_rounded,
-              color: MarkaziaTheme.primaryOrange, size: 20),
+          const Icon(Icons.check_circle_rounded, color: MarkaziaColors.orange, size: 20),
           const SizedBox(width: 8),
-          Text('تم نسخ $label: $code',
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold, color: Colors.white)),
+          Text('تم نسخ $label: $code', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
         ],
       ),
-      backgroundColor: MarkaziaTheme.darkBar,
+      backgroundColor: MarkaziaColors.dark,
       duration: const Duration(seconds: 2),
       behavior: SnackBarBehavior.floating,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      width: 340,
+      width: 320,
     ),
   );
 }
 
-// بادج تفاعلي لنسخ الكود بنقرة واحدة
-Widget buildCopyBadge(BuildContext context,
-    {required String label, required String code, Color? color}) {
-  if (code.isEmpty || code.toLowerCase() == 'nan')
-    return const SizedBox.shrink();
-  final c = color ?? MarkaziaTheme.primaryOrange;
+Widget buildCopyBadge(BuildContext context, {required String label, required String code, Color? color}) {
+  if (code.isEmpty || code.toLowerCase() == 'nan') return const SizedBox.shrink();
+  final c = color ?? MarkaziaColors.orange;
   return InkWell(
     onTap: () => copyCode(context, code, label),
-    borderRadius: BorderRadius.circular(6),
+    borderRadius: BorderRadius.circular(8),
     child: Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
         color: c.withOpacity(0.09),
-        borderRadius: BorderRadius.circular(6),
-        border: Border.all(color: c.withOpacity(0.4)),
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: c.withOpacity(0.35)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('$label: $code',
-              style: TextStyle(
-                  fontSize: 11, fontWeight: FontWeight.bold, color: c)),
-          const SizedBox(width: 4),
+          Text('$label: $code', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: c)),
+          const SizedBox(width: 5),
           Icon(Icons.copy_rounded, size: 12, color: c),
         ],
       ),
@@ -117,6 +102,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
   List<dynamic> _staffMeals = [];
   List<dynamic> _talabatItems = [];
   List<dynamic> _odooCatalog = [];
+  final Map<String, String> _odooIndex = {};
   bool _isLoading = true;
 
   @override
@@ -132,11 +118,20 @@ class _MainHubScreenState extends State<MainHubScreen> {
       final tStr = await rootBundle.loadString('assets/data/talabat_mart.json');
       final oStr = await rootBundle.loadString('assets/data/odoo_catalog.json');
 
+      final oList = json.decode(oStr) as List;
+      for (var it in oList) {
+        final c = (it['code'] ?? '').toString().trim().toLowerCase();
+        final n = (it['name'] ?? '').toString().trim();
+        if (c.isNotEmpty && n.isNotEmpty) {
+          _odooIndex[c] = n;
+        }
+      }
+
       setState(() {
         _recipes = json.decode(rStr);
         _staffMeals = json.decode(sStr);
         _talabatItems = json.decode(tStr);
-        _odooCatalog = json.decode(oStr);
+        _odooCatalog = oList;
         _isLoading = false;
       });
     } catch (e) {
@@ -144,95 +139,92 @@ class _MainHubScreenState extends State<MainHubScreen> {
     }
   }
 
+  // دالة البحث المباشر عن الاسم الرسمي في أودو
+  String getOdooOfficialName(String code, String defaultName) {
+    final c = code.trim().toLowerCase();
+    if (_odooIndex.containsKey(c)) {
+      return _odooIndex[c]!;
+    }
+    return defaultName;
+  }
+
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
       return const Scaffold(
-        body: Center(
-            child:
-                CircularProgressIndicator(color: MarkaziaTheme.primaryOrange)),
+        body: Center(child: CircularProgressIndicator(color: MarkaziaColors.orange)),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 64,
-        elevation: 1,
-        shadowColor: Colors.black12,
+        toolbarHeight: 66,
+        elevation: 0,
         title: Row(
           children: [
             Image.asset(
               'assets/logo.png',
               height: 44,
-              errorBuilder: (_, __, ___) => const Icon(Icons.restaurant_menu,
-                  color: MarkaziaTheme.primaryOrange, size: 32),
+              errorBuilder: (_, __, ___) => const Icon(Icons.restaurant, color: MarkaziaColors.orange, size: 32),
             ),
             const SizedBox(width: 14),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text('الـمـركــزيــة  |  AL-MARKAZIA',
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17,
-                        color: Colors.white)),
-                Text('مركز إدارة التكاليف الموحد والشامل',
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17, color: Colors.white)),
+                Text('نظام إدارة وحساب التكاليف المتطور',
                     style: TextStyle(fontSize: 11, color: Colors.white70)),
               ],
             ),
             const Spacer(),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
               decoration: BoxDecoration(
-                color: Colors.white12,
-                borderRadius: BorderRadius.circular(20),
+                color: Colors.white.withOpacity(0.12),
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Colors.white12),
               ),
               child: Text(
                 'أودو: ${_odooCatalog.length}  |  طلبات: ${_talabatItems.length}  |  وجبات: ${_recipes.length}',
-                style: const TextStyle(fontSize: 12, color: Colors.white),
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
               ),
             ),
           ],
         ),
-        backgroundColor: MarkaziaTheme.darkBar,
+        backgroundColor: MarkaziaColors.dark,
       ),
       body: Row(
         children: [
           NavigationRail(
             selectedIndex: _selectedTabIndex,
-            onDestinationSelected: (index) =>
-                setState(() => _selectedTabIndex = index),
+            onDestinationSelected: (index) => setState(() => _selectedTabIndex = index),
             labelType: NavigationRailLabelType.all,
             backgroundColor: Colors.white,
-            selectedIconTheme: const IconThemeData(
-                color: MarkaziaTheme.primaryOrange, size: 28),
+            selectedIconTheme: const IconThemeData(color: MarkaziaColors.orange, size: 28),
             unselectedIconTheme: const IconThemeData(color: Colors.black45),
-            selectedLabelTextStyle: const TextStyle(
-                color: MarkaziaTheme.primaryOrange,
-                fontWeight: FontWeight.bold,
-                fontSize: 12),
-            unselectedLabelTextStyle:
-                const TextStyle(color: Colors.black54, fontSize: 11),
-            indicatorColor: MarkaziaTheme.primaryOrange.withOpacity(0.12),
+            selectedLabelTextStyle: const TextStyle(color: MarkaziaColors.orange, fontWeight: FontWeight.bold, fontSize: 12),
+            unselectedLabelTextStyle: const TextStyle(color: Colors.black54, fontSize: 11),
+            indicatorColor: MarkaziaColors.orange.withOpacity(0.15),
             destinations: const [
               NavigationRailDestination(
                 icon: Icon(Icons.account_tree_outlined),
-                selectedIcon: Icon(Icons.account_tree),
+                selectedIcon: Icon(Icons.account_tree_rounded),
                 label: Text('شجرة التكاليف'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.restaurant_outlined),
-                selectedIcon: Icon(Icons.restaurant),
+                selectedIcon: Icon(Icons.restaurant_rounded),
                 label: Text('وجبات الموظفين'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.shopping_bag_outlined),
-                selectedIcon: Icon(Icons.shopping_bag),
+                selectedIcon: Icon(Icons.shopping_bag_rounded),
                 label: Text('طلبات مارت'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.inventory_2_outlined),
-                selectedIcon: Icon(Icons.inventory_2),
+                selectedIcon: Icon(Icons.inventory_2_rounded),
                 label: Text('دليل أودو'),
               ),
             ],
@@ -261,8 +253,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
     return _UniversalSearchList(
       items: _recipes,
       titleKey: 'name',
-      subtitleBuilder: (item) =>
-          'Odoo: ${item['odoo_code']} | كود: ${item['item_code']}',
+      subtitleBuilder: (item) => 'Odoo: ${item['odoo_code']} | كود: ${item['item_code']}',
       costBuilder: (item) => (item['calculated_cost'] as num).toDouble(),
       marginBuilder: (item) => (item['profit_margin'] as num).toDouble(),
       detailBuilder: (item) => _buildRecipeDetail(item),
@@ -282,11 +273,11 @@ class _MainHubScreenState extends State<MainHubScreen> {
           elevation: 0,
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
             side: const BorderSide(color: Color(0xFFE2E8F0)),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(18.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -294,53 +285,33 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   children: [
                     Expanded(
                       child: Text(item['name'],
-                          style: const TextStyle(
-                              fontSize: 21,
-                              fontWeight: FontWeight.bold,
-                              color: MarkaziaTheme.textMain)),
+                          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                     ),
-                    buildCopyBadge(context,
-                        label: 'Odoo كود', code: item['odoo_code']),
+                    buildCopyBadge(context, label: 'Odoo كود', code: item['odoo_code']),
                     const SizedBox(width: 8),
-                    buildCopyBadge(context,
-                        label: 'كود الوجبة',
-                        code: item['item_code'],
-                        color: MarkaziaTheme.darkBar),
+                    buildCopyBadge(context, label: 'كود الوجبة', code: item['item_code'], color: MarkaziaColors.dark),
                   ],
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: 16),
                 const Divider(height: 1),
-                const SizedBox(height: 14),
+                const SizedBox(height: 16),
                 Row(
                   children: [
-                    _kpiTile(
-                        'سعر البيع (المركزية)',
-                        '${price.toStringAsFixed(3)} د.أ',
-                        MarkaziaTheme.textSub),
+                    _kpiTile('سعر البيع (المركزية)', '${price.toStringAsFixed(3)} د.أ', Colors.grey.shade700),
                     const SizedBox(width: 12),
-                    _kpiTile(
-                        'التكلفة الكلية الدقيقة',
-                        '${cost.toStringAsFixed(3)} د.أ',
-                        MarkaziaTheme.primaryOrange),
+                    _kpiTile('التكلفة الكلية الفعلية', '${cost.toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
                     const SizedBox(width: 12),
-                    _kpiTile(
-                        'هامش الربح',
-                        '${(margin * 100).toStringAsFixed(1)}%',
-                        margin >= 0.25
-                            ? Colors.green.shade700
-                            : MarkaziaTheme.primaryDark),
+                    _kpiTile('هامش الربح', '${(margin * 100).toStringAsFixed(1)}%',
+                        margin >= 0.25 ? Colors.green.shade700 : MarkaziaColors.orange),
                   ],
                 ),
               ],
             ),
           ),
         ),
-        const SizedBox(height: 12),
-        Text('المكونات التفصيلية (${ings.length} مكون):',
-            style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 14,
-                color: MarkaziaTheme.textMain)),
+        const SizedBox(height: 14),
+        Text('المكونات التفصيلية (${ings.length} صنف):',
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: MarkaziaColors.dark)),
         const SizedBox(height: 8),
         Expanded(
           child: ListView.builder(
@@ -350,6 +321,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
               final isSf = ing['is_semi_finished'] == true;
               final subs = ing['sub_ingredients'] as List? ?? [];
               final iCost = (ing['total_cost'] as num).toDouble();
+              final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
 
               if (!isSf) {
                 return Card(
@@ -357,75 +329,61 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   color: Colors.white,
                   margin: const EdgeInsets.symmetric(vertical: 3),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    side: const BorderSide(color: Color(0xFFEDE8E3)),
+                    borderRadius: BorderRadius.circular(10),
+                    side: const BorderSide(color: Color(0xFFE2E8F0)),
                   ),
                   child: ListTile(
                     dense: true,
-                    title: Text(ing['name'],
-                        style: const TextStyle(fontWeight: FontWeight.w600)),
+                    title: Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold)),
                     subtitle: Row(
                       children: [
-                        Text(
-                            'الكمية: ${ing['quantity']} ${ing['unit']} | الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(4)} د.أ'),
-                        const SizedBox(width: 8),
+                        Text('الكمية: ${ing['quantity']} ${ing['unit']} | الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(4)} د.أ'),
+                        const SizedBox(width: 10),
                         buildCopyBadge(context, label: 'ID', code: ing['code']),
                       ],
                     ),
                     trailing: Text('${iCost.toStringAsFixed(3)} د.أ',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: MarkaziaTheme.textMain)),
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
                   ),
                 );
               }
 
               return Card(
                 elevation: 0,
-                color: const Color(0xFFFFFBF5),
+                color: const Color(0xFFFFFDF8),
                 margin: const EdgeInsets.symmetric(vertical: 4),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  side: const BorderSide(color: Color(0xFFF0D5BA)),
+                  borderRadius: BorderRadius.circular(12),
+                  side: BorderSide(color: MarkaziaColors.orange.withOpacity(0.4)),
                 ),
                 child: ExpansionTile(
                   initiallyExpanded: true,
                   title: Row(
                     children: [
-                      const Icon(Icons.account_tree_rounded,
-                          size: 18, color: MarkaziaTheme.primaryOrange),
+                      const Icon(Icons.account_tree_rounded, size: 18, color: MarkaziaColors.orange),
                       const SizedBox(width: 8),
-                      Text(ing['name'],
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: MarkaziaTheme.primaryDark)),
+                      Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
                       const SizedBox(width: 8),
-                      buildCopyBadge(context,
-                          label: 'SF كود', code: ing['code']),
+                      buildCopyBadge(context, label: 'SF كود', code: ing['code']),
                     ],
                   ),
-                  subtitle: Text(
-                      'الكمية المستخدمة: ${ing['quantity']} ${ing['unit']} | الكلفة: ${iCost.toStringAsFixed(3)} د.أ'),
+                  subtitle: Text('الكمية المستخدمة: ${ing['quantity']} ${ing['unit']} | الكلفة: ${iCost.toStringAsFixed(3)} د.أ'),
                   children: subs.map((sub) {
+                    final subOfficial = getOdooOfficialName(sub['rm_code'] ?? '', sub['name'] ?? '');
                     return Container(
                       color: Colors.white,
                       child: ListTile(
                         dense: true,
-                        title: Text(sub['name']),
+                        title: Text(subOfficial),
                         subtitle: Row(
                           children: [
-                            Text(
-                                'بالخلطة: ${sub['batch_quantity']} ${sub['unit']} | الوحدة: ${(sub['cost_per_unit'] as num).toStringAsFixed(5)} د.أ'),
+                            Text('بالخلطة: ${sub['batch_quantity']} ${sub['unit']} | الوحدة: ${(sub['cost_per_unit'] as num).toStringAsFixed(5)} د.أ'),
                             const SizedBox(width: 8),
-                            buildCopyBadge(context,
-                                label: 'RM', code: sub['rm_code']),
+                            buildCopyBadge(context, label: 'RM', code: sub['rm_code']),
                           ],
                         ),
-                        trailing: Text(
-                            '${(sub['total_cost'] as num).toStringAsFixed(4)} د.أ',
-                            style: const TextStyle(
-                                fontWeight: FontWeight.w600,
-                                color: MarkaziaTheme.primaryOrange)),
+                        trailing: Text('${(sub['total_cost'] as num).toStringAsFixed(4)} د.أ',
+                            style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
                       ),
                     );
                   }).toList(),
@@ -439,7 +397,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
   }
 
   // ==========================================
-  // التبويب 2: وجبات الموظفين المنظمة بالتواريخ
+  // التبويب 2: وجبات الموظفين بالأسماء الرسمية
   // ==========================================
   Widget _buildStaffMealsTab() {
     return _UniversalSearchList(
@@ -456,11 +414,11 @@ class _MainHubScreenState extends State<MainHubScreen> {
               elevation: 0,
               color: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(16),
                 side: const BorderSide(color: Color(0xFFE2E8F0)),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(18.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -468,51 +426,33 @@ class _MainHubScreenState extends State<MainHubScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(item['name'],
-                            style: const TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold,
-                                color: MarkaziaTheme.textMain)),
-                        const SizedBox(height: 6),
+                            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                        const SizedBox(height: 8),
                         Row(
                           children: [
                             Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 3),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                               decoration: BoxDecoration(
-                                color: MarkaziaTheme.primaryOrange
-                                    .withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(6),
+                                color: MarkaziaColors.orange.withOpacity(0.12),
+                                borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text('📅 تاريخ الوجبة: ${item['date']}',
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12,
-                                      color: MarkaziaTheme.primaryDark)),
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: MarkaziaColors.orange)),
                             ),
-                            const SizedBox(width: 8),
-                            buildCopyBadge(context,
-                                label: 'كود الوجبة',
-                                code: item['code'],
-                                color: MarkaziaTheme.darkBar),
+                            const SizedBox(width: 10),
+                            buildCopyBadge(context, label: 'كود الوجبة', code: item['code'], color: MarkaziaColors.dark),
                           ],
                         ),
                       ],
                     ),
-                    _kpiTile(
-                        'تكلفة الوجبة الكلية',
-                        '${(item['total_cost'] as num).toStringAsFixed(3)} د.أ',
-                        MarkaziaTheme.primaryOrange),
+                    _kpiTile('تكلفة الوجبة الكلية', '${(item['total_cost'] as num).toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 12),
-            Text(
-                'مكونات وجبة الموظف الرسمية المعتمدة من أودو (${ings.length} مكون):',
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 13,
-                    color: MarkaziaTheme.textMain)),
+            const SizedBox(height: 14),
+            Text('مكونات الوجبة المستخرجة من دليل أودو الرسمي (${ings.length} مكون):',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: MarkaziaColors.dark)),
             const SizedBox(height: 8),
             Expanded(
               child: ListView.builder(
@@ -521,84 +461,97 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   final ing = ings[idx];
                   final isSf = ing['is_semi_finished'] == true;
                   final subs = ing['sub_ingredients'] as List? ?? [];
+                  final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
 
                   if (!isSf) {
                     return Card(
                       elevation: 0,
                       color: Colors.white,
-                      margin: const EdgeInsets.symmetric(vertical: 3),
+                      margin: const EdgeInsets.symmetric(vertical: 4),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
-                        side: const BorderSide(color: Color(0xFFEDE8E3)),
+                        borderRadius: BorderRadius.circular(12),
+                        side: const BorderSide(color: Color(0xFFE2E8F0)),
                       ),
-                      child: ListTile(
-                        dense: true,
-                        title: Text(ing['name'],
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: MarkaziaTheme.textMain)),
-                        subtitle: Row(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        child: Row(
                           children: [
-                            Text('الكمية: ${ing['quantity']} ${ing['unit']}'),
-                            const SizedBox(width: 10),
-                            buildCopyBadge(context,
-                                label: 'كود المادة', code: ing['code']),
+                            Container(
+                              width: 8,
+                              height: 8,
+                              decoration: const BoxDecoration(
+                                color: MarkaziaColors.orange,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(officialName,
+                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
+                                  const SizedBox(height: 4),
+                                  Row(
+                                    children: [
+                                      Text('الكمية: ${ing['quantity']} ${ing['unit']}', style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+                                      const SizedBox(width: 10),
+                                      buildCopyBadge(context, label: 'كود أودو', code: ing['code']),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text('${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.orange)),
+                                Text('الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(3)} د.أ',
+                                    style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+                              ],
+                            ),
                           ],
                         ),
-                        trailing: Text(
-                            '${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ',
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: MarkaziaTheme.primaryDark)),
                       ),
                     );
                   }
 
                   return Card(
                     elevation: 0,
-                    color: const Color(0xFFFFFBF5),
+                    color: const Color(0xFFFFFDF8),
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: const BorderSide(color: Color(0xFFF0D5BA)),
+                      borderRadius: BorderRadius.circular(12),
+                      side: BorderSide(color: MarkaziaColors.orange.withOpacity(0.4)),
                     ),
                     child: ExpansionTile(
                       title: Row(
                         children: [
-                          const Icon(Icons.account_tree_rounded,
-                              size: 16, color: MarkaziaTheme.primaryOrange),
-                          const SizedBox(width: 6),
-                          Text(ing['name'],
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: MarkaziaTheme.primaryDark)),
+                          const Icon(Icons.account_tree_rounded, size: 16, color: MarkaziaColors.orange),
                           const SizedBox(width: 8),
-                          buildCopyBadge(context,
-                              label: 'كود SF', code: ing['code']),
+                          Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
+                          const SizedBox(width: 8),
+                          buildCopyBadge(context, label: 'كود SF', code: ing['code']),
                         ],
                       ),
-                      subtitle: Text(
-                          'الكمية: ${ing['quantity']} ${ing['unit']} | الإجمالي: ${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ'),
+                      subtitle: Text('الكمية: ${ing['quantity']} ${ing['unit']} | الإجمالي: ${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ'),
                       children: subs.map((s) {
+                        final sOfficial = getOdooOfficialName(s['rm_code'] ?? '', s['name'] ?? '');
                         return Container(
                           color: Colors.white,
                           child: ListTile(
                             dense: true,
-                            title: Text(s['name']),
+                            title: Text(sOfficial),
                             subtitle: Row(
                               children: [
-                                Text(
-                                    'الكمية بالخلطة: ${s['batch_quantity']} ${s['unit']}'),
+                                Text('الكمية بالخلطة: ${s['batch_quantity']} ${s['unit']}'),
                                 const SizedBox(width: 8),
-                                buildCopyBadge(context,
-                                    label: 'RM', code: s['rm_code']),
+                                buildCopyBadge(context, label: 'RM', code: s['rm_code']),
                               ],
                             ),
-                            trailing: Text(
-                                '${(s['total_cost'] as num).toStringAsFixed(3)} د.أ',
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: MarkaziaTheme.primaryOrange)),
+                            trailing: Text('${(s['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                                style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
                           ),
                         );
                       }).toList(),
@@ -632,7 +585,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
           elevation: 0,
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
             side: const BorderSide(color: Color(0xFFE2E8F0)),
           ),
           child: Padding(
@@ -641,26 +594,16 @@ class _MainHubScreenState extends State<MainHubScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(item['name'],
-                    style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: MarkaziaTheme.textMain)),
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 12,
                   runSpacing: 8,
                   children: [
-                    buildCopyBadge(context,
-                        label: 'الباركود', code: item['barcode']),
-                    buildCopyBadge(context,
-                        label: 'SKU',
-                        code: item['sku'],
-                        color: MarkaziaTheme.darkBar),
+                    buildCopyBadge(context, label: 'الباركود', code: item['barcode']),
+                    buildCopyBadge(context, label: 'SKU', code: item['sku'], color: MarkaziaColors.dark),
                     if (item['odoo_code'].toString().isNotEmpty)
-                      buildCopyBadge(context,
-                          label: 'كود أودو المطابق',
-                          code: item['odoo_code'],
-                          color: Colors.green.shade800),
+                      buildCopyBadge(context, label: 'كود أودو المطابق', code: item['odoo_code'], color: Colors.green.shade800),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -668,22 +611,12 @@ class _MainHubScreenState extends State<MainHubScreen> {
                 const SizedBox(height: 16),
                 Row(
                   children: [
-                    _kpiTile(
-                        'سعر البيع في طلبات',
-                        '${price.toStringAsFixed(2)} د.أ',
-                        MarkaziaTheme.textSub),
+                    _kpiTile('سعر البيع في طلبات', '${price.toStringAsFixed(2)} د.أ', Colors.grey.shade700),
                     const SizedBox(width: 16),
-                    _kpiTile(
-                        'التكلفة المرجعية',
-                        '${cost.toStringAsFixed(3)} د.أ',
-                        MarkaziaTheme.primaryOrange),
+                    _kpiTile('التكلفة المرجعية', '${cost.toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
                     const SizedBox(width: 16),
-                    _kpiTile(
-                        'هامش الربح',
-                        '${(margin * 100).toStringAsFixed(1)}%',
-                        margin >= 0.20
-                            ? Colors.green.shade700
-                            : MarkaziaTheme.primaryDark),
+                    _kpiTile('هامش الربح', '${(margin * 100).toStringAsFixed(1)}%',
+                        margin >= 0.20 ? Colors.green.shade700 : MarkaziaColors.orange),
                   ],
                 ),
               ],
@@ -701,15 +634,14 @@ class _MainHubScreenState extends State<MainHubScreen> {
     return _UniversalSearchList(
       items: _odooCatalog,
       titleKey: 'name',
-      subtitleBuilder: (item) =>
-          'كود: ${item['code']} | فئة: ${item['category']}',
+      subtitleBuilder: (item) => 'كود: ${item['code']} | فئة: ${item['category']}',
       costBuilder: (item) => (item['cost'] as num).toDouble(),
       detailBuilder: (item) {
         return Card(
           elevation: 0,
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
             side: const BorderSide(color: Color(0xFFE2E8F0)),
           ),
           child: Padding(
@@ -718,25 +650,17 @@ class _MainHubScreenState extends State<MainHubScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(item['name'],
-                    style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        color: MarkaziaTheme.textMain)),
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 12,
                   runSpacing: 8,
                   children: [
-                    buildCopyBadge(context,
-                        label: 'كود أودو', code: item['code']),
-                    buildCopyBadge(context,
-                        label: 'الباركود',
-                        code: item['barcode'],
-                        color: MarkaziaTheme.darkBar),
+                    buildCopyBadge(context, label: 'كود أودو', code: item['code']),
+                    buildCopyBadge(context, label: 'الباركود', code: item['barcode'], color: MarkaziaColors.dark),
                     Chip(
-                      label: Text('الفئة: ${item['category']}',
-                          style: const TextStyle(fontSize: 12)),
-                      backgroundColor: const Color(0xFFF1F5F9),
+                      label: Text('الفئة: ${item['category']}', style: const TextStyle(fontSize: 12)),
+                      backgroundColor: const Color(0xFFF8FAFC),
                     ),
                   ],
                 ),
@@ -745,18 +669,11 @@ class _MainHubScreenState extends State<MainHubScreen> {
                 const SizedBox(height: 16),
                 Row(
                   children: [
-                    _kpiTile(
-                        'سعر التكلفة / الشراء',
-                        '${(item['cost'] as num).toStringAsFixed(4)} د.أ',
-                        MarkaziaTheme.primaryOrange),
+                    _kpiTile('سعر التكلفة / الشراء', '${(item['cost'] as num).toStringAsFixed(4)} د.أ', MarkaziaColors.orange),
                     const SizedBox(width: 16),
-                    _kpiTile(
-                        'سعر البيع الافتراضي',
-                        '${(item['price'] as num).toStringAsFixed(3)} د.أ',
-                        MarkaziaTheme.textSub),
+                    _kpiTile('سعر البيع الافتراضي', '${(item['price'] as num).toStringAsFixed(3)} د.أ', Colors.grey.shade700),
                     const SizedBox(width: 16),
-                    _kpiTile('وحدة القياس', item['unit'].toString(),
-                        Colors.teal.shade800),
+                    _kpiTile('وحدة القياس', item['unit'].toString(), Colors.teal.shade800),
                   ],
                 ),
               ],
@@ -770,24 +687,18 @@ class _MainHubScreenState extends State<MainHubScreen> {
   Widget _kpiTile(String title, String value, Color color) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.07),
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: color.withOpacity(0.25)),
+          color: color.withOpacity(0.08),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: color.withOpacity(0.2)),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(title,
-                style: TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.grey.shade700)),
-            const SizedBox(height: 3),
-            Text(value,
-                style: TextStyle(
-                    fontSize: 16, fontWeight: FontWeight.bold, color: color)),
+            Text(title, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey.shade600)),
+            const SizedBox(height: 4),
+            Text(value, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: color)),
           ],
         ),
       ),
@@ -795,7 +706,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
   }
 }
 
-// قائمة بحث متطورة وسريعة
 class _UniversalSearchList extends StatefulWidget {
   final List<dynamic> items;
   final String titleKey;
@@ -834,15 +744,9 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
     setState(() {
       _filtered = widget.items.where((i) {
         final title = (i[widget.titleKey] ?? '').toString().toLowerCase();
-        final code =
-            (i['code'] ?? i['sku'] ?? i['barcode'] ?? i['odoo_code'] ?? '')
-                .toString()
-                .toLowerCase();
+        final code = (i['code'] ?? i['sku'] ?? i['barcode'] ?? i['odoo_code'] ?? '').toString().toLowerCase();
         final date = (i['date'] ?? '').toString().toLowerCase();
-        return query.isEmpty ||
-            title.contains(query) ||
-            code.contains(query) ||
-            date.contains(query);
+        return query.isEmpty || title.contains(query) || code.contains(query) || date.contains(query);
       }).toList();
       if (_filtered.isNotEmpty && !_filtered.contains(_selected)) {
         _selected = _filtered.first;
@@ -855,102 +759,80 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
     return Row(
       children: [
         SizedBox(
-          width: 370,
+          width: 380,
           child: Container(
             color: Colors.white,
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
+                Container(
+                  margin: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFBF9F5),
+                    borderRadius: BorderRadius.circular(30),
+                    border: Border.all(color: const Color(0xFFE2E8F0)),
+                  ),
                   child: TextField(
                     controller: _ctrl,
                     onChanged: _filter,
                     decoration: InputDecoration(
                       hintText: 'بحث بالاسم، الكود، أو التاريخ...',
-                      prefixIcon: const Icon(Icons.search,
-                          color: MarkaziaTheme.primaryOrange),
-                      filled: true,
-                      fillColor: MarkaziaTheme.bgCream,
-                      contentPadding: const EdgeInsets.symmetric(
-                          horizontal: 12, vertical: 8),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFFE2E8F0)),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Color(0xFFE2E8F0)),
-                      ),
+                      prefixIcon: const Icon(Icons.search_rounded, color: MarkaziaColors.orange),
+                      suffixIcon: _ctrl.text.isNotEmpty
+                          ? IconButton(icon: const Icon(Icons.clear, size: 16), onPressed: () { _ctrl.clear(); _filter(''); })
+                          : null,
+                      border: InputBorder.none,
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
                     ),
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 2),
                   child: Row(
                     children: [
-                      Text('إجمالي النتائج: ${_filtered.length}',
-                          style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey.shade600)),
+                      Text('إجمالي العناصر: ${_filtered.length}',
+                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey.shade500)),
                     ],
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 6),
                 const Divider(height: 1, color: Color(0xFFE2E8F0)),
                 Expanded(
                   child: ListView.separated(
                     itemCount: _filtered.length,
-                    separatorBuilder: (_, __) =>
-                        const Divider(height: 1, color: Color(0xFFF1F5F9)),
+                    separatorBuilder: (_, __) => const Divider(height: 1, color: Color(0xFFF8FAFC)),
                     itemBuilder: (context, idx) {
                       final item = _filtered[idx] as Map<String, dynamic>;
                       final isSel = item == _selected;
-                      final cost = widget.costBuilder != null
-                          ? widget.costBuilder!(item)
-                          : null;
-                      final margin = widget.marginBuilder != null
-                          ? widget.marginBuilder!(item)
-                          : null;
+                      final cost = widget.costBuilder != null ? widget.costBuilder!(item) : null;
+                      final margin = widget.marginBuilder != null ? widget.marginBuilder!(item) : null;
 
                       return ListTile(
                         dense: true,
                         selected: isSel,
-                        selectedTileColor:
-                            MarkaziaTheme.primaryOrange.withOpacity(0.08),
+                        selectedTileColor: MarkaziaColors.orange.withOpacity(0.09),
+                        shape: isSel
+                            ? const Border(right: BorderSide(color: MarkaziaColors.orange, width: 4))
+                            : null,
                         title: Text(item[widget.titleKey] ?? '',
                             style: TextStyle(
-                              fontWeight:
-                                  isSel ? FontWeight.bold : FontWeight.w600,
-                              color: isSel
-                                  ? MarkaziaTheme.primaryDark
-                                  : MarkaziaTheme.textMain,
+                              fontWeight: isSel ? FontWeight.bold : FontWeight.w600,
+                              color: isSel ? MarkaziaColors.orange : MarkaziaColors.dark,
                             )),
                         subtitle: Text(widget.subtitleBuilder(item),
-                            style: TextStyle(
-                                fontSize: 11,
-                                color: isSel
-                                    ? MarkaziaTheme.primaryDark
-                                    : MarkaziaTheme.textSub)),
+                            style: TextStyle(fontSize: 11, color: isSel ? MarkaziaColors.orange : Colors.grey.shade600)),
                         trailing: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             if (cost != null)
                               Text('${cost.toStringAsFixed(2)} د.أ',
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 13,
-                                      color: MarkaziaTheme.textMain)),
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: MarkaziaColors.dark)),
                             if (margin != null && margin != 0.0)
                               Text('${(margin * 100).toStringAsFixed(0)}%',
                                   style: TextStyle(
                                       fontSize: 10,
                                       fontWeight: FontWeight.bold,
-                                      color: margin >= 0.2
-                                          ? Colors.green.shade700
-                                          : MarkaziaTheme.primaryDark)),
+                                      color: margin >= 0.2 ? Colors.green.shade700 : MarkaziaColors.orange)),
                           ],
                         ),
                         onTap: () => setState(() => _selected = item),
@@ -967,7 +849,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
           child: _selected == null
               ? const Center(child: Text('اختر عنصراً لعرض تفاصيله الكاملة'))
               : Padding(
-                  padding: const EdgeInsets.all(18.0),
+                  padding: const EdgeInsets.all(20.0),
                   child: widget.detailBuilder(_selected!),
                 ),
         ),

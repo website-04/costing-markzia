@@ -267,9 +267,39 @@
     ]
   },
   {
+    "name": "مجدرة",
+    "date": "مجدرة",
+    "code": "STAFF-011",
+    "total_cost": 18.442610862068967,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 12.682610862068966,
+        "total_cost": 7.221305431034482,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 20.682610862068966,
+        "total_cost": 11.221305431034484,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
     "name": "ارز بشعرية شاكري",
     "date": "ارز بشعرية شاكري",
-    "code": "STAFF-011",
+    "code": "STAFF-012",
     "total_cost": 12.670280431034485,
     "ingredients": [
       {
@@ -288,7 +318,7 @@
   {
     "name": "اوزي",
     "date": "2026-08-26",
-    "code": "STAFF-012",
+    "code": "STAFF-013",
     "total_cost": 47.00176853037767,
     "ingredients": [
       {
@@ -311,28 +341,7 @@
         "cost_per_unit": 6.772349999999999,
         "total_cost": 13.544699999999999,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5373",
-            "name": "قطعيات عجل مشكلة",
-            "batch_quantity": 700.0,
-            "unit": "غم",
-            "equivalent_quantity": 700.0,
-            "cost_per_unit": 0.00901,
-            "total_cost": 6.307
-          },
-          {
-            "odoo_code": "FPW3000042",
-            "rm_code": "4601",
-            "name": "نتر خروف",
-            "batch_quantity": 300.0,
-            "unit": "غم",
-            "equivalent_quantity": 300.0,
-            "cost_per_unit": 0.003,
-            "total_cost": 0.9
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11120004",
@@ -493,7 +502,7 @@
   {
     "name": "ارز بشعرية ملوخية",
     "date": "2026-08-27",
-    "code": "STAFF-013",
+    "code": "STAFF-014",
     "total_cost": 25.149056241379313,
     "ingredients": [
       {
@@ -622,7 +631,7 @@
   {
     "name": "ارز بشعرية بازيلا وجزر",
     "date": "2026-08-28",
-    "code": "STAFF-014",
+    "code": "STAFF-015",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -784,7 +793,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-08-29",
-    "code": "STAFF-015",
+    "code": "STAFF-016",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -946,7 +955,7 @@
   {
     "name": "ارز بشعرية داوود باشا",
     "date": "2026-08-30",
-    "code": "STAFF-016",
+    "code": "STAFF-017",
     "total_cost": 68.04510694050033,
     "ingredients": [
       {
@@ -1024,28 +1033,7 @@
         "cost_per_unit": 6.772349999999999,
         "total_cost": 47.40644999999999,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5373",
-            "name": "قطعيات عجل مشكلة",
-            "batch_quantity": 700.0,
-            "unit": "غم",
-            "equivalent_quantity": 700.0,
-            "cost_per_unit": 0.00901,
-            "total_cost": 6.307
-          },
-          {
-            "odoo_code": "FPW3000042",
-            "rm_code": "4601",
-            "name": "نتر خروف",
-            "batch_quantity": 300.0,
-            "unit": "غم",
-            "equivalent_quantity": 300.0,
-            "cost_per_unit": 0.003,
-            "total_cost": 0.9
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11140013",
@@ -1151,7 +1139,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-08-31",
-    "code": "STAFF-017",
+    "code": "STAFF-018",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -1313,7 +1301,7 @@
   {
     "name": "قدرة",
     "date": "2026-01-09",
-    "code": "STAFF-018",
+    "code": "STAFF-019",
     "total_cost": 84.22177384776403,
     "ingredients": [
       {
@@ -1347,38 +1335,7 @@
         "cost_per_unit": 0.6896077777777778,
         "total_cost": 0.6896077777777778,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4143",
-            "name": "حمص حب نمرة 12",
-            "batch_quantity": 10000.0,
-            "unit": "غم",
-            "equivalent_quantity": 555.5555555555555,
-            "cost_per_unit": 0.00124,
-            "total_cost": 0.6888888888888889
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "3",
-            "name": "مياه حنفية",
-            "batch_quantity": 15000.0,
-            "unit": "مل",
-            "equivalent_quantity": 833.3333333333334,
-            "cost_per_unit": 0.0,
-            "total_cost": 0.0
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4207",
-            "name": "كربونة",
-            "batch_quantity": 20.0,
-            "unit": "غم",
-            "equivalent_quantity": 1.1111111111111112,
-            "cost_per_unit": 0.000647,
-            "total_cost": 0.0007188888888888889
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11060003",
@@ -1510,105 +1467,14 @@
         "cost_per_unit": 3.133747995495496,
         "total_cost": 56.40746391891893,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5416",
-            "name": "دجاج طازج الوطنية",
-            "batch_quantity": 140000.0,
-            "unit": "غم",
-            "equivalent_quantity": 1400.0,
-            "cost_per_unit": 0.00175,
-            "total_cost": 2.45
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5417",
-            "name": "بهارات دجاج شواية",
-            "batch_quantity": 1200.0,
-            "unit": "غم",
-            "equivalent_quantity": 12.0,
-            "cost_per_unit": 0.012,
-            "total_cost": 0.14400000000000002
-          },
-          {
-            "odoo_code": "WH11140032",
-            "rm_code": "4513",
-            "name": "ليمون اصفر",
-            "batch_quantity": 600.0,
-            "unit": "غم",
-            "equivalent_quantity": 6.0,
-            "cost_per_unit": 0.00175,
-            "total_cost": 0.0105
-          },
-          {
-            "odoo_code": "WH11140016",
-            "rm_code": "4505",
-            "name": "ثوم طازج كامل",
-            "batch_quantity": 1000.0,
-            "unit": "غم",
-            "equivalent_quantity": 10.0,
-            "cost_per_unit": 0.0035,
-            "total_cost": 0.035
-          },
-          {
-            "odoo_code": "WH11140031",
-            "rm_code": "5283",
-            "name": "برتقال عصير",
-            "batch_quantity": 200.0,
-            "unit": "غم",
-            "equivalent_quantity": 2.0,
-            "cost_per_unit": 0.00065,
-            "total_cost": 0.0013
-          },
-          {
-            "odoo_code": "WH11060013",
-            "rm_code": "4213",
-            "name": "ورق غار",
-            "batch_quantity": 50.0,
-            "unit": "غم",
-            "equivalent_quantity": 0.5,
-            "cost_per_unit": 0.002069,
-            "total_cost": 0.0010345
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "3",
-            "name": "مياه حنفية",
-            "batch_quantity": 50.0,
-            "unit": "مل",
-            "equivalent_quantity": 0.5,
-            "cost_per_unit": 0.0,
-            "total_cost": 0.0
-          },
-          {
-            "odoo_code": "WH11060003",
-            "rm_code": "4152",
-            "name": "ملح طعام 750غم",
-            "batch_quantity": 1700.0,
-            "unit": "غم",
-            "equivalent_quantity": 17.0,
-            "cost_per_unit": 0.00017066666666666665,
-            "total_cost": 0.002901333333333333
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4002",
-            "name": "خل ابيض 3.7 لتر",
-            "batch_quantity": 1000.0,
-            "unit": "مل",
-            "equivalent_quantity": 10.0,
-            "cost_per_unit": 0.00029121621621621617,
-            "total_cost": 0.0029121621621621616
-          }
-        ]
+        "sub_ingredients": []
       }
     ]
   },
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-02-09",
-    "code": "STAFF-019",
+    "code": "STAFF-020",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -1770,7 +1636,7 @@
   {
     "name": "ارز بشعرية شاكرية",
     "date": "2026-03-09",
-    "code": "STAFF-020",
+    "code": "STAFF-021",
     "total_cost": 29.09557003448276,
     "ingredients": [
       {
@@ -1932,7 +1798,7 @@
   {
     "name": "ارز بشعرية ملوخية",
     "date": "2026-04-09",
-    "code": "STAFF-021",
+    "code": "STAFF-022",
     "total_cost": 25.149056241379313,
     "ingredients": [
       {
@@ -2061,7 +1927,7 @@
   {
     "name": "ارز بشعرية فاهيتا جاج",
     "date": "2026-05-09",
-    "code": "STAFF-022",
+    "code": "STAFF-023",
     "total_cost": 57.81753815077756,
     "ingredients": [
       {
@@ -2278,7 +2144,7 @@
   {
     "name": "ارز بشعرية بامية",
     "date": "2026-06-09",
-    "code": "STAFF-023",
+    "code": "STAFF-024",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -2440,7 +2306,7 @@
   {
     "name": "ارز بشعرية منزلة بطاطا",
     "date": "2026-07-09",
-    "code": "STAFF-024",
+    "code": "STAFF-025",
     "total_cost": 23.566016379310344,
     "ingredients": [
       {
@@ -2613,7 +2479,7 @@
   {
     "name": "مجدرة",
     "date": "2026-08-09",
-    "code": "STAFF-025",
+    "code": "STAFF-026",
     "total_cost": 12.682610862068966,
     "ingredients": [
       {
@@ -2698,7 +2564,7 @@
   {
     "name": "ارز بشعرية داوود باشا",
     "date": "2026-09-09",
-    "code": "STAFF-026",
+    "code": "STAFF-027",
     "total_cost": 67.11910694050033,
     "ingredients": [
       {
@@ -2776,28 +2642,7 @@
         "cost_per_unit": 6.772349999999999,
         "total_cost": 47.40644999999999,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5373",
-            "name": "قطعيات عجل مشكلة",
-            "batch_quantity": 700.0,
-            "unit": "غم",
-            "equivalent_quantity": 700.0,
-            "cost_per_unit": 0.00901,
-            "total_cost": 6.307
-          },
-          {
-            "odoo_code": "FPW3000042",
-            "rm_code": "4601",
-            "name": "نتر خروف",
-            "batch_quantity": 300.0,
-            "unit": "غم",
-            "equivalent_quantity": 300.0,
-            "cost_per_unit": 0.003,
-            "total_cost": 0.9
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11140013",
@@ -2903,7 +2748,7 @@
   {
     "name": "مندي",
     "date": "2026-10-09",
-    "code": "STAFF-027",
+    "code": "STAFF-028",
     "total_cost": 13.846282413793103,
     "ingredients": [
       {
@@ -3010,7 +2855,7 @@
   {
     "name": "معكرونة",
     "date": "2026-11-09",
-    "code": "STAFF-028",
+    "code": "STAFF-029",
     "total_cost": 35.3538831913455,
     "ingredients": [
       {
@@ -3099,28 +2944,7 @@
         "cost_per_unit": 6.772349999999999,
         "total_cost": 13.544699999999999,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5373",
-            "name": "قطعيات عجل مشكلة",
-            "batch_quantity": 700.0,
-            "unit": "غم",
-            "equivalent_quantity": 700.0,
-            "cost_per_unit": 0.00901,
-            "total_cost": 6.307
-          },
-          {
-            "odoo_code": "FPW3000042",
-            "rm_code": "4601",
-            "name": "نتر خروف",
-            "batch_quantity": 300.0,
-            "unit": "غم",
-            "equivalent_quantity": 300.0,
-            "cost_per_unit": 0.003,
-            "total_cost": 0.9
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11140001",
@@ -3149,7 +2973,7 @@
   {
     "name": "ارز بشعرية بازيلا وجزر",
     "date": "2026-12-09",
-    "code": "STAFF-029",
+    "code": "STAFF-030",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -3311,7 +3135,7 @@
   {
     "name": "قدرة",
     "date": "2026-09-13",
-    "code": "STAFF-030",
+    "code": "STAFF-031",
     "total_cost": 27.8143099288451,
     "ingredients": [
       {
@@ -3345,38 +3169,7 @@
         "cost_per_unit": 0.6896077777777778,
         "total_cost": 0.6896077777777778,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4143",
-            "name": "حمص حب نمرة 12",
-            "batch_quantity": 10000.0,
-            "unit": "غم",
-            "equivalent_quantity": 555.5555555555555,
-            "cost_per_unit": 0.00124,
-            "total_cost": 0.6888888888888889
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "3",
-            "name": "مياه حنفية",
-            "batch_quantity": 15000.0,
-            "unit": "مل",
-            "equivalent_quantity": 833.3333333333334,
-            "cost_per_unit": 0.0,
-            "total_cost": 0.0
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4207",
-            "name": "كربونة",
-            "batch_quantity": 20.0,
-            "unit": "غم",
-            "equivalent_quantity": 1.1111111111111112,
-            "cost_per_unit": 0.000647,
-            "total_cost": 0.0007188888888888889
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11060003",
@@ -3504,7 +3297,7 @@
   {
     "name": "شاورما مندي",
     "date": "2026-09-14",
-    "code": "STAFF-031",
+    "code": "STAFF-032",
     "total_cost": 60.30124148918188,
     "ingredients": [
       {
@@ -3765,7 +3558,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-09-15",
-    "code": "STAFF-032",
+    "code": "STAFF-033",
     "total_cost": 31.010199901106404,
     "ingredients": [
       {
@@ -3777,88 +3570,7 @@
         "cost_per_unit": 2.11514624452862,
         "total_cost": 15.229052960606065,
         "is_semi_finished": true,
-        "sub_ingredients": [
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4644",
-            "name": "فاصوليا خضراء مقطعة مجمدة 400 غم",
-            "batch_quantity": 4800.0,
-            "unit": "غم",
-            "equivalent_quantity": 320.0,
-            "cost_per_unit": 0.0015,
-            "total_cost": 0.48
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4045",
-            "name": "معجون الطماطم 1375 غم",
-            "batch_quantity": 780.0,
-            "unit": "غم",
-            "equivalent_quantity": 52.0,
-            "cost_per_unit": 0.0013666,
-            "total_cost": 0.07106319999999999
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "5401",
-            "name": "روز بيف",
-            "batch_quantity": 2000.0,
-            "unit": "غم",
-            "equivalent_quantity": 133.33333333333334,
-            "cost_per_unit": 0.012580000000000001,
-            "total_cost": 1.6773333333333336
-          },
-          {
-            "odoo_code": "اضافة اودو",
-            "rm_code": "4021",
-            "name": "مكعبات مرق الدجاج 24 عبوة*2 مكعب",
-            "batch_quantity": 100.0,
-            "unit": "غم",
-            "equivalent_quantity": 6.666666666666667,
-            "cost_per_unit": 0.0038541666666666668,
-            "total_cost": 0.025694444444444447
-          },
-          {
-            "odoo_code": "WH11060003",
-            "rm_code": "4152",
-            "name": "ملح طعام 750غم",
-            "batch_quantity": 50.0,
-            "unit": "غم",
-            "equivalent_quantity": 3.3333333333333335,
-            "cost_per_unit": 0.00017066666666666665,
-            "total_cost": 0.0005688888888888889
-          },
-          {
-            "odoo_code": "WH11140016",
-            "rm_code": "4505",
-            "name": "ثوم طازج كامل",
-            "batch_quantity": 100.0,
-            "unit": "غم",
-            "equivalent_quantity": 6.666666666666667,
-            "cost_per_unit": 0.0035,
-            "total_cost": 0.023333333333333334
-          },
-          {
-            "odoo_code": "WH11060030",
-            "rm_code": "4218",
-            "name": "بهارات مشكلة",
-            "batch_quantity": 50.0,
-            "unit": "غم",
-            "equivalent_quantity": 3.3333333333333335,
-            "cost_per_unit": 0.0030169999999999997,
-            "total_cost": 0.010056666666666667
-          },
-          {
-            "odoo_code": "WH11060020",
-            "rm_code": "4204",
-            "name": "فلفل اسود ناعم",
-            "batch_quantity": 10.0,
-            "unit": "غم",
-            "equivalent_quantity": 0.6666666666666666,
-            "cost_per_unit": 0.006897,
-            "total_cost": 0.004598
-          }
-        ]
+        "sub_ingredients": []
       },
       {
         "code": "WH11060003",
@@ -4008,7 +3720,7 @@
   {
     "name": "مجدرة",
     "date": "2026-09-16",
-    "code": "STAFF-033",
+    "code": "STAFF-034",
     "total_cost": 20.682610862068966,
     "ingredients": [
       {
@@ -4104,7 +3816,7 @@
   {
     "name": "ارز بشعرية شاكري",
     "date": "2026-09-17",
-    "code": "STAFF-034",
+    "code": "STAFF-035",
     "total_cost": 23.580560862068964,
     "ingredients": [
       {
