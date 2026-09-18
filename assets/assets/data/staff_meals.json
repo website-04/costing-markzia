@@ -1,0 +1,2516 @@
+[
+  {
+    "name": "اوزي",
+    "code": "STAFF-001",
+    "total_cost": 47.00176853037767,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 13.544699999999999
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 3كيس",
+        "quantity": 1.05,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 0.9618362068965517
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 80غرام",
+        "quantity": 0.08,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.17928275862068968
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.41381896551724145
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138
+      },
+      {
+        "code": "WH11060025",
+        "name": "قرفة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.80198275862069,
+        "total_cost": 0.0560396551724138
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.92
+      },
+      {
+        "code": "WH11060016",
+        "name": "جوزة الطيب 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 9.48301724137931,
+        "total_cost": 0.1896603448275862
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل بودره 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.04742068965517242
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم بودره 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.043
+      },
+      {
+        "code": "WH11130010",
+        "name": "لبن رايب 8كيل",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.8,
+        "total_cost": 6.4
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية ملوخية",
+    "code": "STAFF-002",
+    "total_cost": 50.298112482758626,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11120006",
+        "name": "ملوخية 20كيس",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.34698275862069,
+        "total_cost": 10.77586206896552
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 1.375
+      },
+      {
+        "code": "WH11060019",
+        "name": "كزبرة ناعمة 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 1.72,
+        "total_cost": 0.1032
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796
+      },
+      {
+        "code": "WH11120006",
+        "name": "ملوخية 20كيس",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.34698275862069,
+        "total_cost": 10.77586206896552
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 1.375
+      },
+      {
+        "code": "WH11060019",
+        "name": "كزبرة ناعمة 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 1.72,
+        "total_cost": 0.1032
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بازيلا وجزر",
+    "code": "STAFF-003",
+    "total_cost": 44.98077663962137,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاصوليا",
+    "code": "STAFF-004",
+    "total_cost": 98.48136486053845,
+    "ingredients": [
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "SF20100030",
+        "name": "فاصوليا18باكيت",
+        "quantity": 7.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.11514624452862,
+        "total_cost": 15.229052960606065
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 0.7,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.693
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية داوود باشا",
+    "code": "STAFF-005",
+    "total_cost": 135.16421388100065,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 47.40644999999999
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.18
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.18
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 47.40644999999999
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      }
+    ]
+  },
+  {
+    "name": "قدرة",
+    "code": "STAFF-006",
+    "total_cost": 112.03608377660913,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "SF21000014",
+        "name": "حمص مسلوق 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.6896077777777778,
+        "total_cost": 0.6896077777777778
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11060010",
+        "name": "ملح صيني 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 1.723965517241379,
+        "total_cost": 0.03447931034482758
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1508491379310345
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11220002",
+        "name": "ماجي بودرة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.0732
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138
+      },
+      {
+        "code": "SF20200024",
+        "name": "دجاج مشوي 72قطعة يعني 18دجاجة",
+        "quantity": 18.0,
+        "unit": "كيلو",
+        "cost_per_unit": 3.133747995495496,
+        "total_cost": 56.40746391891893
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "SF21000014",
+        "name": "حمص مسلوق 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.6896077777777778,
+        "total_cost": 0.6896077777777778
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11060010",
+        "name": "ملح صيني 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 1.723965517241379,
+        "total_cost": 0.03447931034482758
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1508491379310345
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11220002",
+        "name": "ماجي بودرة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.0732
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية شاكرية",
+    "code": "STAFF-007",
+    "total_cost": 29.09557003448276,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11130010",
+        "name": "لبن رايب 15كيلو",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.8,
+        "total_cost": 12.0
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796
+      },
+      {
+        "code": "WH11130012",
+        "name": "شنشنة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.42,
+        "total_cost": 2.94
+      },
+      {
+        "code": "WH11180001",
+        "name": "نشأ 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5169827586206898,
+        "total_cost": 0.10339655172413796
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.010799999999999999
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 15غرام",
+        "quantity": 0.015,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.11637931034482758
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاهيتا جاج",
+    "code": "STAFF-008",
+    "total_cost": 57.81753815077756,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11020009",
+        "name": "دجاج تندر ربش 8كيلو",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 4.4,
+        "total_cost": 35.2
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 5كيلو",
+        "quantity": 5.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 0.6834803921568625
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11220002",
+        "name": "ماجي بودرة 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.2196
+      },
+      {
+        "code": "WH11060022",
+        "name": "بابريكا 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.586034482758621,
+        "total_cost": 0.15516206896551724
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بامية",
+    "code": "STAFF-009",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11120004",
+        "name": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية منزلة بطاطا",
+    "code": "STAFF-010",
+    "total_cost": 23.566016379310344,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11170002",
+        "name": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934
+      },
+      {
+        "code": "WH11060001",
+        "name": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11140008",
+        "name": "بطاطا 20كيلو",
+        "quantity": 20.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.45,
+        "total_cost": 9.0
+      },
+      {
+        "code": "WH11060027",
+        "name": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11060014",
+        "name": "ملح ليمون 30غرام",
+        "quantity": 0.03,
+        "unit": "كيلو",
+        "cost_per_unit": 1.078017241379311,
+        "total_cost": 0.032340517241379325
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11180001",
+        "name": "نشأ 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5169827586206898,
+        "total_cost": 0.12924568965517244
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 10باكيتات",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0071837931034482785
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0
+      }
+    ]
+  },
+  {
+    "name": "مجدرة",
+    "code": "STAFF-011",
+    "total_cost": 33.36522172413793,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11040004",
+        "name": "عدس حب 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.0,
+        "total_cost": 2.0
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060076",
+        "name": "كمون 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.6,
+        "total_cost": 0.14400000000000002
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8
+      },
+      {
+        "code": "WH11040004",
+        "name": "عدس حب 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.0,
+        "total_cost": 2.0
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060076",
+        "name": "كمون 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.6,
+        "total_cost": 0.14400000000000002
+      },
+      {
+        "code": "WH11130010",
+        "name": "10كيلو لبن",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.8,
+        "total_cost": 8.0
+      }
+    ]
+  },
+  {
+    "name": "مندي",
+    "code": "STAFF-012",
+    "total_cost": 13.846282413793103,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1 كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 0.125
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11060062",
+        "name": "بهار مندي 188غرام",
+        "quantity": 0.188,
+        "unit": "كيلو",
+        "cost_per_unit": 6.0,
+        "total_cost": 1.1280000000000001
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      }
+    ]
+  },
+  {
+    "name": "معكرونة",
+    "code": "STAFF-013",
+    "total_cost": 35.3538831913455,
+    "ingredients": [
+      {
+        "code": "WH11170004",
+        "name": "معكرونة سباغيتي25باكيت",
+        "quantity": 12.5,
+        "unit": "كيلو",
+        "cost_per_unit": 0.64655,
+        "total_cost": 8.081875
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11060005",
+        "name": "اوريجانو 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 4.902,
+        "total_cost": 0.12255
+      },
+      {
+        "code": "WH11060007",
+        "name": "نعنع ناشف 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 2.727,
+        "total_cost": 0.068175
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 0.375
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 13.544699999999999
+      },
+      {
+        "code": "WH11140001",
+        "name": "بندورة 18كيلو",
+        "quantity": 18.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5,
+        "total_cost": 9.0
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 2مرتبان",
+        "quantity": 2.75,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 3.759142156862744
+      }
+    ]
+  },
+  {
+    "name": "شاورما مندي",
+    "code": "STAFF-014",
+    "total_cost": 60.30124148918188,
+    "ingredients": [
+      {
+        "code": "WH11020009",
+        "name": "دجاج تندر 9.5",
+        "quantity": 9.5,
+        "unit": "كيلو",
+        "cost_per_unit": 4.4,
+        "total_cost": 41.800000000000004
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم فرش 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.11
+      },
+      {
+        "code": "DRK5100023",
+        "name": "عصير ليمون 150غرام",
+        "quantity": 0.15,
+        "unit": "كيلو",
+        "cost_per_unit": 2.600000000000001,
+        "total_cost": 0.3900000000000001
+      },
+      {
+        "code": "DRK5100029",
+        "name": "عصير برتقال 150غرام",
+        "quantity": 0.15,
+        "unit": "كيلو",
+        "cost_per_unit": 2.0,
+        "total_cost": 0.3
+      },
+      {
+        "code": "WH11060031",
+        "name": "قرنفل 5غرام",
+        "quantity": 0.005,
+        "unit": "كيلو",
+        "cost_per_unit": 8.190000000000001,
+        "total_cost": 0.04095000000000001
+      },
+      {
+        "code": "WH11060016",
+        "name": "جوزة الطيب 5غرام",
+        "quantity": 0.005,
+        "unit": "كيلو",
+        "cost_per_unit": 9.48301724137931,
+        "total_cost": 0.04741508620689655
+      },
+      {
+        "code": "WH11060015",
+        "name": "زنجبيل 3غرام",
+        "quantity": 0.003,
+        "unit": "كيلو",
+        "cost_per_unit": 3.233017241379311,
+        "total_cost": 0.009699051724137934
+      },
+      {
+        "code": "WH11060025",
+        "name": "قرفة 5غرام",
+        "quantity": 0.005,
+        "unit": "كيلو",
+        "cost_per_unit": 2.80198275862069,
+        "total_cost": 0.01400991379310345
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11220002",
+        "name": "ماجي بودرة 80غرام",
+        "quantity": 0.08,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.2928
+      },
+      {
+        "code": "WH11150001",
+        "name": "رب بندورة 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 0.34174019607843126
+      },
+      {
+        "code": "WH11150002",
+        "name": "معجون تكة 150غرام",
+        "quantity": 0.15,
+        "unit": "كيلو",
+        "cost_per_unit": 5.02896551724138,
+        "total_cost": 0.7543448275862069
+      },
+      {
+        "code": "WH11130010",
+        "name": "لبن رايب 1كيلوو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.8,
+        "total_cost": 0.8
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 0.375
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل 1 كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456
+      },
+      {
+        "code": "WH11060062",
+        "name": "بهار مندي 188غرام",
+        "quantity": 0.188,
+        "unit": "كيلو",
+        "cost_per_unit": 6.0,
+        "total_cost": 1.1280000000000001
+      },
+      {
+        "code": "WH11220001",
+        "name": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393
+      }
+    ]
+  }
+]
