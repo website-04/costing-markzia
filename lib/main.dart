@@ -8,9 +8,9 @@ void main() {
 }
 
 class MarkaziaColors {
-  static const Color orange = Color(0xFFFF9C00); // لونك المعتمد #FF9C00
-  static const Color dark = Color(0xFF18181B);   // فحمى ماتريال فخم
-  static const Color bg = Color(0xFFFBF9F5);     // خلفية كريمية راقية ومريحة للعين
+  static const Color orange = Color(0xFFFF9C00); // لون المركزية المعتمد #FF9C00
+  static const Color dark = Color(0xFF18181B);   // فحمى داكن متناسق مع الشعار الأبيض
+  static const Color bg = Color(0xFFFBF9F5);     // خلفية كريمية مريحة وفخمة
 }
 
 class CostingApp extends StatelessWidget {
@@ -70,7 +70,7 @@ Widget buildCopyBadge(BuildContext context, {required String label, required Str
     onTap: () => copyCode(context, code, label),
     borderRadius: BorderRadius.circular(8),
     child: Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
       decoration: BoxDecoration(
         color: c.withOpacity(0.09),
         borderRadius: BorderRadius.circular(8),
@@ -139,13 +139,12 @@ class _MainHubScreenState extends State<MainHubScreen> {
     }
   }
 
-  // دالة البحث المباشر عن الاسم الرسمي في أودو
-  String getOdooOfficialName(String code, String defaultName) {
+  String getOdooOfficialName(String code, String fallbackName) {
     final c = code.trim().toLowerCase();
     if (_odooIndex.containsKey(c)) {
       return _odooIndex[c]!;
     }
-    return defaultName;
+    return fallbackName;
   }
 
   @override
@@ -158,14 +157,16 @@ class _MainHubScreenState extends State<MainHubScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 66,
+        toolbarHeight: 68,
         elevation: 0,
         title: Row(
           children: [
+            // الشعار الأبيض المتناسق مع الشريط الداكن
             Image.asset(
               'assets/logo.png',
-              height: 44,
-              errorBuilder: (_, __, ___) => const Icon(Icons.restaurant, color: MarkaziaColors.orange, size: 32),
+              height: 48,
+              fit: BoxFit.contain,
+              errorBuilder: (_, __, ___) => const Icon(Icons.restaurant_menu, color: MarkaziaColors.orange, size: 34),
             ),
             const SizedBox(width: 14),
             Column(
@@ -173,20 +174,20 @@ class _MainHubScreenState extends State<MainHubScreen> {
               children: const [
                 Text('الـمـركــزيــة  |  AL-MARKAZIA',
                     style: TextStyle(fontWeight: FontWeight.w900, fontSize: 17, color: Colors.white)),
-                Text('نظام إدارة وحساب التكاليف المتطور',
+                Text('نظام إدارة وحساب التكاليف الموحد والشامل',
                     style: TextStyle(fontSize: 11, color: Colors.white70)),
               ],
             ),
             const Spacer(),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.12),
                 borderRadius: BorderRadius.circular(25),
                 border: Border.all(color: Colors.white12),
               ),
               child: Text(
-                'أودو: ${_odooCatalog.length}  |  طلبات: ${_talabatItems.length}  |  وجبات: ${_recipes.length}',
+                'أودو: ${_odooCatalog.length}  |  طلبات: ${_talabatItems.length}  |  وجبات المركزية: ${_recipes.length}  |  وجبات الموظفين: ${_staffMeals.length}',
                 style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
               ),
             ),
@@ -397,13 +398,13 @@ class _MainHubScreenState extends State<MainHubScreen> {
   }
 
   // ==========================================
-  // التبويب 2: وجبات الموظفين بالأسماء الرسمية
+  // التبويب 2: وجبات الموظفين بالتواريخ والمكونات الرسمية
   // ==========================================
   Widget _buildStaffMealsTab() {
     return _UniversalSearchList(
       items: _staffMeals,
       titleKey: 'name',
-      subtitleBuilder: (item) => '📅 التاريخ: ${item['date']}',
+      subtitleBuilder: (item) => '📅 التاريخ: ${item['date']}  |  ${(item['ingredients'] as List? ?? []).length} مكونات',
       costBuilder: (item) => (item['total_cost'] as num).toDouble(),
       detailBuilder: (item) {
         final ings = item['ingredients'] as List? ?? [];
@@ -431,13 +432,14 @@ class _MainHubScreenState extends State<MainHubScreen> {
                         Row(
                           children: [
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                               decoration: BoxDecoration(
                                 color: MarkaziaColors.orange.withOpacity(0.12),
                                 borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: MarkaziaColors.orange.withOpacity(0.3)),
                               ),
-                              child: Text('📅 تاريخ الوجبة: ${item['date']}',
-                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: MarkaziaColors.orange)),
+                              child: Text('📅 تاريخ تقديم الوجبة: ${item['date']}',
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: MarkaziaColors.orange)),
                             ),
                             const SizedBox(width: 10),
                             buildCopyBadge(context, label: 'كود الوجبة', code: item['code'], color: MarkaziaColors.dark),
@@ -451,8 +453,8 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ),
             ),
             const SizedBox(height: 14),
-            Text('مكونات الوجبة المستخرجة من دليل أودو الرسمي (${ings.length} مكون):',
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: MarkaziaColors.dark)),
+            Text('مكونات الوجبة المستخرجة بالأسماء الرسمية من أودو (${ings.length} مكون):',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: MarkaziaColors.dark)),
             const SizedBox(height: 8),
             Expanded(
               child: ListView.builder(
@@ -462,6 +464,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   final isSf = ing['is_semi_finished'] == true;
                   final subs = ing['sub_ingredients'] as List? ?? [];
                   final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
+                  final rawDesc = (ing['raw_description'] ?? '').toString().trim();
 
                   if (!isSf) {
                     return Card(
@@ -491,10 +494,16 @@ class _MainHubScreenState extends State<MainHubScreen> {
                                 children: [
                                   Text(officialName,
                                       style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
+                                  if (rawDesc.isNotEmpty && rawDesc != officialName) ...[
+                                    const SizedBox(height: 2),
+                                    Text('الوصف بالريسبي: $rawDesc',
+                                        style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+                                  ],
                                   const SizedBox(height: 4),
                                   Row(
                                     children: [
-                                      Text('الكمية: ${ing['quantity']} ${ing['unit']}', style: TextStyle(fontSize: 12, color: Colors.grey.shade700)),
+                                      Text('الكمية: ${ing['quantity']} ${ing['unit']}',
+                                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.grey.shade700)),
                                       const SizedBox(width: 10),
                                       buildCopyBadge(context, label: 'كود أودو', code: ing['code']),
                                     ],
@@ -739,6 +748,14 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
     if (_filtered.isNotEmpty) _selected = _filtered.first;
   }
 
+  @override
+  void didUpdateWidget(covariant _UniversalSearchList oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.items != widget.items) {
+      _filter(_ctrl.text);
+    }
+  }
+
   void _filter(String q) {
     final query = q.trim().toLowerCase();
     setState(() {
@@ -746,8 +763,25 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
         final title = (i[widget.titleKey] ?? '').toString().toLowerCase();
         final code = (i['code'] ?? i['sku'] ?? i['barcode'] ?? i['odoo_code'] ?? '').toString().toLowerCase();
         final date = (i['date'] ?? '').toString().toLowerCase();
-        return query.isEmpty || title.contains(query) || code.contains(query) || date.contains(query);
+        final displayTitle = (i['display_title'] ?? '').toString().toLowerCase();
+
+        // فحص مكونات الوجبة في حال البحث عن مادة
+        final ings = (i['ingredients'] as List? ?? []);
+        final ingMatch = ings.any((ing) {
+          final n = (ing['name'] ?? '').toString().toLowerCase();
+          final c = (ing['code'] ?? '').toString().toLowerCase();
+          final r = (ing['raw_description'] ?? '').toString().toLowerCase();
+          return n.contains(query) || c.contains(query) || r.contains(query);
+        });
+
+        return query.isEmpty ||
+            title.contains(query) ||
+            code.contains(query) ||
+            date.contains(query) ||
+            displayTitle.contains(query) ||
+            ingMatch;
       }).toList();
+
       if (_filtered.isNotEmpty && !_filtered.contains(_selected)) {
         _selected = _filtered.first;
       }
@@ -759,7 +793,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
     return Row(
       children: [
         SizedBox(
-          width: 380,
+          width: 390,
           child: Container(
             color: Colors.white,
             child: Column(
@@ -775,7 +809,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
                     controller: _ctrl,
                     onChanged: _filter,
                     decoration: InputDecoration(
-                      hintText: 'بحث بالاسم، الكود، أو التاريخ...',
+                      hintText: 'بحث بالاسم، الكود، التاريخ، أو المادة...',
                       prefixIcon: const Icon(Icons.search_rounded, color: MarkaziaColors.orange),
                       suffixIcon: _ctrl.text.isNotEmpty
                           ? IconButton(icon: const Icon(Icons.clear, size: 16), onPressed: () { _ctrl.clear(); _filter(''); })
@@ -789,7 +823,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
                   padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 2),
                   child: Row(
                     children: [
-                      Text('إجمالي العناصر: ${_filtered.length}',
+                      Text('إجمالي النتائج: ${_filtered.length}',
                           style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey.shade500)),
                     ],
                   ),

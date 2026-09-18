@@ -1,294 +1,77 @@
 [
   {
-    "name": "اوزي",
-    "date": "اوزي",
-    "code": "STAFF-001",
-    "total_cost": 24.38088426518883,
+    "name": "0.14187529467084642",
+    "date": "مندي",
+    "display_title": "0.14187529467084642 (مندي)",
+    "code": "STAFF-013",
+    "total_cost": 7.803141206896553,
     "ingredients": [
       {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 47.00176853037766,
-        "total_cost": 24.38088426518883,
+        "code": "10-09-2026",
+        "name": "10-09-2026",
+        "raw_description": "10-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 13.846282413793103,
+        "total_cost": 7.803141206896553,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
     ]
   },
   {
-    "name": "ارز بشعرية ملوخية",
-    "date": "ارز بشعرية ملوخية",
-    "code": "STAFF-002",
-    "total_cost": 26.909056241379318,
+    "name": "0.3373989381031409",
+    "date": "معكرونة",
+    "display_title": "0.3373989381031409 (معكرونة)",
+    "code": "STAFF-014",
+    "total_cost": 18.55694159567275,
     "ingredients": [
       {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 25.149056241379316,
-        "total_cost": 13.454528120689659,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 25.149056241379313,
-        "total_cost": 13.454528120689657,
+        "code": "11-09-2026",
+        "name": "11-09-2026",
+        "raw_description": "11-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 35.3538831913455,
+        "total_cost": 18.55694159567275,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
     ]
   },
   {
-    "name": "ارز بشعرية بازيلا وجزر",
-    "date": "ارز بشعرية بازيلا وجزر",
-    "code": "STAFF-003",
-    "total_cost": 24.25038831981068,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاصوليا",
-    "date": "ارز بشعرية فاصوليا",
-    "code": "STAFF-004",
-    "total_cost": 52.76068243026923,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.490388319810684,
-        "total_cost": 12.125194159905343,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.490388319810684,
-        "total_cost": 12.125194159905343,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 31.010199901106407,
-        "total_cost": 16.385099950553204,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية داوود باشا",
-    "date": "ارز بشعرية داوود باشا",
-    "code": "STAFF-005",
-    "total_cost": 69.25210694050034,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 68.04510694050033,
-        "total_cost": 34.90255347025016,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 66.93910694050034,
-        "total_cost": 34.34955347025017,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "قدرة",
-    "date": "قدرة",
-    "code": "STAFF-006",
-    "total_cost": 57.778041888304564,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 84.22177384776403,
-        "total_cost": 42.990886923882016,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 27.8143099288451,
-        "total_cost": 14.78715496442255,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية شاكرية",
-    "date": "ارز بشعرية شاكرية",
-    "code": "STAFF-007",
-    "total_cost": 15.427785017241382,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 29.09557003448276,
-        "total_cost": 15.427785017241382,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاهيتا جاج",
-    "date": "ارز بشعرية فاهيتا جاج",
-    "code": "STAFF-008",
-    "total_cost": 29.788769075388778,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 57.81753815077756,
-        "total_cost": 29.788769075388778,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية بامية",
-    "date": "ارز بشعرية بامية",
-    "code": "STAFF-009",
-    "total_cost": 12.125194159905343,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 22.490388319810684,
-        "total_cost": 12.125194159905343,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية منزلة بطاطا",
-    "date": "ارز بشعرية منزلة بطاطا",
-    "code": "STAFF-010",
-    "total_cost": 12.663008189655171,
-    "ingredients": [
-      {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 23.56601637931034,
-        "total_cost": 12.663008189655171,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "مجدرة",
+    "name": "0.13129646238244513",
     "date": "مجدرة",
+    "display_title": "0.13129646238244513 (مجدرة)",
     "code": "STAFF-011",
-    "total_cost": 18.442610862068967,
+    "total_cost": 7.221305431034482,
     "ingredients": [
       {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
+        "code": "08-09-2026",
+        "name": "08-09-2026",
+        "raw_description": "08-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
         "cost_per_unit": 12.682610862068966,
         "total_cost": 7.221305431034482,
         "is_semi_finished": false,
         "sub_ingredients": []
-      },
+      }
+    ]
+  },
+  {
+    "name": "0.20402373510971789",
+    "date": "مجدرة",
+    "display_title": "0.20402373510971789 (مجدرة)",
+    "code": "STAFF-018",
+    "total_cost": 11.221305431034484,
+    "ingredients": [
       {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
+        "code": "16-09-2026",
+        "name": "16-09-2026",
+        "raw_description": "16-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
         "cost_per_unit": 20.682610862068966,
         "total_cost": 11.221305431034484,
         "is_semi_finished": false,
@@ -297,17 +80,342 @@
     ]
   },
   {
-    "name": "ارز بشعرية شاكري",
-    "date": "ارز بشعرية شاكري",
+    "name": "0.7816524895251276",
+    "date": "قدرة",
+    "display_title": "0.7816524895251276 (قدرة)",
+    "code": "STAFF-006",
+    "total_cost": 42.990886923882016,
+    "ingredients": [
+      {
+        "code": "01-09-2026",
+        "name": "01-09-2026",
+        "raw_description": "01-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 84.22177384776403,
+        "total_cost": 42.990886923882016,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.2688573629895009",
+    "date": "قدرة",
+    "display_title": "0.2688573629895009 (قدرة)",
+    "code": "STAFF-015",
+    "total_cost": 14.78715496442255,
+    "ingredients": [
+      {
+        "code": "13-09-2026",
+        "name": "13-09-2026",
+        "raw_description": "13-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 27.8143099288451,
+        "total_cost": 14.78715496442255,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.5641931044471081",
+    "date": "شاورما",
+    "display_title": "0.5641931044471081 (شاورما)",
+    "code": "STAFF-016",
+    "total_cost": 31.030620744590948,
+    "ingredients": [
+      {
+        "code": "14-09-2026",
+        "name": "14-09-2026",
+        "raw_description": "14-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 60.30124148918189,
+        "total_cost": 31.030620744590948,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.4432888048216151",
+    "date": "اوزي",
+    "display_title": "0.4432888048216151 (اوزي)",
+    "code": "STAFF-001",
+    "total_cost": 24.38088426518883,
+    "ingredients": [
+      {
+        "code": "26-08-2026",
+        "name": "26-08-2026",
+        "raw_description": "26-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 47.00176853037766,
+        "total_cost": 24.38088426518883,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.24462778401253926",
+    "date": "ارز",
+    "display_title": "0.24462778401253926 (ارز)",
+    "code": "STAFF-002",
+    "total_cost": 13.454528120689659,
+    "ingredients": [
+      {
+        "code": "27-08-2026",
+        "name": "27-08-2026",
+        "raw_description": "27-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 25.149056241379316,
+        "total_cost": 13.454528120689659,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.22045807563464254",
+    "date": "ارز",
+    "display_title": "0.22045807563464254 (ارز)",
+    "code": "STAFF-003",
+    "total_cost": 36.375582479716016,
+    "ingredients": [
+      {
+        "code": "28-08-2026",
+        "name": "28-08-2026",
+        "raw_description": "28-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "31-08-2026",
+        "name": "31-08-2026",
+        "raw_description": "31-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "12-09-2026",
+        "name": "12-09-2026",
+        "raw_description": "12-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.2204580756346426",
+    "date": "ارز",
+    "display_title": "0.2204580756346426 (ارز)",
+    "code": "STAFF-004",
+    "total_cost": 36.37558247971603,
+    "ingredients": [
+      {
+        "code": "29-08-2026",
+        "name": "29-08-2026",
+        "raw_description": "29-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.490388319810684,
+        "total_cost": 12.125194159905343,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "02-09-2026",
+        "name": "02-09-2026",
+        "raw_description": "02-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.490388319810684,
+        "total_cost": 12.125194159905343,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "06-09-2026",
+        "name": "06-09-2026",
+        "raw_description": "06-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 22.490388319810684,
+        "total_cost": 12.125194159905343,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.6345918812772757",
+    "date": "ارز",
+    "display_title": "0.6345918812772757 (ارز)",
+    "code": "STAFF-005",
+    "total_cost": 34.90255347025016,
+    "ingredients": [
+      {
+        "code": "30-08-2026",
+        "name": "30-08-2026",
+        "raw_description": "30-08-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 68.04510694050033,
+        "total_cost": 34.90255347025016,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.2805051821316615",
+    "date": "ارز",
+    "display_title": "0.2805051821316615 (ارز)",
+    "code": "STAFF-007",
+    "total_cost": 15.427785017241382,
+    "ingredients": [
+      {
+        "code": "03-09-2026",
+        "name": "03-09-2026",
+        "raw_description": "03-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 29.09557003448276,
+        "total_cost": 15.427785017241382,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.2446277840125392",
+    "date": "ارز",
+    "display_title": "0.2446277840125392 (ارز)",
+    "code": "STAFF-008",
+    "total_cost": 13.454528120689657,
+    "ingredients": [
+      {
+        "code": "04-09-2026",
+        "name": "04-09-2026",
+        "raw_description": "04-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 25.149056241379313,
+        "total_cost": 13.454528120689657,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.5416139831888869",
+    "date": "ارز",
+    "display_title": "0.5416139831888869 (ارز)",
+    "code": "STAFF-009",
+    "total_cost": 29.788769075388778,
+    "ingredients": [
+      {
+        "code": "05-09-2026",
+        "name": "05-09-2026",
+        "raw_description": "05-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 57.81753815077756,
+        "total_cost": 29.788769075388778,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.23023651253918492",
+    "date": "ارز",
+    "display_title": "0.23023651253918492 (ارز)",
+    "code": "STAFF-010",
+    "total_cost": 12.663008189655171,
+    "ingredients": [
+      {
+        "code": "07-09-2026",
+        "name": "07-09-2026",
+        "raw_description": "07-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 23.56601637931034,
+        "total_cost": 12.663008189655171,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.6245373358227304",
+    "date": "ارز",
+    "display_title": "0.6245373358227304 (ارز)",
     "code": "STAFF-012",
+    "total_cost": 34.34955347025017,
+    "ingredients": [
+      {
+        "code": "09-09-2026",
+        "name": "09-09-2026",
+        "raw_description": "09-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 66.93910694050034,
+        "total_cost": 34.34955347025017,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.29791090819187643",
+    "date": "ارز",
+    "display_title": "0.29791090819187643 (ارز)",
+    "code": "STAFF-017",
+    "total_cost": 16.385099950553204,
+    "ingredients": [
+      {
+        "code": "15-09-2026",
+        "name": "15-09-2026",
+        "raw_description": "15-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
+        "cost_per_unit": 31.010199901106407,
+        "total_cost": 16.385099950553204,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "0.2303687351097179",
+    "date": "ارز",
+    "display_title": "0.2303687351097179 (ارز)",
+    "code": "STAFF-019",
     "total_cost": 12.670280431034485,
     "ingredients": [
       {
-        "code": "",
-        "name": "مادة ",
-        "raw_description": "",
-        "quantity": 0.0,
-        "unit": "غم",
+        "code": "17-09-2026",
+        "name": "17-09-2026",
+        "raw_description": "17-09-2026",
+        "quantity": 15.0,
+        "unit": "كيلو",
         "cost_per_unit": 23.580560862068968,
         "total_cost": 12.670280431034485,
         "is_semi_finished": false,
@@ -316,343 +424,108 @@
     ]
   },
   {
-    "name": "اوزي",
-    "date": "2026-08-26",
-    "code": "STAFF-013",
-    "total_cost": 47.00176853037767,
+    "name": "ارز بشعرية شاكري",
+    "date": "2026-09-17",
+    "display_title": "ارز بشعرية شاكري (2026-09-17)",
+    "code": "STAFF-042",
+    "total_cost": 23.580560862068964,
     "ingredients": [
       {
         "code": "WH11030002",
         "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
+        "raw_description": "ارز بسمتي 8كيلو",
+        "quantity": 8.0,
         "unit": "كيلو",
         "cost_per_unit": 0.98,
-        "total_cost": 9.8,
+        "total_cost": 7.84,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "SF20600002",
-        "name": "لحمة مفرومة",
-        "raw_description": "لحمة مفرومة 2كيلو",
-        "quantity": 2.0,
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 0.7,
         "unit": "كيلو",
-        "cost_per_unit": 6.772349999999999,
-        "total_cost": 13.544699999999999,
-        "is_semi_finished": true,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 3كيس",
-        "quantity": 1.05,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 0.9618362068965517,
+        "cost_per_unit": 0.99,
+        "total_cost": 0.693,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11080006",
-        "name": "سمنة بلدية",
-        "raw_description": "سمنة 1700غرام",
-        "quantity": 1.7,
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
         "unit": "كيلو",
-        "cost_per_unit": 8.33295238095238,
-        "total_cost": 14.166019047619045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1810189655172414,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 80غرام",
-        "quantity": 0.08,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.17928275862068968,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.41381896551724145,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060028",
-        "name": "كركم ناعم",
-        "raw_description": "كركم 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.069,
-        "total_cost": 0.04138,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060025",
-        "name": "قرفة ناعمة",
-        "raw_description": "قرفة 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.80198275862069,
-        "total_cost": 0.0560396551724138,
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
         "code": "WH11060001",
         "name": "هال ناعم",
-        "raw_description": "هيل ناعم 40غرام",
-        "quantity": 0.04,
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
         "unit": "كيلو",
         "cost_per_unit": 23.0,
-        "total_cost": 0.92,
+        "total_cost": 0.5750000000000001,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11060016",
-        "name": "جوزة الطيب ناعمة",
-        "raw_description": "جوزة الطيب 20غرام",
-        "quantity": 0.02,
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
         "unit": "كيلو",
-        "cost_per_unit": 9.48301724137931,
-        "total_cost": 0.1896603448275862,
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11060023",
-        "name": "بصل ناعم",
-        "raw_description": "بصل بودره 20غرام",
-        "quantity": 0.02,
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
         "unit": "كيلو",
-        "cost_per_unit": 2.371034482758621,
-        "total_cost": 0.04742068965517242,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060024",
-        "name": "ثوم ناعم",
-        "raw_description": "ثوم بودره 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.15,
-        "total_cost": 0.043,
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
         "code": "WH11130010",
         "name": "لبن رايب بقري",
-        "raw_description": "لبن رايب 8كيل",
-        "quantity": 8.0,
+        "raw_description": "لبن 15كيلو",
+        "quantity": 15.0,
         "unit": "كيلو",
         "cost_per_unit": 0.8,
-        "total_cost": 6.4,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية ملوخية",
-    "date": "2026-08-27",
-    "code": "STAFF-014",
-    "total_cost": 25.149056241379313,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
+        "total_cost": 12.0,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 2كيلو",
+        "quantity": 2.0,
         "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
         "code": "WH11060003",
         "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11120006",
-        "name": "ملوخية مفرومة مجمدة",
-        "raw_description": "ملوخية 20كيس",
-        "quantity": 8.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.34698275862069,
-        "total_cost": 10.77586206896552,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 500غرام",
-        "quantity": 0.5,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 1.375,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060019",
-        "name": "كزبرة ناعمة",
-        "raw_description": "كزبرة ناعمة 60غرام",
+        "raw_description": "ملح 60غرام",
         "quantity": 0.06,
         "unit": "كيلو",
-        "cost_per_unit": 1.72,
-        "total_cost": 0.1032,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 7باكيتات",
-        "quantity": 0.14,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.005028655172413796,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية بازيلا وجزر",
-    "date": "2026-08-28",
-    "code": "STAFF-015",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
+        "cost_per_unit": 0.18,
+        "total_cost": 0.010799999999999999,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -664,440 +537,6 @@
         "unit": "كيلو",
         "cost_per_unit": 7.758620689655173,
         "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 0.55,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاصوليا",
-    "date": "2026-08-29",
-    "code": "STAFF-016",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 0.55,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية داوود باشا",
-    "date": "2026-08-30",
-    "code": "STAFF-017",
-    "total_cost": 68.04510694050033,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "SF20600002",
-        "name": "لحمة مفرومة",
-        "raw_description": "لحمة مفرومة 7كيلو",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 6.772349999999999,
-        "total_cost": 47.40644999999999,
-        "is_semi_finished": true,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 4كيلو",
-        "quantity": 4.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 1.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140011",
-        "name": "فلفل حلو احمر",
-        "raw_description": "فلفل حلو احمر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140010",
-        "name": "فلفل حلو اخضر",
-        "raw_description": "فلفل حلو اخضر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140012",
-        "name": "فلفل حلو اصفر",
-        "raw_description": "فلفل حلو اصفر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -1109,308 +548,6 @@
         "unit": "كيلو",
         "cost_per_unit": 0.03591896551724139,
         "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاصوليا",
-    "date": "2026-08-31",
-    "code": "STAFF-018",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 0.55,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "قدرة",
-    "date": "2026-01-09",
-    "code": "STAFF-019",
-    "total_cost": 84.22177384776403,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 12كيلو",
-        "quantity": 12.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 11.76,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "SF21000014",
-        "name": "حمص مسلوق",
-        "raw_description": "حمص مسلوق 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.6896077777777778,
-        "total_cost": 0.6896077777777778,
-        "is_semi_finished": true,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060010",
-        "name": "ملح صيني كريستال",
-        "raw_description": "ملح صيني 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 1.723965517241379,
-        "total_cost": 0.03447931034482758,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.13446206896551727,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1508491379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220002",
-        "name": "مرق الدجاج بودرة",
-        "raw_description": "ماجي بودرة 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 3.66,
-        "total_cost": 0.0732,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080006",
-        "name": "سمنة بلدية",
-        "raw_description": "سمنة 1700غرام",
-        "quantity": 1.7,
-        "unit": "كيلو",
-        "cost_per_unit": 8.33295238095238,
-        "total_cost": 14.166019047619045,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -1437,308 +574,6 @@
         "sub_ingredients": []
       },
       {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060028",
-        "name": "كركم ناعم",
-        "raw_description": "كركم 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.069,
-        "total_cost": 0.04138,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "SF20200024",
-        "name": "دجاجة شواية",
-        "raw_description": "دجاج مشوي 72قطعة يعني 18دجاجة",
-        "quantity": 18.0,
-        "unit": "كيلو",
-        "cost_per_unit": 3.133747995495496,
-        "total_cost": 56.40746391891893,
-        "is_semi_finished": true,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاصوليا",
-    "date": "2026-02-09",
-    "code": "STAFF-020",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 0.55,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية شاكرية",
-    "date": "2026-03-09",
-    "code": "STAFF-021",
-    "total_cost": 29.09557003448276,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11130010",
-        "name": "لبن رايب بقري",
-        "raw_description": "لبن رايب 15كيلو",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.8,
-        "total_cost": 12.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 7باكيتات",
-        "quantity": 0.14,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.005028655172413796,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11130012",
-        "name": "لبن مخيض بقري",
-        "raw_description": "شنشنة 7كيلو",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.42,
-        "total_cost": 2.94,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
         "code": "WH11180001",
         "name": "نشا الذرة (نشا طعام)",
         "raw_description": "نشأ 200غرام",
@@ -1748,739 +583,15 @@
         "total_cost": 0.10339655172413796,
         "is_semi_finished": false,
         "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.010799999999999999,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 15غرام",
-        "quantity": 0.015,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.11637931034482758,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 2كيلو",
-        "quantity": 2.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.5,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية ملوخية",
-    "date": "2026-04-09",
-    "code": "STAFF-022",
-    "total_cost": 25.149056241379313,
-    "ingredients": [
-      {
-        "code": "WH11120006",
-        "name": "ملوخية مفرومة مجمدة",
-        "raw_description": "ملوخية 20كيس",
-        "quantity": 8.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.34698275862069,
-        "total_cost": 10.77586206896552,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 500غرام",
-        "quantity": 0.5,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 1.375,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060019",
-        "name": "كزبرة ناعمة",
-        "raw_description": "كزبرة ناعمة 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 1.72,
-        "total_cost": 0.1032,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 7باكيتات",
-        "quantity": 0.14,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.005028655172413796,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية فاهيتا جاج",
-    "date": "2026-05-09",
-    "code": "STAFF-023",
-    "total_cost": 57.81753815077756,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11020009",
-        "name": "تندر دجاج - طازج",
-        "raw_description": "دجاج تندر ربش 8كيلو",
-        "quantity": 8.0,
-        "unit": "كيلو",
-        "cost_per_unit": 4.4,
-        "total_cost": 35.2,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 5كيلو",
-        "quantity": 5.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140011",
-        "name": "فلفل حلو احمر",
-        "raw_description": "فلفل حلو احمر",
-        "quantity": 1.6666666666666667,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.8333333333333335,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140010",
-        "name": "فلفل حلو اخضر",
-        "raw_description": "فلفل حلو اخضر",
-        "quantity": 1.6666666666666667,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.8333333333333335,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140012",
-        "name": "فلفل حلو اصفر",
-        "raw_description": "فلفل حلو اصفر",
-        "quantity": 1.6666666666666667,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.8333333333333335,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 500غرام",
-        "quantity": 0.5,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 0.6834803921568625,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1810189655172414,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220002",
-        "name": "مرق الدجاج بودرة",
-        "raw_description": "ماجي بودرة 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 3.66,
-        "total_cost": 0.2196,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060022",
-        "name": "بابريكا حلوة",
-        "raw_description": "بابريكا 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 2.586034482758621,
-        "total_cost": 0.15516206896551724,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.13446206896551727,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية بامية",
-    "date": "2026-06-09",
-    "code": "STAFF-024",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140016",
-        "name": "ثوم ناشف (كامل) (بقشره)",
-        "raw_description": "ثوم فرش 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 2.75,
-        "total_cost": 0.55,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية منزلة بطاطا",
-    "date": "2026-07-09",
-    "code": "STAFF-025",
-    "total_cost": 23.566016379310344,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140008",
-        "name": "بطاطا",
-        "raw_description": "بطاطا 20كيلو",
-        "quantity": 20.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.45,
-        "total_cost": 9.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.11205172413793106,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060014",
-        "name": "ملح ليمون",
-        "raw_description": "ملح ليمون 30غرام",
-        "quantity": 0.03,
-        "unit": "كيلو",
-        "cost_per_unit": 1.078017241379311,
-        "total_cost": 0.032340517241379325,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11180001",
-        "name": "نشا الذرة (نشا طعام)",
-        "raw_description": "نشأ 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.5169827586206898,
-        "total_cost": 0.12924568965517244,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 10باكيتات",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0071837931034482785,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060028",
-        "name": "كركم ناعم",
-        "raw_description": "كركم 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.069,
-        "total_cost": 0.04138,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 4كيلو",
-        "quantity": 4.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 1.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
       }
     ]
   },
   {
     "name": "مجدرة",
-    "date": "2026-08-09",
-    "code": "STAFF-026",
-    "total_cost": 12.682610862068966,
+    "date": "2026-09-16",
+    "display_title": "مجدرة (2026-09-16)",
+    "code": "STAFF-041",
+    "total_cost": 20.682610862068966,
     "ingredients": [
       {
         "code": "WH11030002",
@@ -2558,499 +669,36 @@
         "total_cost": 0.14400000000000002,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية داوود باشا",
-    "date": "2026-09-09",
-    "code": "STAFF-027",
-    "total_cost": 67.11910694050033,
-    "ingredients": [
+      },
       {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
+        "code": "WH11130010",
+        "name": "لبن رايب بقري",
+        "raw_description": "10كيلو لبن",
         "quantity": 10.0,
         "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
+        "cost_per_unit": 0.8,
+        "total_cost": 8.0,
         "is_semi_finished": false,
         "sub_ingredients": []
-      },
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاصوليا",
+    "date": "2026-09-15",
+    "display_title": "ارز بشعرية فاصوليا (2026-09-15)",
+    "code": "STAFF-040",
+    "total_cost": 31.010199901106404,
+    "ingredients": [
       {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
+        "code": "SF20100030",
+        "name": "فاصوليا خضراء",
+        "raw_description": "فاصوليا18باكيت",
+        "quantity": 7.2,
         "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.0,
-        "unit": "غم",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.18,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.18,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "SF20600002",
-        "name": "لحمة مفرومة",
-        "raw_description": "لحمة مفرومة 7كيلو",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 6.772349999999999,
-        "total_cost": 47.40644999999999,
+        "cost_per_unit": 2.11514624452862,
+        "total_cost": 15.229052960606065,
         "is_semi_finished": true,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 4كيلو",
-        "quantity": 4.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 1.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140011",
-        "name": "فلفل حلو احمر",
-        "raw_description": "فلفل حلو احمر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140010",
-        "name": "فلفل حلو اخضر",
-        "raw_description": "فلفل حلو اخضر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140012",
-        "name": "فلفل حلو اصفر",
-        "raw_description": "فلفل حلو اصفر",
-        "quantity": 1.3333333333333333,
-        "unit": "كيلو",
-        "cost_per_unit": 1.1,
-        "total_cost": 1.4666666666666668,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 250غرام",
-        "quantity": 0.25,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1206793103448276,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 1مرتبان",
-        "quantity": 1.375,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 1.879571078431372,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "مندي",
-    "date": "2026-10-09",
-    "code": "STAFF-028",
-    "total_cost": 13.846282413793103,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 12كيلو",
-        "quantity": 12.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 11.76,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1 كيلو",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 0.125,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060023",
-        "name": "بصل ناعم",
-        "raw_description": "بصل بودره 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 2.371034482758621,
-        "total_cost": 0.09484137931034484,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060024",
-        "name": "ثوم ناعم",
-        "raw_description": "ثوم بودره 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 2.15,
-        "total_cost": 0.086,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060062",
-        "name": "بهارات مندي",
-        "raw_description": "بهار مندي 188غرام",
-        "quantity": 0.188,
-        "unit": "كيلو",
-        "cost_per_unit": 6.0,
-        "total_cost": 1.1280000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "معكرونة",
-    "date": "2026-11-09",
-    "code": "STAFF-029",
-    "total_cost": 35.3538831913455,
-    "ingredients": [
-      {
-        "code": "WH11170004",
-        "name": "ايسباغتي باستا 500 غ",
-        "raw_description": "معكرونة سباغيتي25باكيت",
-        "quantity": 12.5,
-        "unit": "كيلو",
-        "cost_per_unit": 0.64655,
-        "total_cost": 8.081875,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.054,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.34484913793103456,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060005",
-        "name": "زعتر اوريجانو",
-        "raw_description": "اوريجانو 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 4.902,
-        "total_cost": 0.12255,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060007",
-        "name": "نعنع ناشف",
-        "raw_description": "نعنع ناشف 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 2.727,
-        "total_cost": 0.068175,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 300غرام",
-        "quantity": 0.3,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 0.375,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "SF20600002",
-        "name": "لحمة مفرومة",
-        "raw_description": "لحمة مفرومة 2كيلو",
-        "quantity": 2.0,
-        "unit": "كيلو",
-        "cost_per_unit": 6.772349999999999,
-        "total_cost": 13.544699999999999,
-        "is_semi_finished": true,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11140001",
-        "name": "بندورة جامدة",
-        "raw_description": "بندورة 18كيلو",
-        "quantity": 18.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.5,
-        "total_cost": 9.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11150001",
-        "name": "معجون الطماطم",
-        "raw_description": "رب بندورة 2مرتبان",
-        "quantity": 2.75,
-        "unit": "كيلو",
-        "cost_per_unit": 1.366960784313725,
-        "total_cost": 3.759142156862744,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "ارز بشعرية بازيلا وجزر",
-    "date": "2026-12-09",
-    "code": "STAFF-030",
-    "total_cost": 22.490388319810684,
-    "ingredients": [
-      {
-        "code": "WH11030002",
-        "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 10كيلو",
-        "quantity": 10.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.98,
-        "total_cost": 9.8,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11170002",
-        "name": "معكرونة شعيرية",
-        "raw_description": "شعرية 2كيس",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.99,
-        "total_cost": 0.99,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060059",
-        "name": "فلفل ابيض",
-        "raw_description": "فلفل ابيض 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 7.758620689655173,
-        "total_cost": 0.19396551724137934,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060001",
-        "name": "هال ناعم",
-        "raw_description": "هيل ناعم 25غرام",
-        "quantity": 0.025,
-        "unit": "كيلو",
-        "cost_per_unit": 23.0,
-        "total_cost": 0.5750000000000001,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060003",
-        "name": "ملح طعام عمرة",
-        "raw_description": "ملح 200غرام",
-        "quantity": 0.2,
-        "unit": "كيلو",
-        "cost_per_unit": 0.18,
-        "total_cost": 0.036,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080002",
-        "name": "زيت صويا",
-        "raw_description": "زيت قلي 1000غرام",
-        "quantity": 1.0,
-        "unit": "كيلو",
-        "cost_per_unit": 1.25,
-        "total_cost": 1.25,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11120004",
-        "name": "بازيلاء و جزر مجمدة",
-        "raw_description": "بازيلا وجزر 20باكيت",
-        "quantity": 7.0,
-        "unit": "كيلو",
-        "cost_per_unit": 0.9160344827586206,
-        "total_cost": 6.412241379310345,
-        "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
@@ -3129,166 +777,70 @@
         "total_cost": 0.11205172413793106,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "قدرة",
-    "date": "2026-09-13",
-    "code": "STAFF-031",
-    "total_cost": 27.8143099288451,
-    "ingredients": [
+      },
       {
         "code": "WH11030002",
         "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 12كيلو",
-        "quantity": 12.0,
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
         "unit": "كيلو",
         "cost_per_unit": 0.98,
-        "total_cost": 11.76,
+        "total_cost": 9.8,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 1كيلو",
-        "quantity": 1.0,
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 0.7,
         "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.25,
+        "cost_per_unit": 0.99,
+        "total_cost": 0.693,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "SF21000014",
-        "name": "حمص مسلوق",
-        "raw_description": "حمص مسلوق 1كيلو",
-        "quantity": 1.0,
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
         "unit": "كيلو",
-        "cost_per_unit": 0.6896077777777778,
-        "total_cost": 0.6896077777777778,
-        "is_semi_finished": true,
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
         "code": "WH11060003",
         "name": "ملح طعام عمرة",
-        "raw_description": "ملح 300غرام",
-        "quantity": 0.3,
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
         "unit": "كيلو",
         "cost_per_unit": 0.18,
-        "total_cost": 0.054,
+        "total_cost": 0.036,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11060010",
-        "name": "ملح صيني كريستال",
-        "raw_description": "ملح صيني 20غرام",
-        "quantity": 0.02,
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
         "unit": "كيلو",
-        "cost_per_unit": 1.723965517241379,
-        "total_cost": 0.03447931034482758,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060027",
-        "name": "بهارات كاري",
-        "raw_description": "كاري 60غرام",
-        "quantity": 0.06,
-        "unit": "كيلو",
-        "cost_per_unit": 2.241034482758621,
-        "total_cost": 0.13446206896551727,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060030",
-        "name": "بهارات مشكل",
-        "raw_description": "بهار مشكل 50غرام",
-        "quantity": 0.05,
-        "unit": "كيلو",
-        "cost_per_unit": 3.01698275862069,
-        "total_cost": 0.1508491379310345,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
-        "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11220002",
-        "name": "مرق الدجاج بودرة",
-        "raw_description": "ماجي بودرة 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 3.66,
-        "total_cost": 0.0732,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11080006",
-        "name": "سمنة بلدية",
-        "raw_description": "سمنة 1700غرام",
-        "quantity": 1.7,
-        "unit": "كيلو",
-        "cost_per_unit": 8.33295238095238,
-        "total_cost": 14.166019047619045,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060023",
-        "name": "بصل ناعم",
-        "raw_description": "بصل بودره 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 2.371034482758621,
-        "total_cost": 0.09484137931034484,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060024",
-        "name": "ثوم ناعم",
-        "raw_description": "ثوم بودره 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 2.15,
-        "total_cost": 0.086,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060020",
-        "name": "فلفل اسود ناعم",
-        "raw_description": "فلفل اسود 40غرام",
-        "quantity": 0.04,
-        "unit": "كيلو",
-        "cost_per_unit": 6.896982758620691,
-        "total_cost": 0.27587931034482766,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "WH11060028",
-        "name": "كركم ناعم",
-        "raw_description": "كركم 20غرام",
-        "quantity": 0.02,
-        "unit": "كيلو",
-        "cost_per_unit": 2.069,
-        "total_cost": 0.04138,
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
@@ -3297,7 +849,8 @@
   {
     "name": "شاورما مندي",
     "date": "2026-09-14",
-    "code": "STAFF-032",
+    "display_title": "شاورما مندي (2026-09-14)",
+    "code": "STAFF-039",
     "total_cost": 60.30124148918188,
     "ingredients": [
       {
@@ -3556,20 +1109,1019 @@
     ]
   },
   {
-    "name": "ارز بشعرية فاصوليا",
-    "date": "2026-09-15",
-    "code": "STAFF-033",
-    "total_cost": 31.010199901106404,
+    "name": "قدرة",
+    "date": "2026-09-13",
+    "display_title": "قدرة (2026-09-13)",
+    "code": "STAFF-038",
+    "total_cost": 27.8143099288451,
     "ingredients": [
       {
-        "code": "SF20100030",
-        "name": "فاصوليا خضراء",
-        "raw_description": "فاصوليا18باكيت",
-        "quantity": 7.2,
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
         "unit": "كيلو",
-        "cost_per_unit": 2.11514624452862,
-        "total_cost": 15.229052960606065,
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF21000014",
+        "name": "حمص مسلوق",
+        "raw_description": "حمص مسلوق 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.6896077777777778,
+        "total_cost": 0.6896077777777778,
         "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060010",
+        "name": "ملح صيني كريستال",
+        "raw_description": "ملح صيني 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 1.723965517241379,
+        "total_cost": 0.03447931034482758,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1508491379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220002",
+        "name": "مرق الدجاج بودرة",
+        "raw_description": "ماجي بودرة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.0732,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة بلدية",
+        "raw_description": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل ناعم",
+        "raw_description": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم ناعم",
+        "raw_description": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم ناعم",
+        "raw_description": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بازيلا وجزر",
+    "date": "2026-09-12",
+    "display_title": "ارز بشعرية بازيلا وجزر (2026-09-12)",
+    "code": "STAFF-037",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "معكرونة",
+    "date": "2026-09-11",
+    "display_title": "معكرونة (2026-09-11)",
+    "code": "STAFF-036",
+    "total_cost": 35.3538831913455,
+    "ingredients": [
+      {
+        "code": "WH11170004",
+        "name": "ايسباغتي باستا 500 غ",
+        "raw_description": "معكرونة سباغيتي25باكيت",
+        "quantity": 12.5,
+        "unit": "كيلو",
+        "cost_per_unit": 0.64655,
+        "total_cost": 8.081875,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060005",
+        "name": "زعتر اوريجانو",
+        "raw_description": "اوريجانو 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 4.902,
+        "total_cost": 0.12255,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060007",
+        "name": "نعنع ناشف",
+        "raw_description": "نعنع ناشف 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 2.727,
+        "total_cost": 0.068175,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 0.375,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة",
+        "raw_description": "لحمة مفرومة 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 13.544699999999999,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140001",
+        "name": "بندورة جامدة",
+        "raw_description": "بندورة 18كيلو",
+        "quantity": 18.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5,
+        "total_cost": 9.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 2مرتبان",
+        "quantity": 2.75,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 3.759142156862744,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "مندي",
+    "date": "2026-09-10",
+    "display_title": "مندي (2026-09-10)",
+    "code": "STAFF-035",
+    "total_cost": 13.846282413793103,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1 كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 0.125,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل ناعم",
+        "raw_description": "بصل بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.09484137931034484,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم ناعم",
+        "raw_description": "ثوم بودره 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.086,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060062",
+        "name": "بهارات مندي",
+        "raw_description": "بهار مندي 188غرام",
+        "quantity": 0.188,
+        "unit": "كيلو",
+        "cost_per_unit": 6.0,
+        "total_cost": 1.1280000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية داوود باشا",
+    "date": "2026-09-09",
+    "display_title": "ارز بشعرية داوود باشا (2026-09-09)",
+    "code": "STAFF-034",
+    "total_cost": 67.11910694050033,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 1.0,
+        "unit": "قطعة",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.18,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.18,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة",
+        "raw_description": "لحمة مفرومة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 47.40644999999999,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "raw_description": "فلفل حلو احمر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "raw_description": "فلفل حلو اخضر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "raw_description": "فلفل حلو اصفر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "مجدرة",
+    "date": "2026-09-08",
+    "display_title": "مجدرة (2026-09-08)",
+    "code": "STAFF-033",
+    "total_cost": 12.682610862068966,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11040004",
+        "name": "عدس بني",
+        "raw_description": "عدس حب 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.0,
+        "total_cost": 2.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060076",
+        "name": "كمون ناعم",
+        "raw_description": "كمون 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.6,
+        "total_cost": 0.14400000000000002,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية منزلة بطاطا",
+    "date": "2026-09-07",
+    "display_title": "ارز بشعرية منزلة بطاطا (2026-09-07)",
+    "code": "STAFF-032",
+    "total_cost": 23.566016379310344,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140008",
+        "name": "بطاطا",
+        "raw_description": "بطاطا 20كيلو",
+        "quantity": 20.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.45,
+        "total_cost": 9.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060014",
+        "name": "ملح ليمون",
+        "raw_description": "ملح ليمون 30غرام",
+        "quantity": 0.03,
+        "unit": "كيلو",
+        "cost_per_unit": 1.078017241379311,
+        "total_cost": 0.032340517241379325,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11180001",
+        "name": "نشا الذرة (نشا طعام)",
+        "raw_description": "نشأ 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5169827586206898,
+        "total_cost": 0.12924568965517244,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 10باكيتات",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0071837931034482785,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم ناعم",
+        "raw_description": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بامية",
+    "date": "2026-09-06",
+    "display_title": "ارز بشعرية بامية (2026-09-06)",
+    "code": "STAFF-031",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
@@ -3664,10 +2216,10 @@
         "code": "WH11170002",
         "name": "معكرونة شعيرية",
         "raw_description": "شعرية 2كيس",
-        "quantity": 0.7,
+        "quantity": 1.0,
         "unit": "كيلو",
         "cost_per_unit": 0.99,
-        "total_cost": 0.693,
+        "total_cost": 0.99,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3718,10 +2270,11 @@
     ]
   },
   {
-    "name": "مجدرة",
-    "date": "2026-09-16",
-    "code": "STAFF-034",
-    "total_cost": 20.682610862068966,
+    "name": "ارز بشعرية فاهيتا جاج",
+    "date": "2026-09-05",
+    "display_title": "ارز بشعرية فاهيتا جاج (2026-09-05)",
+    "code": "STAFF-030",
+    "total_cost": 57.81753815077756,
     "ingredients": [
       {
         "code": "WH11030002",
@@ -3735,24 +2288,123 @@
         "sub_ingredients": []
       },
       {
-        "code": "WH11040004",
-        "name": "عدس بني",
-        "raw_description": "عدس حب 2كيلو",
-        "quantity": 2.0,
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
         "unit": "كيلو",
-        "cost_per_unit": 1.0,
-        "total_cost": 2.0,
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11020009",
+        "name": "تندر دجاج - طازج",
+        "raw_description": "دجاج تندر ربش 8كيلو",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 4.4,
+        "total_cost": 35.2,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
         "code": "WH11140013",
         "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 2كيلو",
-        "quantity": 2.0,
+        "raw_description": "بصل 5كيلو",
+        "quantity": 5.0,
         "unit": "كيلو",
         "cost_per_unit": 0.25,
-        "total_cost": 0.5,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "raw_description": "فلفل حلو احمر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "raw_description": "فلفل حلو اخضر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "raw_description": "فلفل حلو اصفر",
+        "quantity": 1.6666666666666667,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.8333333333333335,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 0.6834803921568625,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3779,54 +2431,132 @@
         "sub_ingredients": []
       },
       {
-        "code": "WH11220001",
-        "name": "مرق الدجاج مكعبات",
-        "raw_description": "ماجي مكعبات 5باكتات",
-        "quantity": 0.1,
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت 1000غرام",
+        "quantity": 1.0,
         "unit": "كيلو",
-        "cost_per_unit": 0.03591896551724139,
-        "total_cost": 0.0035918965517241393,
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11060076",
-        "name": "كمون ناعم",
-        "raw_description": "كمون 40غرام",
-        "quantity": 0.04,
+        "code": "WH11220002",
+        "name": "مرق الدجاج بودرة",
+        "raw_description": "ماجي بودرة 60غرام",
+        "quantity": 0.06,
         "unit": "كيلو",
-        "cost_per_unit": 3.6,
-        "total_cost": 0.14400000000000002,
+        "cost_per_unit": 3.66,
+        "total_cost": 0.2196,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
       {
-        "code": "WH11130010",
-        "name": "لبن رايب بقري",
-        "raw_description": "10كيلو لبن",
-        "quantity": 10.0,
+        "code": "WH11060022",
+        "name": "بابريكا حلوة",
+        "raw_description": "بابريكا 60غرام",
+        "quantity": 0.06,
         "unit": "كيلو",
-        "cost_per_unit": 0.8,
-        "total_cost": 8.0,
+        "cost_per_unit": 2.586034482758621,
+        "total_cost": 0.15516206896551724,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
     ]
   },
   {
-    "name": "ارز بشعرية شاكري",
-    "date": "2026-09-17",
-    "code": "STAFF-035",
-    "total_cost": 23.580560862068964,
+    "name": "ارز بشعرية ملوخية",
+    "date": "2026-09-04",
+    "display_title": "ارز بشعرية ملوخية (2026-09-04)",
+    "code": "STAFF-029",
+    "total_cost": 25.149056241379313,
     "ingredients": [
+      {
+        "code": "WH11120006",
+        "name": "ملوخية مفرومة مجمدة",
+        "raw_description": "ملوخية 20كيس",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.34698275862069,
+        "total_cost": 10.77586206896552,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 1.375,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060019",
+        "name": "كزبرة ناعمة",
+        "raw_description": "كزبرة ناعمة 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 1.72,
+        "total_cost": 0.1032,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
       {
         "code": "WH11030002",
         "name": "ارز بسمتي ذهبي",
-        "raw_description": "ارز بسمتي 8كيلو",
-        "quantity": 8.0,
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
         "unit": "كيلو",
         "cost_per_unit": 0.98,
-        "total_cost": 7.84,
+        "total_cost": 9.8,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3834,10 +2564,85 @@
         "code": "WH11170002",
         "name": "معكرونة شعيرية",
         "raw_description": "شعرية 2كيس",
-        "quantity": 0.7,
+        "quantity": 1.0,
         "unit": "كيلو",
         "cost_per_unit": 0.99,
-        "total_cost": 0.693,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية شاكرية",
+    "date": "2026-09-03",
+    "display_title": "ارز بشعرية شاكرية (2026-09-03)",
+    "code": "STAFF-028",
+    "total_cost": 29.09557003448276,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3888,7 +2693,7 @@
       {
         "code": "WH11130010",
         "name": "لبن رايب بقري",
-        "raw_description": "لبن 15كيلو",
+        "raw_description": "لبن رايب 15كيلو",
         "quantity": 15.0,
         "unit": "كيلو",
         "cost_per_unit": 0.8,
@@ -3897,13 +2702,35 @@
         "sub_ingredients": []
       },
       {
-        "code": "WH11140013",
-        "name": "بصل ناشف دفش (جامبو)",
-        "raw_description": "بصل 2كيلو",
-        "quantity": 2.0,
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
         "unit": "كيلو",
-        "cost_per_unit": 0.25,
-        "total_cost": 0.5,
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11130012",
+        "name": "لبن مخيض بقري",
+        "raw_description": "شنشنة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.42,
+        "total_cost": 2.94,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11180001",
+        "name": "نشا الذرة (نشا طعام)",
+        "raw_description": "نشأ 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.5169827586206898,
+        "total_cost": 0.10339655172413796,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3921,11 +2748,282 @@
       {
         "code": "WH11060059",
         "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 15غرام",
+        "quantity": 0.015,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.11637931034482758,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.5,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاصوليا",
+    "date": "2026-09-02",
+    "display_title": "ارز بشعرية فاصوليا (2026-09-02)",
+    "code": "STAFF-027",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
         "raw_description": "فلفل ابيض 25غرام",
         "quantity": 0.025,
         "unit": "كيلو",
         "cost_per_unit": 7.758620689655173,
         "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "قدرة",
+    "date": "2026-09-01",
+    "display_title": "قدرة (2026-09-01)",
+    "code": "STAFF-026",
+    "total_cost": 84.22177384776403,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 12كيلو",
+        "quantity": 12.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 11.76,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF21000014",
+        "name": "حمص مسلوق",
+        "raw_description": "حمص مسلوق 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.6896077777777778,
+        "total_cost": 0.6896077777777778,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060010",
+        "name": "ملح صيني كريستال",
+        "raw_description": "ملح صيني 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 1.723965517241379,
+        "total_cost": 0.03447931034482758,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.13446206896551727,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1508491379310345,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3937,6 +3035,28 @@
         "unit": "كيلو",
         "cost_per_unit": 0.03591896551724139,
         "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220002",
+        "name": "مرق الدجاج بودرة",
+        "raw_description": "ماجي بودرة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 3.66,
+        "total_cost": 0.0732,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة بلدية",
+        "raw_description": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045,
         "is_semi_finished": false,
         "sub_ingredients": []
       },
@@ -3963,13 +3083,1024 @@
         "sub_ingredients": []
       },
       {
-        "code": "WH11180001",
-        "name": "نشا الذرة (نشا طعام)",
-        "raw_description": "نشأ 200غرام",
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم ناعم",
+        "raw_description": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF20200024",
+        "name": "دجاجة شواية",
+        "raw_description": "دجاج مشوي 72قطعة يعني 18دجاجة",
+        "quantity": 18.0,
+        "unit": "كيلو",
+        "cost_per_unit": 3.133747995495496,
+        "total_cost": 56.40746391891893,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاصوليا",
+    "date": "2026-08-31",
+    "display_title": "ارز بشعرية فاصوليا (2026-08-31)",
+    "code": "STAFF-025",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
         "quantity": 0.2,
         "unit": "كيلو",
-        "cost_per_unit": 0.5169827586206898,
-        "total_cost": 0.10339655172413796,
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية داوود باشا",
+    "date": "2026-08-30",
+    "display_title": "ارز بشعرية داوود باشا (2026-08-30)",
+    "code": "STAFF-024",
+    "total_cost": 68.04510694050033,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة",
+        "raw_description": "لحمة مفرومة 7كيلو",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 47.40644999999999,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 4كيلو",
+        "quantity": 4.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 1.0,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140011",
+        "name": "فلفل حلو احمر",
+        "raw_description": "فلفل حلو احمر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140010",
+        "name": "فلفل حلو اخضر",
+        "raw_description": "فلفل حلو اخضر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140012",
+        "name": "فلفل حلو اصفر",
+        "raw_description": "فلفل حلو اصفر",
+        "quantity": 1.3333333333333333,
+        "unit": "كيلو",
+        "cost_per_unit": 1.1,
+        "total_cost": 1.4666666666666668,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.34484913793103456,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاصوليا",
+    "date": "2026-08-29",
+    "display_title": "ارز بشعرية فاصوليا (2026-08-29)",
+    "code": "STAFF-023",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بازيلا وجزر",
+    "date": "2026-08-28",
+    "display_title": "ارز بشعرية بازيلا وجزر (2026-08-28)",
+    "code": "STAFF-022",
+    "total_cost": 22.490388319810684,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 20باكيت",
+        "quantity": 7.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 6.412241379310345,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11150001",
+        "name": "معجون الطماطم",
+        "raw_description": "رب بندورة 1مرتبان",
+        "quantity": 1.375,
+        "unit": "كيلو",
+        "cost_per_unit": 1.366960784313725,
+        "total_cost": 1.879571078431372,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140013",
+        "name": "بصل ناشف دفش (جامبو)",
+        "raw_description": "بصل 1كيلو",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.25,
+        "total_cost": 0.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 0.55,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.27587931034482766,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1206793103448276,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 50غرام",
+        "quantity": 0.05,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.11205172413793106,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية ملوخية",
+    "date": "2026-08-27",
+    "display_title": "ارز بشعرية ملوخية (2026-08-27)",
+    "code": "STAFF-021",
+    "total_cost": 25.149056241379313,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11170002",
+        "name": "معكرونة شعيرية",
+        "raw_description": "شعرية 2كيس",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.99,
+        "total_cost": 0.99,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060059",
+        "name": "فلفل ابيض",
+        "raw_description": "فلفل ابيض 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 7.758620689655173,
+        "total_cost": 0.19396551724137934,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 25غرام",
+        "quantity": 0.025,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.5750000000000001,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 200غرام",
+        "quantity": 0.2,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.036,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080002",
+        "name": "زيت صويا",
+        "raw_description": "زيت قلي 1000غرام",
+        "quantity": 1.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.25,
+        "total_cost": 1.25,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11120006",
+        "name": "ملوخية مفرومة مجمدة",
+        "raw_description": "ملوخية 20كيس",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 1.34698275862069,
+        "total_cost": 10.77586206896552,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 250غرام",
+        "quantity": 0.25,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11140016",
+        "name": "ثوم ناشف (كامل) (بقشره)",
+        "raw_description": "ثوم فرش 500غرام",
+        "quantity": 0.5,
+        "unit": "كيلو",
+        "cost_per_unit": 2.75,
+        "total_cost": 1.375,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060019",
+        "name": "كزبرة ناعمة",
+        "raw_description": "كزبرة ناعمة 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 1.72,
+        "total_cost": 0.1032,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 7باكيتات",
+        "quantity": 0.14,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.005028655172413796,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "اوزي",
+    "date": "2026-08-26",
+    "display_title": "اوزي (2026-08-26)",
+    "code": "STAFF-020",
+    "total_cost": 47.00176853037767,
+    "ingredients": [
+      {
+        "code": "WH11030002",
+        "name": "ارز بسمتي ذهبي",
+        "raw_description": "ارز بسمتي 10كيلو",
+        "quantity": 10.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.98,
+        "total_cost": 9.8,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "SF20600002",
+        "name": "لحمة مفرومة",
+        "raw_description": "لحمة مفرومة 2كيلو",
+        "quantity": 2.0,
+        "unit": "كيلو",
+        "cost_per_unit": 6.772349999999999,
+        "total_cost": 13.544699999999999,
+        "is_semi_finished": true,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11120004",
+        "name": "بازيلاء و جزر مجمدة",
+        "raw_description": "بازيلا وجزر 3كيس",
+        "quantity": 1.05,
+        "unit": "كيلو",
+        "cost_per_unit": 0.9160344827586206,
+        "total_cost": 0.9618362068965517,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11080006",
+        "name": "سمنة بلدية",
+        "raw_description": "سمنة 1700غرام",
+        "quantity": 1.7,
+        "unit": "كيلو",
+        "cost_per_unit": 8.33295238095238,
+        "total_cost": 14.166019047619045,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060003",
+        "name": "ملح طعام عمرة",
+        "raw_description": "ملح 300غرام",
+        "quantity": 0.3,
+        "unit": "كيلو",
+        "cost_per_unit": 0.18,
+        "total_cost": 0.054,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060030",
+        "name": "بهارات مشكل",
+        "raw_description": "بهار مشكل 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 3.01698275862069,
+        "total_cost": 0.1810189655172414,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11220001",
+        "name": "مرق الدجاج مكعبات",
+        "raw_description": "ماجي مكعبات 5باكتات",
+        "quantity": 0.1,
+        "unit": "كيلو",
+        "cost_per_unit": 0.03591896551724139,
+        "total_cost": 0.0035918965517241393,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060027",
+        "name": "بهارات كاري",
+        "raw_description": "كاري 80غرام",
+        "quantity": 0.08,
+        "unit": "كيلو",
+        "cost_per_unit": 2.241034482758621,
+        "total_cost": 0.17928275862068968,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060020",
+        "name": "فلفل اسود ناعم",
+        "raw_description": "فلفل اسود 60غرام",
+        "quantity": 0.06,
+        "unit": "كيلو",
+        "cost_per_unit": 6.896982758620691,
+        "total_cost": 0.41381896551724145,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060028",
+        "name": "كركم ناعم",
+        "raw_description": "كركم 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.069,
+        "total_cost": 0.04138,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060025",
+        "name": "قرفة ناعمة",
+        "raw_description": "قرفة 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.80198275862069,
+        "total_cost": 0.0560396551724138,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060001",
+        "name": "هال ناعم",
+        "raw_description": "هيل ناعم 40غرام",
+        "quantity": 0.04,
+        "unit": "كيلو",
+        "cost_per_unit": 23.0,
+        "total_cost": 0.92,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060016",
+        "name": "جوزة الطيب ناعمة",
+        "raw_description": "جوزة الطيب 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 9.48301724137931,
+        "total_cost": 0.1896603448275862,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060023",
+        "name": "بصل ناعم",
+        "raw_description": "بصل بودره 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.371034482758621,
+        "total_cost": 0.04742068965517242,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11060024",
+        "name": "ثوم ناعم",
+        "raw_description": "ثوم بودره 20غرام",
+        "quantity": 0.02,
+        "unit": "كيلو",
+        "cost_per_unit": 2.15,
+        "total_cost": 0.043,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "WH11130010",
+        "name": "لبن رايب بقري",
+        "raw_description": "لبن رايب 8كيل",
+        "quantity": 8.0,
+        "unit": "كيلو",
+        "cost_per_unit": 0.8,
+        "total_cost": 6.4,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
