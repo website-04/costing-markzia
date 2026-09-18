@@ -1,16 +1,16 @@
 [
   {
-    "name": "47.00176853037766",
+    "name": "اوزي",
     "date": "اوزي",
     "code": "STAFF-001",
     "total_cost": 24.38088426518883,
     "ingredients": [
       {
-        "code": "26-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 47.00176853037766,
         "total_cost": 24.38088426518883,
         "is_semi_finished": false,
@@ -19,172 +19,28 @@
     ]
   },
   {
-    "name": "25.149056241379316",
+    "name": "ارز بشعرية ملوخية",
     "date": "ارز بشعرية ملوخية",
     "code": "STAFF-002",
-    "total_cost": 13.454528120689659,
+    "total_cost": 26.909056241379318,
     "ingredients": [
       {
-        "code": "27-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 25.149056241379316,
         "total_cost": 13.454528120689659,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "22.49038831981068",
-    "date": "ارز بشعرية بازيلا وجزر",
-    "code": "STAFF-003",
-    "total_cost": 24.25038831981068,
-    "ingredients": [
-      {
-        "code": "28-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
       },
       {
-        "code": "12-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "22.490388319810684",
-    "date": "ارز بشعرية فاصوليا",
-    "code": "STAFF-004",
-    "total_cost": 24.250388319810686,
-    "ingredients": [
-      {
-        "code": "29-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 22.490388319810684,
-        "total_cost": 12.125194159905343,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      },
-      {
-        "code": "02-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 22.490388319810684,
-        "total_cost": 12.125194159905343,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "68.04510694050033",
-    "date": "ارز بشعرية داوود باشا",
-    "code": "STAFF-005",
-    "total_cost": 34.90255347025016,
-    "ingredients": [
-      {
-        "code": "30-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 68.04510694050033,
-        "total_cost": 34.90255347025016,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "22.49038831981068",
-    "date": "ارز بشعرية فاصوليا",
-    "code": "STAFF-006",
-    "total_cost": 12.12519415990534,
-    "ingredients": [
-      {
-        "code": "31-08-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 22.49038831981068,
-        "total_cost": 12.12519415990534,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "84.22177384776403",
-    "date": "قدرة",
-    "code": "STAFF-007",
-    "total_cost": 42.990886923882016,
-    "ingredients": [
-      {
-        "code": "01-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 84.22177384776403,
-        "total_cost": 42.990886923882016,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "29.09557003448276",
-    "date": "ارز بشعرية شاكرية",
-    "code": "STAFF-008",
-    "total_cost": 15.427785017241382,
-    "ingredients": [
-      {
-        "code": "03-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 29.09557003448276,
-        "total_cost": 15.427785017241382,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "25.149056241379313",
-    "date": "ارز بشعرية ملوخية",
-    "code": "STAFF-009",
-    "total_cost": 13.454528120689657,
-    "ingredients": [
-      {
-        "code": "04-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 25.149056241379313,
         "total_cost": 13.454528120689657,
         "is_semi_finished": false,
@@ -193,188 +49,80 @@
     ]
   },
   {
-    "name": "57.81753815077756",
-    "date": "ارز بشعرية فاهيتا جاج",
-    "code": "STAFF-010",
-    "total_cost": 29.788769075388778,
+    "name": "ارز بشعرية بازيلا وجزر",
+    "date": "ارز بشعرية بازيلا وجزر",
+    "code": "STAFF-003",
+    "total_cost": 24.25038831981068,
     "ingredients": [
       {
-        "code": "05-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 57.81753815077756,
-        "total_cost": 29.788769075388778,
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
     ]
   },
   {
-    "name": "22.490388319810684",
-    "date": "ارز بشعرية بامية",
-    "code": "STAFF-011",
-    "total_cost": 12.125194159905343,
+    "name": "ارز بشعرية فاصوليا",
+    "date": "ارز بشعرية فاصوليا",
+    "code": "STAFF-004",
+    "total_cost": 52.76068243026923,
     "ingredients": [
       {
-        "code": "06-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 22.490388319810684,
         "total_cost": 12.125194159905343,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "23.56601637931034",
-    "date": "ارز بشعرية منزلة بطاطا",
-    "code": "STAFF-012",
-    "total_cost": 12.663008189655171,
-    "ingredients": [
+      },
       {
-        "code": "07-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 23.56601637931034,
-        "total_cost": 12.663008189655171,
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 22.49038831981068,
+        "total_cost": 12.12519415990534,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "12.682610862068966",
-    "date": "مجدرة",
-    "code": "STAFF-013",
-    "total_cost": 7.221305431034482,
-    "ingredients": [
+      },
       {
-        "code": "08-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 12.682610862068966,
-        "total_cost": 7.221305431034482,
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 22.490388319810684,
+        "total_cost": 12.125194159905343,
         "is_semi_finished": false,
         "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "66.93910694050034",
-    "date": "ارز بشعرية داوود باشا",
-    "code": "STAFF-014",
-    "total_cost": 34.34955347025017,
-    "ingredients": [
+      },
       {
-        "code": "09-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 66.93910694050034,
-        "total_cost": 34.34955347025017,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "13.846282413793103",
-    "date": "مندي",
-    "code": "STAFF-015",
-    "total_cost": 7.803141206896553,
-    "ingredients": [
-      {
-        "code": "10-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 13.846282413793103,
-        "total_cost": 7.803141206896553,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "35.3538831913455",
-    "date": "معكرونة",
-    "code": "STAFF-016",
-    "total_cost": 18.55694159567275,
-    "ingredients": [
-      {
-        "code": "11-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 35.3538831913455,
-        "total_cost": 18.55694159567275,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "27.8143099288451",
-    "date": "قدرة",
-    "code": "STAFF-017",
-    "total_cost": 14.78715496442255,
-    "ingredients": [
-      {
-        "code": "13-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 27.8143099288451,
-        "total_cost": 14.78715496442255,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "60.30124148918189",
-    "date": "شاورما مندي",
-    "code": "STAFF-018",
-    "total_cost": 31.030620744590948,
-    "ingredients": [
-      {
-        "code": "14-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 60.30124148918189,
-        "total_cost": 31.030620744590948,
-        "is_semi_finished": false,
-        "sub_ingredients": []
-      }
-    ]
-  },
-  {
-    "name": "31.010199901106407",
-    "date": "ارز بشعرية فاصوليا",
-    "code": "STAFF-019",
-    "total_cost": 16.385099950553204,
-    "ingredients": [
-      {
-        "code": "15-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 31.010199901106407,
         "total_cost": 16.385099950553204,
         "is_semi_finished": false,
@@ -383,36 +131,153 @@
     ]
   },
   {
-    "name": "20.682610862068966",
-    "date": "مجدرة",
-    "code": "STAFF-020",
-    "total_cost": 11.221305431034484,
+    "name": "ارز بشعرية داوود باشا",
+    "date": "ارز بشعرية داوود باشا",
+    "code": "STAFF-005",
+    "total_cost": 69.25210694050034,
     "ingredients": [
       {
-        "code": "16-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
-        "cost_per_unit": 20.682610862068966,
-        "total_cost": 11.221305431034484,
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 68.04510694050033,
+        "total_cost": 34.90255347025016,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 66.93910694050034,
+        "total_cost": 34.34955347025017,
         "is_semi_finished": false,
         "sub_ingredients": []
       }
     ]
   },
   {
-    "name": "23.580560862068968",
+    "name": "قدرة",
+    "date": "قدرة",
+    "code": "STAFF-006",
+    "total_cost": 57.778041888304564,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 84.22177384776403,
+        "total_cost": 42.990886923882016,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      },
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 27.8143099288451,
+        "total_cost": 14.78715496442255,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية شاكرية",
+    "date": "ارز بشعرية شاكرية",
+    "code": "STAFF-007",
+    "total_cost": 15.427785017241382,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 29.09557003448276,
+        "total_cost": 15.427785017241382,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية فاهيتا جاج",
+    "date": "ارز بشعرية فاهيتا جاج",
+    "code": "STAFF-008",
+    "total_cost": 29.788769075388778,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 57.81753815077756,
+        "total_cost": 29.788769075388778,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية بامية",
+    "date": "ارز بشعرية بامية",
+    "code": "STAFF-009",
+    "total_cost": 12.125194159905343,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 22.490388319810684,
+        "total_cost": 12.125194159905343,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية منزلة بطاطا",
+    "date": "ارز بشعرية منزلة بطاطا",
+    "code": "STAFF-010",
+    "total_cost": 12.663008189655171,
+    "ingredients": [
+      {
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
+        "cost_per_unit": 23.56601637931034,
+        "total_cost": 12.663008189655171,
+        "is_semi_finished": false,
+        "sub_ingredients": []
+      }
+    ]
+  },
+  {
+    "name": "ارز بشعرية شاكري",
     "date": "ارز بشعرية شاكري",
-    "code": "STAFF-021",
+    "code": "STAFF-011",
     "total_cost": 12.670280431034485,
     "ingredients": [
       {
-        "code": "17-09-2026",
-        "name": "55",
-        "raw_description": "55",
-        "quantity": 15.0,
-        "unit": "كيلو",
+        "code": "",
+        "name": "مادة ",
+        "raw_description": "",
+        "quantity": 0.0,
+        "unit": "غم",
         "cost_per_unit": 23.580560862068968,
         "total_cost": 12.670280431034485,
         "is_semi_finished": false,
@@ -423,7 +288,7 @@
   {
     "name": "اوزي",
     "date": "2026-08-26",
-    "code": "STAFF-022",
+    "code": "STAFF-012",
     "total_cost": 47.00176853037767,
     "ingredients": [
       {
@@ -628,7 +493,7 @@
   {
     "name": "ارز بشعرية ملوخية",
     "date": "2026-08-27",
-    "code": "STAFF-023",
+    "code": "STAFF-013",
     "total_cost": 25.149056241379313,
     "ingredients": [
       {
@@ -757,7 +622,7 @@
   {
     "name": "ارز بشعرية بازيلا وجزر",
     "date": "2026-08-28",
-    "code": "STAFF-024",
+    "code": "STAFF-014",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -919,7 +784,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-08-29",
-    "code": "STAFF-025",
+    "code": "STAFF-015",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -1081,7 +946,7 @@
   {
     "name": "ارز بشعرية داوود باشا",
     "date": "2026-08-30",
-    "code": "STAFF-026",
+    "code": "STAFF-016",
     "total_cost": 68.04510694050033,
     "ingredients": [
       {
@@ -1286,7 +1151,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-08-31",
-    "code": "STAFF-027",
+    "code": "STAFF-017",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -1448,7 +1313,7 @@
   {
     "name": "قدرة",
     "date": "2026-01-09",
-    "code": "STAFF-028",
+    "code": "STAFF-018",
     "total_cost": 84.22177384776403,
     "ingredients": [
       {
@@ -1743,7 +1608,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-02-09",
-    "code": "STAFF-029",
+    "code": "STAFF-019",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -1905,7 +1770,7 @@
   {
     "name": "ارز بشعرية شاكرية",
     "date": "2026-03-09",
-    "code": "STAFF-030",
+    "code": "STAFF-020",
     "total_cost": 29.09557003448276,
     "ingredients": [
       {
@@ -2067,7 +1932,7 @@
   {
     "name": "ارز بشعرية ملوخية",
     "date": "2026-04-09",
-    "code": "STAFF-031",
+    "code": "STAFF-021",
     "total_cost": 25.149056241379313,
     "ingredients": [
       {
@@ -2196,7 +2061,7 @@
   {
     "name": "ارز بشعرية فاهيتا جاج",
     "date": "2026-05-09",
-    "code": "STAFF-032",
+    "code": "STAFF-022",
     "total_cost": 57.81753815077756,
     "ingredients": [
       {
@@ -2413,7 +2278,7 @@
   {
     "name": "ارز بشعرية بامية",
     "date": "2026-06-09",
-    "code": "STAFF-033",
+    "code": "STAFF-023",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -2575,7 +2440,7 @@
   {
     "name": "ارز بشعرية منزلة بطاطا",
     "date": "2026-07-09",
-    "code": "STAFF-034",
+    "code": "STAFF-024",
     "total_cost": 23.566016379310344,
     "ingredients": [
       {
@@ -2748,7 +2613,7 @@
   {
     "name": "مجدرة",
     "date": "2026-08-09",
-    "code": "STAFF-035",
+    "code": "STAFF-025",
     "total_cost": 12.682610862068966,
     "ingredients": [
       {
@@ -2833,7 +2698,7 @@
   {
     "name": "ارز بشعرية داوود باشا",
     "date": "2026-09-09",
-    "code": "STAFF-036",
+    "code": "STAFF-026",
     "total_cost": 67.11910694050033,
     "ingredients": [
       {
@@ -3038,7 +2903,7 @@
   {
     "name": "مندي",
     "date": "2026-10-09",
-    "code": "STAFF-037",
+    "code": "STAFF-027",
     "total_cost": 13.846282413793103,
     "ingredients": [
       {
@@ -3145,7 +3010,7 @@
   {
     "name": "معكرونة",
     "date": "2026-11-09",
-    "code": "STAFF-038",
+    "code": "STAFF-028",
     "total_cost": 35.3538831913455,
     "ingredients": [
       {
@@ -3284,7 +3149,7 @@
   {
     "name": "ارز بشعرية بازيلا وجزر",
     "date": "2026-12-09",
-    "code": "STAFF-039",
+    "code": "STAFF-029",
     "total_cost": 22.490388319810684,
     "ingredients": [
       {
@@ -3446,7 +3311,7 @@
   {
     "name": "قدرة",
     "date": "2026-09-13",
-    "code": "STAFF-040",
+    "code": "STAFF-030",
     "total_cost": 27.8143099288451,
     "ingredients": [
       {
@@ -3639,7 +3504,7 @@
   {
     "name": "شاورما مندي",
     "date": "2026-09-14",
-    "code": "STAFF-041",
+    "code": "STAFF-031",
     "total_cost": 60.30124148918188,
     "ingredients": [
       {
@@ -3900,7 +3765,7 @@
   {
     "name": "ارز بشعرية فاصوليا",
     "date": "2026-09-15",
-    "code": "STAFF-042",
+    "code": "STAFF-032",
     "total_cost": 31.010199901106404,
     "ingredients": [
       {
@@ -4143,7 +4008,7 @@
   {
     "name": "مجدرة",
     "date": "2026-09-16",
-    "code": "STAFF-043",
+    "code": "STAFF-033",
     "total_cost": 20.682610862068966,
     "ingredients": [
       {
@@ -4239,7 +4104,7 @@
   {
     "name": "ارز بشعرية شاكري",
     "date": "2026-09-17",
-    "code": "STAFF-044",
+    "code": "STAFF-034",
     "total_cost": 23.580560862068964,
     "ingredients": [
       {
