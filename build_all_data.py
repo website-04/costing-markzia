@@ -40,7 +40,9 @@ def find_col(df, inc_keys, exc_keys=[]):
                 return col
     return None
 
+# ====================================================
 # 1. دليل أودو الشامل
+# ====================================================
 odoo_items = []
 odoo_map_by_code = {}
 
@@ -125,147 +127,177 @@ if os.path.exists(p_odoo_master):
 with open(os.path.join(out_dir, "odoo_catalog.json"), "w", encoding="utf-8") as f:
     json.dump(odoo_items, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-# 2. شجرة التكاليف Costing V21 (إصلاح تكلفة الصنف وسعر البيع بدقة تامة)
+# ====================================================
+# 2. شجرة التكاليف Costing V21
+# ====================================================
 semi_dict = {}
 standard_bom_map = {}
-finished_items = {}
+recipes_list = []
 
 if os.path.exists(p_costing):
     xls_c = pd.ExcelFile(p_costing)
     if "Semi Finished Recipe" in xls_c.sheet_names:
         df_semi = pd.read_excel(xls_c, sheet_name="Semi Finished Recipe")
-        curr_sf_code, curr_sf_name, curr_sf_std_qty, curr_sf_unit = "", "", 1.0, "كغ"
+        curr_sf_code, curr_sf_name = "", ""
 
         for _, row in df_semi.iterrows():
-            vals = list(row.values)
-            if len(vals) < 12: continue
-            sf_od = c_str(vals[0])
-            sf_cd = c_str(vals[1])
-            sf_nm = c_str(vals[3])
+            parent_code = c_str(row.get('odoo')) or c_str(row.get('SF Item\nCode'))
+            parent_name = c_str(row.get('SF Item\nName'))
+            if parent_name:
+                curr_sf_name = parent_name
+                curr_sf_code = parent_code
 
-            if sf_nm:
-                curr_sf_name = sf_nm
-                curr_sf_code = sf_od if sf_od else sf_cd
-                curr_sf_std_qty = c_num(vals[7]) if c_num(vals[7]) > 0 else 1.0
-                curr_sf_unit = c_str(vals[8]) or "كغ"
-
-            if not curr_sf_name: continue
-            rm_od = c_str(vals[4])
-            rm_cd = c_str(vals[5])
-            rm_nm = c_str(vals[6]) or "مادة خام"
-            rm_code = rm_od if rm_od else rm_cd
+            ing_code = c_str(row.get('odoo.1')) or c_str(row.get('RM Item\nNew Code'))
+            ing_name = c_str(row.get('Complete Item Description'))
+            if not ing_name and not ing_code: continue
 
             sub_item = {
-                "rm_code": rm_code, "name": rm_nm,
-                "standard_quantity": c_num(vals[7]), "unit": c_str(vals[8]) or "كغ",
-                "cost_per_unit": c_num(vals[10]), "total_cost": c_num(vals[11])
+                "rm_code": ing_code,
+                "name": ing_name or "مادة خام",
+                "standard_quantity": c_num(row.get('الكمية المعادلة') or row.get('Quantity') or 1.0),
+                "unit": c_str(row.get('Unit')) or "غم",
+                "cost_per_unit": c_num(row.get('Cost Per Unit') or row.get('Cost per Unit')),
+                "total_cost": c_num(row.get('Total Cost'))
             }
 
-            for k in [curr_sf_code, sf_od, sf_cd]:
+            for k in [curr_sf_code, parent_code]:
                 if k and len(k) >= 3:
-                    k_low = k.lower()
-                    if k_low not in semi_dict: semi_dict[k_low] = []
-                    semi_dict[k_low].append(sub_item)
-                    standard_bom_map[k_low] = {
+                    k_l = k.lower()
+                    if k_l not in semi_dict: semi_dict[k_l] = []
+                    semi_dict[k_l].append(sub_item)
+                    standard_bom_map[k_l] = {
                         "name": curr_sf_name, "code": k,
-                        "standard_quantity": curr_sf_std_qty, "unit": curr_sf_unit,
-                        "cost": c_num(vals[11])
+                        "standard_quantity": sub_item["standard_quantity"],
+                        "unit": sub_item["unit"], "cost": sub_item["total_cost"]
                     }
 
     if "Finished Recipe" in xls_c.sheet_names:
         df_fin = pd.read_excel(xls_c, sheet_name="Finished Recipe")
-        curr_dish = None
+        dishes_map = {}
+
         for _, row in df_fin.iterrows():
-            vals = list(row.values)
-            if len(vals) < 13: continue
-            d_od = c_str(vals[0])
-            d_cd = c_str(vals[1])
-            d_nm = c_str(vals[3])
+            parent_code = c_str(row.get('odoo')) or c_str(row.get('Menu Item\nNew Code'))
+            parent_name = c_str(row.get('Menu Item\nName'))
+            if not parent_code and not parent_name: continue
 
-            if d_nm and (d_nm != (curr_dish["name"] if curr_dish else "")):
-                dish_code = d_od if d_od else d_cd
-                # استخراج تكلفة الصنف الرسمية من الإكسل
-                excel_dish_cost = c_num(vals[13]) if len(vals) > 13 else 0.0
-                if excel_dish_cost == 0.0 and len(vals) > 14:
-                    excel_dish_cost = c_num(vals[14])
-
-                curr_dish = {
-                    "code": dish_code, "odoo_code": d_od, "recipe_code": d_cd,
-                    "name": d_nm, "category": c_str(vals[4]) or "طعام",
+            key = (parent_code or parent_name).lower()
+            if key not in dishes_map:
+                dish_cost = c_num(row.get('تكلفة الصنف') or row.get('Total Cost'))
+                dishes_map[key] = {
+                    "code": parent_code or key,
+                    "odoo_code": parent_code,
+                    "recipe_code": c_str(row.get('Menu Item\nNew Code')),
+                    "name": parent_name,
+                    "category": c_str(row.get('Category') or row.get('Section') or "طعام"),
                     "selling_price": 0.0,
-                    "total_cost": excel_dish_cost,
+                    "total_cost": dish_cost,
                     "food_cost_percentage": 0.0,
                     "ingredients": []
                 }
-                finished_items[dish_code.lower() if dish_code else d_nm] = curr_dish
 
-            if not curr_dish: continue
-            ing_od = c_str(vals[6])
-            ing_cd = c_str(vals[7])
-            ing_nm = c_str(vals[8])
-            ing_code = ing_od if ing_od else ing_cd
-            if not ing_code and not ing_nm: continue
+            ing_code = c_str(row.get('odoo.1')) or c_str(row.get('RM Item\nNew Code'))
+            ing_name = c_str(row.get('Complete Item Description'))
+            if not ing_code and not ing_name: continue
 
-            ing_std_qty = c_num(vals[9] if len(vals) > 9 else vals[10])
-            ing_unit = c_str(vals[10] if len(vals) > 10 else "كغ") or "كغ"
-            ing_cost_u = c_num(vals[11] if len(vals) > 11 else 0.0)
-            ing_tot_c = c_num(vals[12] if len(vals) > 12 else 0.0)
+            ing_qty = c_num(row.get('Quantity') or 1.0)
+            ing_unit = c_str(row.get('Unit')) or "غم"
+            ing_cost_u = c_num(row.get('Cost per Unit') or row.get('Cost Per Unit'))
+            ing_tot_c = c_num(row.get('Total Cost'))
 
             match_od = odoo_map_by_code.get(ing_code.lower())
-            official_name = match_od["name"] if match_od else (ing_nm or f"مادة {ing_code}")
+            official_name = match_od["name"] if match_od else (ing_name or f"مادة {ing_code}")
             subs = semi_dict.get(ing_code.lower(), [])
 
-            curr_dish["ingredients"].append({
-                "code": ing_code, "name": official_name, "raw_description": ing_nm,
-                "standard_quantity": f"{ing_std_qty} {ing_unit}",
-                "actual_quantity": ing_std_qty, "unit": ing_unit,
-                "cost_per_unit": ing_cost_u, "total_cost": ing_tot_c,
+            dishes_map[key]["ingredients"].append({
+                "code": ing_code,
+                "name": official_name,
+                "raw_description": ing_name,
+                "standard_quantity": f"{ing_qty} {ing_unit}",
+                "actual_quantity": ing_qty,
+                "unit": ing_unit,
+                "cost_per_unit": ing_cost_u,
+                "total_cost": ing_tot_c,
                 "is_semi_finished": len(subs) > 0 or ing_code.startswith("SF"),
                 "sub_ingredients": subs
             })
 
-recipes_list = list(finished_items.values())
-for r in recipes_list:
-    calc_sum = round(sum(i["total_cost"] for i in r["ingredients"]), 3)
-    if r["total_cost"] == 0.0:
-        r["total_cost"] = calc_sum
+        for d in dishes_map.values():
+            if d["total_cost"] == 0.0 and len(d["ingredients"]) > 0:
+                d["total_cost"] = round(sum(i["total_cost"] for i in d["ingredients"]), 3)
+            recipes_list.append(d)
 
 with open(os.path.join(out_dir, "costing_data.json"), "w", encoding="utf-8") as f:
     json.dump(recipes_list, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-# 3. ريسبي وجبات الموظفين - تجميع كامل المقادير تحت كل وجبة وتاريخها
+# ====================================================
+# 3. وجبات الموظفين - استخراج اسم الأكلة الحقيقي (مثل مجدرة)
+# ====================================================
 staff_meals = []
+
 if os.path.exists(p_staff):
     xls_s = pd.ExcelFile(p_staff)
     meals_dict = {}
 
     for s_name in xls_s.sheet_names:
         df_s = pd.read_excel(xls_s, sheet_name=s_name)
+        if len(df_s) < 2: continue
+
+        # الكشف التلقائي عن عامود اسم الطبخة (مثل: مجدرة، داوود باشا)
+        # عامود الوصفات يحتوي على أوزان (10كيلو، 7كيلو) بينما عامود اسم الأكلة نقي تماماً
+        col_actual_dish = None
+        col_recipe_desc = None
         col_code = find_col(df_s, ["معرف", "كود", "code", "odoo"]) or df_s.columns[1]
-        col_dish = find_col(df_s, ["وجبة", "طبخة", "meal", "اسم الوجبة"])
-        col_desc = find_col(df_s, ["المكونات", "المادة", "اسم", "وصف"]) or (df_s.columns[3] if len(df_s.columns) > 3 else None)
         col_date = find_col(df_s, ["تاريخ", "date"])
         col_qty_kg = find_col(df_s, ["كيلو", "كغ", "وزن", "kg"])
         col_qty_g = find_col(df_s, ["غرام", "جرام", "g"])
         col_cost = find_col(df_s, ["كلفة", "تكلفة", "سعر", "cost"])
         col_tot = find_col(df_s, ["اجمالي", "إجمالي", "total"])
 
+        # فحص الأعمدة لاكتشاف أين يقع اسم الأكلة النقي (مجدرة، فاصوليا، داوود باشا)
+        for col in df_s.columns:
+            sample_vals = [str(x).strip() for x in df_s[col].dropna().head(30).tolist()]
+            has_mojadara = any("مجدرة" in v for v in sample_vals)
+            has_dishes = any(any(k in v for k in ["مجدرة", "داوود", "فاصوليا", "بازيلا", "معكرونة", "كبسة", "منسف", "ملوخية", "بامية", "شاورما", "كفتة", "برغر", "مقلوبة"]) for v in sample_vals)
+            has_weights = any(any(k in v for k in ["كيلو", "كغ", "غرام", "جرام", "كيس"]) for v in sample_vals)
+
+            if has_mojadara or (has_dishes and not has_weights):
+                col_actual_dish = col
+            elif has_weights and has_dishes:
+                col_recipe_desc = col
+
+        if not col_actual_dish:
+            # إذا لم يكن هناك عامود منفصل، نبحث في الأعمدة عن اسم الطبخة
+            for col in df_s.columns:
+                if col != col_code and col != col_qty_kg and col != col_tot:
+                    col_actual_dish = col
+                    break
+
         curr_tracked_dish = ""
-        curr_tracked_date = s_name.replace("(", "").replace(")", "").strip()
+        clean_sheet_date = s_name.replace("(", "").replace(")", "").strip()
+        curr_tracked_date = clean_sheet_date
 
         for _, row in df_s.iterrows():
             ing_code = c_str(row.get(col_code))
-            dish_cand = c_str(row.get(col_dish)) if col_dish else ""
-            desc_cand = c_str(row.get(col_desc)) if col_desc else ""
-            date_cand = c_str(row.get(col_date)) if col_date else ""
+            dish_val = c_str(row.get(col_actual_dish)) if col_actual_dish else ""
+            desc_val = c_str(row.get(col_recipe_desc)) if col_recipe_desc else ""
+            date_val = c_str(row.get(col_date)) if col_date else ""
 
-            if date_cand and any(c.isdigit() for c in date_cand):
-                curr_tracked_date = date_cand.split()[0].replace("-", "/")
+            if date_val and any(c.isdigit() for c in date_val):
+                curr_tracked_date = date_val.split()[0].replace("-", "/")
 
-            for text_val in [dish_cand, desc_cand]:
-                if text_val and any(k in text_val for k in ["ارز", "أرز", "داوود", "فاصوليا", "معكرونة", "لحمة", "دجاج", "كبسة", "برياني", "منسف", "شوربة", "صينية", "شاورما"]):
-                    curr_tracked_dish = text_val
-                    break
+            # تنظيف واستخراج اسم الطبخة الحقيقي حصراً
+            # استبعاد الأوزان مثل (10كيلو أو 7كيلو) لتظهر اسم الطبخة مثل: مجدرة أو داوود باشا
+            candidate_dish = dish_val or desc_val
+            if candidate_dish:
+                # حذف أي أوزان ملحقة بالاسم
+                cleaned_dish = re.sub(r'\s*\d+\s*(?:كيلو|كغ|غرام|جرام|كيس).*', '', candidate_dish).strip()
+                # إزالة كلمة ارز بشعرية إذا كانت متبوعة باسم الطبيخ
+                m_sub = re.search(r'(?:ارز بشعرية|أرز بشعرية|ارز|أرز)\s+(.+)', cleaned_dish)
+                if m_sub and len(m_sub.group(1).strip()) >= 3:
+                    cleaned_dish = m_sub.group(1).strip()
+
+                if len(cleaned_dish) >= 3 and not any(w in cleaned_dish for w in ["كيلو", "غرام"]):
+                    curr_tracked_dish = cleaned_dish
 
             if not ing_code or ing_code.lower() in ["nan", "none", "المجموع", "total"]:
                 continue
@@ -273,10 +305,11 @@ if os.path.exists(p_staff):
                 curr_tracked_date = ing_code.replace("-", "/")
                 continue
 
-            active_dish_name = curr_tracked_dish if curr_tracked_dish else (dish_cand or desc_cand or "وجبة موظفين")
+            active_dish_name = curr_tracked_dish if curr_tracked_dish else "وجبة موظفين"
+            active_dish_name = active_dish_name.replace("(", "").replace(")", "").strip()
 
             match_od = odoo_map_by_code.get(ing_code.lower())
-            official_name = match_od["name"] if match_od else (desc_cand or f"مادة {ing_code}")
+            official_name = match_od["name"] if match_od else (desc_val or f"مادة {ing_code}")
 
             qty_kg = c_num(row.get(col_qty_kg)) if col_qty_kg else 0.0
             qty_g = c_num(row.get(col_qty_g)) if col_qty_g else 0.0
@@ -294,22 +327,28 @@ if os.path.exists(p_staff):
             std_info = standard_bom_map.get(ing_code.lower())
             std_qty = f"{std_info['standard_quantity']} {std_info['unit']}" if std_info else "معياري 1 كغ"
             subs = semi_dict.get(ing_code.lower(), [])
-            is_sf = len(subs) > 0 or ing_code.startswith("SF")
 
-            clean_dish_title = active_dish_name.replace("(", "").replace(")", "").strip()
-            group_key = f"{clean_dish_title}____{curr_tracked_date}"
+            group_key = f"{active_dish_name}____{curr_tracked_date}"
             if group_key not in meals_dict:
                 meals_dict[group_key] = {
-                    "name": clean_dish_title, "date": curr_tracked_date,
+                    "name": active_dish_name,
+                    "date": curr_tracked_date,
                     "code": f"STAFF-{len(meals_dict)+1:03d}",
-                    "total_cost": 0.0, "ingredients": []
+                    "total_cost": 0.0,
+                    "ingredients": []
                 }
 
             meals_dict[group_key]["ingredients"].append({
-                "code": ing_code, "name": official_name, "raw_description": desc_cand,
-                "actual_quantity": actual_qty, "unit": "كيلو",
-                "standard_quantity": std_qty, "cost_per_unit": cost_u,
-                "total_cost": tot_c, "is_semi_finished": is_sf, "sub_ingredients": subs
+                "code": ing_code,
+                "name": official_name,
+                "raw_description": desc_val,
+                "actual_quantity": actual_qty,
+                "unit": "كيلو",
+                "standard_quantity": std_qty,
+                "cost_per_unit": cost_u,
+                "total_cost": tot_c,
+                "is_semi_finished": len(subs) > 0 or ing_code.startswith("SF"),
+                "sub_ingredients": subs
             })
 
     for m in meals_dict.values():
@@ -322,23 +361,25 @@ if os.path.exists(p_staff):
 with open(os.path.join(out_dir, "staff_meals.json"), "w", encoding="utf-8") as f:
     json.dump(staff_meals, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-# 4. طلبات مارت - مطابقة جدول الإكسل بالمليمتر ودون أي أقواس
+# ====================================================
+# 4. طلبات مارت
+# ====================================================
 talabat_sheets_data = []
 
-KNOWN_CUTS = [
-    ("كتف + فخد + رقاب + قطع الشيف", ["كتف", "فخد", "رقاب", "قطع الشيف", "شيف"]),
-    ("شقف", ["شقف"]),
-    ("لية", ["لية", "ليه"]),
-    ("ريش", ["ريش"]),
-    ("رفالات + قص مجروم + زوايد", ["رفالات", "قص مجروم", "زوايد", "مجروم"]),
-    ("بدنيات", ["بدنيات"]),
-    ("نتر", ["نتر"]),
-    ("كلاوي", ["كلاوي"]),
-    ("خصاوي", ["خصاوي"]),
-    ("فتايل", ["فتايل", "فتائل", "فتيل"]),
-    ("عروق + عرقيب + عظم", ["عروق", "عرقيب", "عظم"]),
-    ("اضلاع خروف 500غرام", ["اضلاع", "أضلاع"]),
-]
+cuts_dict = {
+    "كتف + فخد + رقاب + قطع الشيف": ["كتف", "فخد", "رقاب", "قطع الشيف", "شيف"],
+    "شقف": ["شقف"],
+    "لية": ["لية", "ليه"],
+    "ريش": ["ريش"],
+    "رفالات + قص مجروم + زوايد": ["رفالات", "قص مجروم", "زوايد", "مجروم"],
+    "بدنيات": ["بدنيات"],
+    "نتر": ["نتر"],
+    "كلاوي": ["كلاوي"],
+    "خصاوي": ["خصاوي"],
+    "فتايل": ["فتايل", "فتائل", "فتيل"],
+    "عروق + عرقيب + عظم": ["عروق", "عرقيب", "عظم"],
+    "اضلاع خروف 500غرام": ["اضلاع", "أضلاع"],
+}
 
 if os.path.exists(p_talabat):
     xls_t = pd.ExcelFile(p_talabat)
@@ -350,7 +391,6 @@ if os.path.exists(p_talabat):
         n_rows, n_cols = df_t.shape
         all_text = " ".join([str(x) for x in df_t.values.flatten() if pd.notna(x)])
 
-        # تنظيف العنوان والتاريخ بدون أي أقواس
         m_date = re.search(r'(\d{1,2}[-/]\d{1,2}(?:[-/]\d{2,4})?)', s_name)
         m_batch = re.search(r'\((\d+)\)', s_name)
         clean_date = m_date.group(1).replace('-', '/') if m_date else s_name.replace('(', '').replace(')', '').strip()
@@ -369,7 +409,6 @@ if os.path.exists(p_talabat):
             sheep_count, price_per_kg, invoice_total = 0.0, 0.0, 0.0
             weight_received, weight_cut, waste_loss = 0.0, 0.0, 0.0
 
-            # قراءة رأس الفاتورة من الصفوف الأولى
             for r in range(min(6, n_rows)):
                 for c in range(n_cols):
                     txt = str(df_t.iat[r, c]).strip()
@@ -383,84 +422,71 @@ if os.path.exists(p_talabat):
                         v = c_num(df_t.iat[r + 1, c])
                         if v > 0: invoice_total = v
 
-            # تحديد مواقع أعمدة الجدول حسب تصميم الإكسل تماماً (الصورة 3)
+            c_name_col = -1
             r_head = -1
-            c_name = -1
             for r in range(min(10, n_rows)):
                 for c in range(n_cols):
                     if "اسم الصنف" in str(df_t.iat[r, c]):
+                        c_name_col = c
                         r_head = r
-                        c_name = c
                         break
-                if r_head != -1: break
+                if c_name_col != -1: break
 
-            c_qty = -1
-            c_pct = -1
-            if r_head != -1:
-                for c in range(c_name + 1, n_cols):
-                    v = str(df_t.iat[r_head, c]).strip()
-                    if "الكمية" in v or "كمية" in v:
-                        c_qty = c
-                        c_pct = c + 1
+            if c_name_col == -1: c_name_col = 3
+            c_qty_col = -1
+            for c in range(c_name_col + 1, n_cols):
+                for r in range(min(10, n_rows)):
+                    if "الكمية" in str(df_t.iat[r, c]):
+                        c_qty_col = c
                         break
+                if c_qty_col != -1: break
 
-            if c_name == -1: c_name = 3
-            if c_qty == -1: c_qty = 6
-            if c_pct == -1: c_pct = 7
-            c_price = max(0, c_name - 2)
-            c_total = max(0, c_name - 1)
+            if c_qty_col == -1: c_qty_col = 6
+            c_pct_col = c_qty_col + 1 if c_qty_col + 1 < n_cols else 7
+            c_price_col = max(0, c_name_col - 2)
+            c_total_col = max(0, c_name_col - 1)
 
             cuts_list = []
             for r in range(r_head + 1 if r_head != -1 else 3, n_rows):
-                name_val = str(df_t.iat[r, c_name]).strip()
-                if not name_val or name_val.lower() in ["nan", "none"]:
-                    for offset in [-1, 1, -2, 2]:
-                        if 0 <= c_name + offset < n_cols:
-                            cand = str(df_t.iat[r, c_name + offset]).strip()
-                            if any(k in cand for k in ["كتف", "شقف", "لية", "ريش", "رفالات", "بدنيات", "نتر", "كلاوي", "خصاوي", "فتايل", "عروق", "اضلاع", "الوزن", "الفاقد"]):
-                                name_val = cand
-                                break
+                row_str = " ".join([str(df_t.iat[r, c]) for c in range(n_cols) if pd.notna(df_t.iat[r, c])])
+                name_val = str(df_t.iat[r, c_name_col]).strip()
 
-                if not name_val: continue
-
-                # الأوزان في أسفل الجدول (الرمادي)
-                if "الوزن عند استلام" in name_val:
-                    weight_received = c_num(df_t.iat[r, c_qty])
+                if "الوزن عند استلام" in row_str or "استلام ( الفاتورة )" in row_str:
+                    weight_received = c_num(df_t.iat[r, c_qty_col])
                     continue
-                elif "الوزن قبل التقطيع" in name_val:
-                    weight_cut = c_num(df_t.iat[r, c_qty])
+                if "الوزن قبل التقطيع" in row_str or "قبل التقطيع" in row_str:
+                    weight_cut = c_num(df_t.iat[r, c_qty_col])
                     continue
-                elif "الفاقد" in name_val:
-                    waste_loss = c_num(df_t.iat[r, c_qty])
+                if "الفاقد" in row_str:
+                    waste_loss = c_num(df_t.iat[r, c_qty_col])
                     continue
-                elif "صافي الوزن" in name_val:
-                    net_w = c_num(df_t.iat[r, c_qty])
+                if "صافي الوزن" in row_str:
+                    net_w = c_num(df_t.iat[r, c_qty_col])
                     if net_w > 0: weight_cut = net_w
                     continue
 
                 matched_cut = None
-                for std_name, keywords in KNOWN_CUTS:
-                    if any(k in name_val for k in keywords):
+                for std_name, kws in cuts_dict.items():
+                    if any(k in name_val for k in kws) or any(k in row_str for k in kws):
                         matched_cut = std_name
                         break
 
                 if matched_cut:
-                    p_val = c_num(df_t.iat[r, c_price])
-                    tot_val = c_num(df_t.iat[r, c_total])
-                    q_val = c_num(df_t.iat[r, c_qty])
-                    pct_raw = str(df_t.iat[r, c_pct]).strip() if c_pct < n_cols else ""
+                    p_val = c_num(df_t.iat[r, c_price_col])
+                    tot_val = c_num(df_t.iat[r, c_total_col])
+                    q_val = c_num(df_t.iat[r, c_qty_col])
+                    pct_raw = str(df_t.iat[r, c_pct_col]).strip() if c_pct_col < n_cols else ""
 
                     pct_str = ""
-                    if "%" in pct_raw:
-                        pct_str = pct_raw
+                    if "%" in pct_raw: pct_str = pct_raw
                     else:
-                        pct_num = c_num(pct_raw)
-                        if 0 < pct_num <= 1.0: pct_str = f"{round(pct_num * 100)}%"
-                        elif pct_num > 1.0: pct_str = f"{round(pct_num)}%"
+                        p_f = c_num(pct_raw)
+                        if 0 < p_f <= 1.0: pct_str = f"{round(p_f * 100)}%"
+                        elif p_f > 1.0: pct_str = f"{round(p_f)}%"
 
-                    if tot_val == 0 and q_val > 0 and p_val > 0:
+                    if tot_val == 0.0 and q_val > 0 and p_val > 0:
                         tot_val = round(q_val * p_val, 3)
-                    elif p_val == 0 and tot_val > 0 and q_val > 0:
+                    elif p_val == 0.0 and tot_val > 0 and q_val > 0:
                         p_val = round(tot_val / q_val, 3)
 
                     if any(k in matched_cut for k in ["بدنيات", "نتر"]): status = "highlight_red"
@@ -501,7 +527,6 @@ if os.path.exists(p_talabat):
                 "display_title": display_title,
                 "sub_title": sub_title,
                 "date": clean_date,
-                "batch_label": f"دفعة {batch_num}" if batch_num else "",
                 "sheep_count": sheep_count,
                 "price_per_kg": price_per_kg,
                 "invoice_total": invoice_total,
@@ -543,4 +568,4 @@ if os.path.exists(p_talabat):
 with open(os.path.join(out_dir, "talabat_mart.json"), "w", encoding="utf-8") as f:
     json.dump(talabat_sheets_data, f, ensure_ascii=False, indent=2, allow_nan=False)
 
-print("🎉 اكتمل بنجاح بناء كافة البيانات ومطابقتها حرفياً مع الصور!")
+print("🎉 اكتمل بنجاح استخراج أسماء الطبخات الحقيقية (مثل مجدرة) وتجميع الوصفات!")
