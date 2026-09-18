@@ -161,7 +161,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
         elevation: 0,
         title: Row(
           children: [
-            // الشعار الشفاف الأبيض بدقة عالية
+            // الشعار الشفاف المعتمد
             Image.asset(
               'assets/logo.png',
               height: 48,
@@ -197,18 +197,21 @@ class _MainHubScreenState extends State<MainHubScreen> {
       ),
       body: Row(
         children: [
-          // شريط تنقل ذو عرض ثابت 100% لمنع اهتزاز الشاشة
+          // شريط تنقل ذو حجم ثابت ومغلق هندسياً يمنع اهتزاز الشاشة نهائياً
           SizedBox(
-            width: 86,
+            width: 92,
             child: NavigationRail(
+              minWidth: 92,
+              minExtendedWidth: 92,
               selectedIndex: _selectedTabIndex,
               onDestinationSelected: (index) => setState(() => _selectedTabIndex = index),
               labelType: NavigationRailLabelType.all,
               backgroundColor: Colors.white,
               selectedIconTheme: const IconThemeData(color: MarkaziaColors.orange, size: 28),
               unselectedIconTheme: const IconThemeData(color: Colors.black45),
-              selectedLabelTextStyle: const TextStyle(color: MarkaziaColors.orange, fontWeight: FontWeight.bold, fontSize: 12),
-              unselectedLabelTextStyle: const TextStyle(color: Colors.black54, fontSize: 11),
+              // خط موحد بنفس الوزن والحجم يمنع اهتزاز وتغير العرض
+              selectedLabelTextStyle: const TextStyle(color: MarkaziaColors.orange, fontWeight: FontWeight.bold, fontSize: 11),
+              unselectedLabelTextStyle: const TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 11),
               indicatorColor: MarkaziaColors.orange.withOpacity(0.15),
               destinations: const [
                 NavigationRailDestination(
@@ -251,7 +254,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // التبويب 1: شجرة التكاليف
   Widget _buildRecipesTab() {
     return _UniversalSearchList(
       items: _recipes,
@@ -300,9 +302,8 @@ class _MainHubScreenState extends State<MainHubScreen> {
                     ],
                   ),
                 ),
-                // صندوق التكلفة ملموم ومحاذى على اليسار
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
                   decoration: BoxDecoration(
                     color: MarkaziaColors.orange.withOpacity(0.09),
                     borderRadius: BorderRadius.circular(14),
@@ -393,7 +394,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                         title: Text(subOfficial),
                         subtitle: Row(
                           children: [
-                            Text('بالخلطة: ${sub['batch_quantity']} ${sub['unit']} | الوحدة: ${(sub['cost_per_unit'] as num).toStringAsFixed(5)} د.أ'),
+                            Text('بالخلطة المعيارية: ${sub['batch_quantity']} ${sub['unit']}'),
                             const SizedBox(width: 8),
                             buildCopyBadge(context, label: 'RM', code: sub['rm_code']),
                           ],
@@ -412,7 +413,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // التبويب 2: وجبات الموظفين (أيقونة كلاسيكية، محاذاة يسار Wrap، ومكونات أودو الحقيقية)
+  // التبويب 2: وجبات الموظفين (تصميم Wrap على اليسار ومكونات حقيقية)
   Widget _buildStaffMealsTab() {
     return _UniversalSearchList(
       items: _staffMeals,
@@ -446,7 +447,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
                           const SizedBox(height: 8),
                           Row(
                             children: [
-                              // أيقونة كلاسيكية بدون إيموجي
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                 decoration: BoxDecoration(
@@ -497,7 +497,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ),
             ),
             const SizedBox(height: 14),
-            Text('مكونات الوجبة المعتمدة من دليل أودو (${ings.length} مكون):',
+            Text('مكونات الوجبة الفعلية المعتمدة (${ings.length} مكون):',
                 style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: MarkaziaColors.dark)),
             const SizedBox(height: 8),
             Expanded(
@@ -546,7 +546,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                                   const SizedBox(height: 4),
                                   Row(
                                     children: [
-                                      Text('الكمية: ${ing['quantity']} ${ing['unit']}',
+                                      Text('الكمية الفعلية: ${ing['quantity']} ${ing['unit']}',
                                           style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.grey.shade700)),
                                       const SizedBox(width: 10),
                                       buildCopyBadge(context, label: 'كود أودو', code: ing['code']),
@@ -588,7 +588,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                           buildCopyBadge(context, label: 'كود SF', code: ing['code']),
                         ],
                       ),
-                      subtitle: Text('الكمية: ${ing['quantity']} ${ing['unit']} | الإجمالي: ${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ'),
+                      subtitle: Text('الكمية الفعلية بالوجبة: ${ing['quantity']} ${ing['unit']} | الإجمالي: ${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ'),
                       children: subs.map((s) {
                         final sOfficial = getOdooOfficialName(s['rm_code'] ?? '', s['name'] ?? '');
                         return Container(
@@ -598,7 +598,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                             title: Text(sOfficial),
                             subtitle: Row(
                               children: [
-                                Text('الكمية بالخلطة: ${s['batch_quantity']} ${s['unit']}'),
+                                Text('بالخلطة المعيارية (BOM): ${s['batch_quantity']} ${s['unit']}'),
                                 const SizedBox(width: 8),
                                 buildCopyBadge(context, label: 'RM', code: s['rm_code']),
                               ],
@@ -619,15 +619,99 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // التبويب 3: طلبات مارت
+  // التبويب 3: طلبات مارت وشيتات حسبة الخروف
   Widget _buildTalabatTab() {
     return _UniversalSearchList(
       items: _talabatItems,
       titleKey: 'name',
-      subtitleBuilder: (item) => 'القسم: ${item['category']}',
-      costBuilder: (item) => (item['price'] as num).toDouble(),
-      marginBuilder: (item) => (item['margin'] as num).toDouble(),
+      subtitleBuilder: (item) => item['type'] == 'lamb_report' ? '📅 ${item['date']} (حسبة خروف كاملة)' : 'القسم: ${item['category']}',
       detailBuilder: (item) {
+        if (item['type'] == 'lamb_report') {
+          final cuts = item['cuts'] as List? ?? [];
+          return SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Card(
+                  elevation: 0,
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    side: const BorderSide(color: Color(0xFFE2E8F0)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(22.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(Icons.receipt_long_rounded, color: MarkaziaColors.orange, size: 28),
+                            const SizedBox(width: 10),
+                            Text(item['name'],
+                                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                          ],
+                        ),
+                        const SizedBox(height: 16),
+                        const Divider(height: 1),
+                        const SizedBox(height: 16),
+                        Row(
+                          children: [
+                            _kpiTile('عدد الخرفان', '${item['sheep_count']} خروف', Colors.grey.shade800),
+                            const SizedBox(width: 12),
+                            _kpiTile('سعر الكيلو (فاتورة)', '${item['price_per_kg']} د.أ', Colors.blueGrey.shade800),
+                            const SizedBox(width: 12),
+                            _kpiTile('إجمالي الفاتورة', '${item['total_invoice']} د.أ', MarkaziaColors.orange),
+                          ],
+                        ),
+                        const SizedBox(height: 12),
+                        Row(
+                          children: [
+                            _kpiTile('الوزن عند الاستلام', '${item['weight_received']} كغ', Colors.grey.shade700),
+                            const SizedBox(width: 12),
+                            _kpiTile('صافي الوزن بعد التقطيع', '${item['weight_cut']} كغ', Colors.green.shade800),
+                            const SizedBox(width: 12),
+                            _kpiTile('الفاقد بالتقطيع', '${item['waste_loss']} كغ', Colors.red.shade800),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Text('تفاصيل وجدول القطعيات الناتجة (${cuts.length} قطعية):',
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
+                const SizedBox(height: 10),
+                Card(
+                  elevation: 0,
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    side: const BorderSide(color: Color(0xFFE2E8F0)),
+                  ),
+                  child: DataTable(
+                    headingRowColor: MaterialStateProperty.all(const Color(0xFFFBF9F5)),
+                    columns: const [
+                      DataColumn(label: Text('اسم الصنف / القطعية', style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(label: Text('الكمية (كغ)', style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(label: Text('السعر للكيلو', style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(label: Text('الإجمالي (د.أ)', style: TextStyle(fontWeight: FontWeight.bold))),
+                    ],
+                    rows: cuts.map<DataRow>((c) {
+                      return DataRow(cells: [
+                        DataCell(Text(c['name'].toString(), style: const TextStyle(fontWeight: FontWeight.w600))),
+                        DataCell(Text('${c['quantity']} كغ')),
+                        DataCell(Text('${c['price']} د.أ')),
+                        DataCell(Text('${(c['total'] as num).toStringAsFixed(3)} د.أ', style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange))),
+                      ]);
+                    }).toList(),
+                  ),
+                ),
+              ],
+            ),
+          );
+        }
+
         final price = (item['price'] as num).toDouble();
         final cost = (item['cost'] as num).toDouble();
         final margin = (item['margin'] as num).toDouble();
@@ -644,8 +728,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(item['name'],
-                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                Text(item['name'], style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 12,
@@ -653,8 +736,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   children: [
                     buildCopyBadge(context, label: 'الباركود', code: item['barcode']),
                     buildCopyBadge(context, label: 'SKU', code: item['sku'], color: MarkaziaColors.dark),
-                    if (item['odoo_code'].toString().isNotEmpty)
-                      buildCopyBadge(context, label: 'كود أودو المطابق', code: item['odoo_code'], color: Colors.green.shade800),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -666,8 +747,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
                     const SizedBox(width: 16),
                     _kpiTile('التكلفة المرجعية', '${cost.toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
                     const SizedBox(width: 16),
-                    _kpiTile('هامش الربح', '${(margin * 100).toStringAsFixed(1)}%',
-                        margin >= 0.20 ? Colors.green.shade700 : MarkaziaColors.orange),
+                    _kpiTile('هامش الربح', '${(margin * 100).toStringAsFixed(1)}%', margin >= 0.20 ? Colors.green.shade700 : MarkaziaColors.orange),
                   ],
                 ),
               ],
@@ -678,7 +758,6 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // التبويب 4: دليل أصناف أودو
   Widget _buildOdooCatalogTab() {
     return _UniversalSearchList(
       items: _odooCatalog,
@@ -698,8 +777,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(item['name'],
-                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                Text(item['name'], style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 12,
@@ -831,9 +909,9 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // عرض ثابت وموحد 375px لجميع التبويبات يمنع اهتزاز الفاصل كلياً
+        // عرض ثابت موحد 370px بدقة هندسية يمنع أي حركة للخط الفاصل
         SizedBox(
-          width: 375,
+          width: 370,
           child: Container(
             color: Colors.white,
             child: Column(
