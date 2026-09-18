@@ -1,4 +1,4 @@
-﻿name: costing_mrkz
+name: costing_mrkz
 description: "Bill of Materials Costing Explorer - Windows Desktop"
 publish_to: 'none'
 version: 1.0.0+1
@@ -19,3 +19,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/data/
+    - assets/logo.png
