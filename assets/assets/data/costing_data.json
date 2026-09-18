@@ -76774,8 +76774,17 @@
         "quantity": 200.0,
         "cost_per_unit": 0.001,
         "total_cost": 0.2,
-        "is_semi_finished": false,
-        "sub_ingredients": []
+        "is_semi_finished": true,
+        "sub_ingredients": [
+          {
+            "rm_code": "5430",
+            "name": "نتر ملحمه",
+            "batch_quantity": 1000.0,
+            "unit": "غم",
+            "cost_per_unit": 0.001,
+            "total_cost": 1.0
+          }
+        ]
       },
       {
         "code": "4309",
@@ -76846,8 +76855,17 @@
         "quantity": 500.0,
         "cost_per_unit": 0.001,
         "total_cost": 0.5,
-        "is_semi_finished": false,
-        "sub_ingredients": []
+        "is_semi_finished": true,
+        "sub_ingredients": [
+          {
+            "rm_code": "5430",
+            "name": "نتر ملحمه",
+            "batch_quantity": 1000.0,
+            "unit": "غم",
+            "cost_per_unit": 0.001,
+            "total_cost": 1.0
+          }
+        ]
       },
       {
         "code": "4503",
@@ -76958,8 +76976,17 @@
         "quantity": 500.0,
         "cost_per_unit": 0.001,
         "total_cost": 0.5,
-        "is_semi_finished": false,
-        "sub_ingredients": []
+        "is_semi_finished": true,
+        "sub_ingredients": [
+          {
+            "rm_code": "5430",
+            "name": "نتر ملحمه",
+            "batch_quantity": 1000.0,
+            "unit": "غم",
+            "cost_per_unit": 0.001,
+            "total_cost": 1.0
+          }
+        ]
       },
       {
         "code": "4503",
@@ -80039,8 +80066,17 @@
         "quantity": 1000.0,
         "cost_per_unit": 0.001,
         "total_cost": 1.0,
-        "is_semi_finished": false,
-        "sub_ingredients": []
+        "is_semi_finished": true,
+        "sub_ingredients": [
+          {
+            "rm_code": "5430",
+            "name": "نتر ملحمه",
+            "batch_quantity": 1000.0,
+            "unit": "غم",
+            "cost_per_unit": 0.001,
+            "total_cost": 1.0
+          }
+        ]
       }
     ]
   },
@@ -100023,22 +100059,6 @@
             "total_cost": 0.0455
           },
           {
-            "rm_code": "4483",
-            "name": "مخلل مشكل 10 كغ",
-            "batch_quantity": 70.0,
-            "unit": "غم",
-            "cost_per_unit": 0.00065,
-            "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4285",
-            "name": "علب بلاستيك مربع متصل 150 مل",
-            "batch_quantity": 1.0,
-            "unit": "قطعة",
-            "cost_per_unit": 0.01494,
-            "total_cost": 0.01494
-          },
-          {
             "rm_code": "4285",
             "name": "علب بلاستيك مربع متصل 150 مل",
             "batch_quantity": 1.0,
@@ -100301,22 +100321,6 @@
             "unit": "غم",
             "cost_per_unit": 0.00065,
             "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4483",
-            "name": "مخلل مشكل 10 كغ",
-            "batch_quantity": 70.0,
-            "unit": "غم",
-            "cost_per_unit": 0.00065,
-            "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4285",
-            "name": "علب بلاستيك مربع متصل 150 مل",
-            "batch_quantity": 1.0,
-            "unit": "قطعة",
-            "cost_per_unit": 0.01494,
-            "total_cost": 0.01494
           },
           {
             "rm_code": "4285",
@@ -100712,22 +100716,6 @@
             "total_cost": 0.0455
           },
           {
-            "rm_code": "4483",
-            "name": "مخلل مشكل 10 كغ",
-            "batch_quantity": 70.0,
-            "unit": "غم",
-            "cost_per_unit": 0.00065,
-            "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4285",
-            "name": "علب بلاستيك مربع متصل 150 مل",
-            "batch_quantity": 1.0,
-            "unit": "قطعة",
-            "cost_per_unit": 0.01494,
-            "total_cost": 0.01494
-          },
-          {
             "rm_code": "4285",
             "name": "علب بلاستيك مربع متصل 150 مل",
             "batch_quantity": 1.0,
@@ -101119,22 +101107,6 @@
             "unit": "غم",
             "cost_per_unit": 0.00065,
             "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4483",
-            "name": "مخلل مشكل 10 كغ",
-            "batch_quantity": 70.0,
-            "unit": "غم",
-            "cost_per_unit": 0.00065,
-            "total_cost": 0.0455
-          },
-          {
-            "rm_code": "4285",
-            "name": "علب بلاستيك مربع متصل 150 مل",
-            "batch_quantity": 1.0,
-            "unit": "قطعة",
-            "cost_per_unit": 0.01494,
-            "total_cost": 0.01494
           },
           {
             "rm_code": "4285",
