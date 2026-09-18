@@ -97,7 +97,6 @@ class MainHubScreen extends StatefulWidget {
 
 class _MainHubScreenState extends State<MainHubScreen> {
   int _selectedTabIndex = 0;
-
   List<dynamic> _recipes = [];
   List<dynamic> _staffMeals = [];
   List<dynamic> _talabatSheets = [];
@@ -178,16 +177,37 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ],
             ),
             const Spacer(),
+            // بادج مدير قسم التكاليف (أ. أحمد الخضري) بتصميم راقي ومتناسق
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.12),
-                borderRadius: BorderRadius.circular(25),
+                color: Colors.black.withOpacity(0.35),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: MarkaziaColors.orange.withOpacity(0.6), width: 1.2),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: const [
+                  Icon(Icons.workspace_premium_rounded, color: MarkaziaColors.orange, size: 18),
+                  SizedBox(width: 8),
+                  Text('إدارة: ', style: TextStyle(fontSize: 12, color: Colors.white70)),
+                  Text('أ. أحمد الخضري', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white)),
+                  SizedBox(width: 6),
+                  Text('(مدير قسم التكاليف)', style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: MarkaziaColors.orange)),
+                ],
+              ),
+            ),
+            const SizedBox(width: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(20),
                 border: Border.all(color: Colors.white12),
               ),
               child: Text(
-                'أودو الشامل: ${_odooCatalog.length}  |  طلبات مارت: ${_talabatSheets.length} شيت  |  التكاليف: ${_recipes.length}  |  وجبات الموظفين: ${_staffMeals.length}',
-                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
+                'أودو: ${_odooCatalog.length}  |  طلبات مارت: ${_talabatSheets.length}  |  التكاليف: ${_recipes.length}  |  وجبات الموظفين: ${_staffMeals.length}',
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white70),
               ),
             ),
           ],
@@ -257,173 +277,13 @@ class _MainHubScreenState extends State<MainHubScreen> {
     return _UniversalSearchList(
       items: _recipes,
       titleKey: 'name',
-      subtitleBuilder: (item) => 'Odoo: ${item['odoo_code']} | كود: ${item['item_code']}',
-      costBuilder: (item) => (item['calculated_cost'] as num).toDouble(),
-      marginBuilder: (item) => (item['profit_margin'] as num).toDouble(),
-      detailBuilder: (item) => _buildRecipeDetail(item),
-    );
-  }
-
-  Widget _buildRecipeDetail(Map<String, dynamic> item) {
-    final ings = item['ingredients'] as List? ?? [];
-    final cost = (item['calculated_cost'] as num).toDouble();
-    final price = (item['markaziya_price'] as num).toDouble();
-    final margin = (item['profit_margin'] as num).toDouble();
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Card(
-          elevation: 0,
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-            side: const BorderSide(color: Color(0xFFE2E8F0)),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(item['name'],
-                          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                      const SizedBox(height: 8),
-                      Row(
-                        children: [
-                          buildCopyBadge(context, label: 'Odoo كود', code: item['odoo_code']),
-                          const SizedBox(width: 8),
-                          buildCopyBadge(context, label: 'كود الوجبة', code: item['item_code'], color: MarkaziaColors.dark),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                  decoration: BoxDecoration(
-                    color: MarkaziaColors.orange.withOpacity(0.09),
-                    borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: MarkaziaColors.orange.withOpacity(0.35)),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('التكلفة الكلية الفعلية', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey.shade700)),
-                      const SizedBox(height: 3),
-                      Text('${cost.toStringAsFixed(3)} د.أ',
-                          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: MarkaziaColors.orange)),
-                      Text('سعر البيع: ${price.toStringAsFixed(3)} د.أ  |  هامش: ${(margin * 100).toStringAsFixed(1)}%',
-                          style: TextStyle(fontSize: 11, color: margin >= 0.25 ? Colors.green.shade700 : MarkaziaColors.orange)),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 14),
-        Text('المكونات التفصيلية (${ings.length} صنف):',
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: MarkaziaColors.dark)),
-        const SizedBox(height: 8),
-        Expanded(
-          child: ListView.builder(
-            itemCount: ings.length,
-            itemBuilder: (context, idx) {
-              final ing = ings[idx];
-              final isSf = ing['is_semi_finished'] == true;
-              final subs = ing['sub_ingredients'] as List? ?? [];
-              final iCost = (ing['total_cost'] as num).toDouble();
-              final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
-
-              if (!isSf) {
-                return Card(
-                  elevation: 0,
-                  color: Colors.white,
-                  margin: const EdgeInsets.symmetric(vertical: 3),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    side: const BorderSide(color: Color(0xFFE2E8F0)),
-                  ),
-                  child: ListTile(
-                    dense: true,
-                    title: Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold)),
-                    subtitle: Row(
-                      children: [
-                        Text('الكمية: ${ing['quantity']} ${ing['unit']} | الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(4)} د.أ'),
-                        const SizedBox(width: 10),
-                        buildCopyBadge(context, label: 'ID', code: ing['code']),
-                      ],
-                    ),
-                    trailing: Text('${iCost.toStringAsFixed(3)} د.أ',
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
-                  ),
-                );
-              }
-
-              return Card(
-                elevation: 0,
-                color: const Color(0xFFFFFDF8),
-                margin: const EdgeInsets.symmetric(vertical: 4),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  side: BorderSide(color: MarkaziaColors.orange.withOpacity(0.4)),
-                ),
-                child: ExpansionTile(
-                  initiallyExpanded: true,
-                  title: Row(
-                    children: [
-                      const Icon(Icons.account_tree_rounded, size: 18, color: MarkaziaColors.orange),
-                      const SizedBox(width: 8),
-                      Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                      const SizedBox(width: 8),
-                      buildCopyBadge(context, label: 'SF كود', code: ing['code']),
-                    ],
-                  ),
-                  subtitle: Text('الكمية المستخدمة: ${ing['quantity']} ${ing['unit']} | الكلفة: ${iCost.toStringAsFixed(3)} د.أ'),
-                  children: subs.map((sub) {
-                    final subOfficial = getOdooOfficialName(sub['rm_code'] ?? '', sub['name'] ?? '');
-                    return Container(
-                      color: Colors.white,
-                      child: ListTile(
-                        dense: true,
-                        title: Text(subOfficial),
-                        subtitle: Row(
-                          children: [
-                            Text('بالخلطة: ${sub['standard_quantity']} ${sub['unit']}'),
-                            const SizedBox(width: 8),
-                            buildCopyBadge(context, label: 'RM', code: sub['rm_code']),
-                          ],
-                        ),
-                        trailing: Text('${(sub['total_cost'] as num).toStringAsFixed(4)} د.أ',
-                            style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                      ),
-                    );
-                  }).toList(),
-                ),
-              );
-            },
-          ),
-        ),
-      ],
-    );
-  }
-
-  // 2. وجبات الموظفين بالحجمين والأسماء الصريحة
-  Widget _buildStaffMealsTab() {
-    return _UniversalSearchList(
-      items: _staffMeals,
-      titleKey: 'name',
-      subtitleBuilder: (item) => '${item['date']}  |  ${(item['ingredients'] as List? ?? []).length} مكونات',
-      isStaffTab: true,
+      subtitleBuilder: (item) => 'كود: ${item['code']} | فئة: ${item['category']}',
       costBuilder: (item) => (item['total_cost'] as num).toDouble(),
+      marginBuilder: (item) => ((item['food_cost_percentage'] ?? 0.0) as num).toDouble() / 100.0,
       detailBuilder: (item) {
         final ings = item['ingredients'] as List? ?? [];
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Card(
               elevation: 0,
@@ -434,68 +294,49 @@ class _MainHubScreenState extends State<MainHubScreen> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(item['name'],
-                              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                          const SizedBox(height: 8),
-                          Row(
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                decoration: BoxDecoration(
-                                  color: MarkaziaColors.orange.withOpacity(0.09),
-                                  borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(color: MarkaziaColors.orange.withOpacity(0.3)),
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    const Icon(Icons.calendar_today_rounded, size: 13, color: MarkaziaColors.orange),
-                                    const SizedBox(width: 6),
-                                    Text('تاريخ الوجبة: ${item['date']}',
-                                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: MarkaziaColors.orange)),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 10),
-                              buildCopyBadge(context, label: 'كود الوجبة', code: item['code'], color: MarkaziaColors.dark),
-                            ],
-                          ),
-                        ],
-                      ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(item['name'],
+                              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text('التكلفة: ${(item['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
+                            Text('سعر البيع: ${(item['selling_price'] as num).toStringAsFixed(3)} د.أ',
+                                style: TextStyle(fontSize: 13, color: Colors.grey.shade600)),
+                          ],
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 16),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                      decoration: BoxDecoration(
-                        color: MarkaziaColors.orange.withOpacity(0.09),
-                        borderRadius: BorderRadius.circular(14),
-                        border: Border.all(color: MarkaziaColors.orange.withOpacity(0.35)),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text('تكلفة الوجبة الكلية', style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey.shade700)),
-                          const SizedBox(height: 3),
-                          Text('${(item['total_cost'] as num).toStringAsFixed(3)} د.أ',
-                              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: MarkaziaColors.orange)),
-                        ],
-                      ),
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 12,
+                      runSpacing: 8,
+                      children: [
+                        buildCopyBadge(context, label: 'كود الطبخة', code: item['code']),
+                        if (item['odoo_code'].toString().isNotEmpty)
+                          buildCopyBadge(context, label: 'كود أودو', code: item['odoo_code']),
+                        Chip(
+                          label: Text('نسبة التكلفة: ${item['food_cost_percentage']}%',
+                              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+                          backgroundColor: const Color(0xFFFFF7ED),
+                          side: const BorderSide(color: MarkaziaColors.orange),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 14),
-            Text('المكونات التفصيلية (الحجم الفعلي المستخدم للطبخة مقابل الحجم المعياري):',
-                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: MarkaziaColors.dark)),
+            const SizedBox(height: 16),
+            const Text('مكونات الوصفة المعيارية (BOM):',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.dark)),
             const SizedBox(height: 8),
             Expanded(
               child: ListView.builder(
@@ -506,103 +347,25 @@ class _MainHubScreenState extends State<MainHubScreen> {
                   final subs = ing['sub_ingredients'] as List? ?? [];
                   final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
 
-                  if (!isSf) {
-                    return Card(
-                      elevation: 0,
-                      color: Colors.white,
-                      margin: const EdgeInsets.symmetric(vertical: 4),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                        side: const BorderSide(color: Color(0xFFE2E8F0)),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                        child: Row(
-                          children: [
-                            Container(
-                              width: 8, height: 8,
-                              decoration: const BoxDecoration(color: MarkaziaColors.orange, shape: BoxShape.circle),
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(officialName,
-                                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
-                                  const SizedBox(height: 4),
-                                  Wrap(
-                                    spacing: 12,
-                                    children: [
-                                      Text('الحجم الفعلي للطبخة: ${ing['actual_quantity']} ${ing['unit']}',
-                                          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                                      Text('المعياري: ${ing['standard_quantity']}',
-                                          style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
-                                      buildCopyBadge(context, label: 'كود', code: ing['code']),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Text('${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ',
-                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.orange)),
-                                Text('الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(3)} د.أ',
-                                    style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    );
-                  }
-
                   return Card(
                     elevation: 0,
-                    color: const Color(0xFFFFFDF8),
+                    color: isSf ? const Color(0xFFFFFDF8) : Colors.white,
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
-                      side: BorderSide(color: MarkaziaColors.orange.withOpacity(0.4)),
+                      side: BorderSide(color: isSf ? MarkaziaColors.orange.withOpacity(0.4) : const Color(0xFFE2E8F0)),
                     ),
-                    child: ExpansionTile(
-                      title: Row(
-                        children: [
-                          const Icon(Icons.account_tree_rounded, size: 16, color: MarkaziaColors.orange),
-                          const SizedBox(width: 8),
-                          Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                          const SizedBox(width: 8),
-                          buildCopyBadge(context, label: 'SF كود', code: ing['code']),
-                        ],
-                      ),
+                    child: ListTile(
+                      title: Text(officialName, style: const TextStyle(fontWeight: FontWeight.bold)),
                       subtitle: Row(
                         children: [
-                          Text('الفعلي: ${ing['actual_quantity']} ${ing['unit']}  |  ',
-                              style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                          Text('المعياري: ${ing['standard_quantity']}  |  الإجمالي: ${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ'),
+                          Text('المعياري: ${ing['standard_quantity']}  |  الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(3)} د.أ'),
+                          const SizedBox(width: 8),
+                          buildCopyBadge(context, label: isSf ? 'SF' : 'RM', code: ing['code']),
                         ],
                       ),
-                      children: subs.map((s) {
-                        final sOfficial = getOdooOfficialName(s['rm_code'] ?? '', s['name'] ?? '');
-                        return Container(
-                          color: Colors.white,
-                          child: ListTile(
-                            dense: true,
-                            title: Text(sOfficial),
-                            subtitle: Row(
-                              children: [
-                                Text('المعياري بالخلطة: ${s['standard_quantity']} ${s['unit']}'),
-                                const SizedBox(width: 8),
-                                buildCopyBadge(context, label: 'RM', code: s['rm_code']),
-                              ],
-                            ),
-                            trailing: Text('${(s['total_cost'] as num).toStringAsFixed(4)} د.أ',
-                                style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
-                          ),
-                        );
-                      }).toList(),
+                      trailing: Text('${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                          style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
                     ),
                   );
                 },
@@ -614,16 +377,353 @@ class _MainHubScreenState extends State<MainHubScreen> {
     );
   }
 
-  // 3. طلبات مارت: شيتات تواريخ أشهر 8 و 9 وشيت حسبة الخروف المعتمد
-  Widget _buildTalabatTab() {
-    if (_talabatSheets.isEmpty) {
-      return const Center(child: Text('جاري تحميل شيتات طلبات مارت...'));
-    }
+  // 2. وجبات الموظفين
+  Widget _buildStaffMealsTab() {
+    return _UniversalSearchList(
+      items: _staffMeals,
+      titleKey: 'name',
+      isStaffTab: true,
+      subtitleBuilder: (item) => '${item['date']} | كود: ${item['code']}',
+      costBuilder: (item) => (item['total_cost'] as num).toDouble(),
+      detailBuilder: (item) {
+        final ings = item['ingredients'] as List? ?? [];
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Card(
+              elevation: 0,
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+                side: const BorderSide(color: Color(0xFFE2E8F0)),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(item['name'],
+                              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                          const SizedBox(height: 6),
+                          Row(
+                            children: [
+                              const Icon(Icons.calendar_today_rounded, size: 14, color: MarkaziaColors.orange),
+                              const SizedBox(width: 6),
+                              Text('تاريخ الوجبة: ${item['date']}',
+                                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.black54)),
+                              const SizedBox(width: 14),
+                              buildCopyBadge(context, label: 'معرف الوجبة', code: item['code']),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text('${(item['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: MarkaziaColors.orange)),
+                        const Text('إجمالي تكلفة الوجبة الفعلية', style: TextStyle(fontSize: 11, color: Colors.grey)),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text('مكونات الطبخة الفعلية ومطابقتها مع دليل أودو:',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.dark)),
+            const SizedBox(height: 8),
+            Expanded(
+              child: ListView.builder(
+                itemCount: ings.length,
+                itemBuilder: (context, idx) {
+                  final ing = ings[idx];
+                  final isSf = ing['is_semi_finished'] == true;
+                  final subs = ing['sub_ingredients'] as List? ?? [];
+                  final officialName = getOdooOfficialName(ing['code'] ?? '', ing['name'] ?? '');
 
-    return _TalabatBrowser(sheets: _talabatSheets);
+                  return Card(
+                    elevation: 0,
+                    color: Colors.white,
+                    margin: const EdgeInsets.symmetric(vertical: 4),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      side: const BorderSide(color: Color(0xFFE2E8F0)),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 8, height: 8,
+                            decoration: const BoxDecoration(color: MarkaziaColors.orange, shape: BoxShape.circle),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(officialName,
+                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: MarkaziaColors.dark)),
+                                const SizedBox(height: 4),
+                                Wrap(
+                                  spacing: 12,
+                                  children: [
+                                    Text('الفعلي للطبخة: ${ing['actual_quantity']} ${ing['unit']}',
+                                        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: MarkaziaColors.orange)),
+                                    Text('المعياري: ${ing['standard_quantity']}',
+                                        style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
+                                    buildCopyBadge(context, label: 'كود', code: ing['code']),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text('${(ing['total_cost'] as num).toStringAsFixed(3)} د.أ',
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.orange)),
+                              Text('الوحدة: ${(ing['cost_per_unit'] as num).toStringAsFixed(3)} د.أ',
+                                  style: TextStyle(fontSize: 11, color: Colors.grey.shade500)),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
 
-  // 4. دليل أودو الشامل: الكود، الاسم، الكمية، كلفة الكمية، الإجمالي
+  // 3. طلبات مارت: قائمة جانبية على اليمين وشاشة تفاصيل ديناميكية بالكامل على اليسار
+  Widget _buildTalabatTab() {
+    if (_talabatSheets.isEmpty) {
+      return const Center(
+        child: Text('جاري تحميل شيتات طلبات مارت...', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+      );
+    }
+
+    return _UniversalSearchList(
+      items: _talabatSheets,
+      titleKey: 'display_title',
+      subtitleBuilder: (item) {
+        final date = item['date'] ?? item['sheet_name'] ?? '';
+        final isL = item['type'] == 'lamb_report';
+        return isL ? 'تاريخ: $date | حسبة الخروف' : 'تاريخ: $date | كشف طلبات';
+      },
+      costBuilder: (item) {
+        if (item['type'] == 'lamb_report') {
+          return ((item['invoice_total'] ?? item['cuts_total_value'] ?? 0.0) as num).toDouble();
+        }
+        return ((item['total_sales'] ?? 0.0) as num).toDouble();
+      },
+      detailBuilder: (item) {
+        final isLamb = item['type'] == 'lamb_report';
+        return SingleChildScrollView(
+          child: isLamb ? _buildLambReport(item) : _buildDailySheet(item),
+        );
+      },
+    );
+  }
+
+  Widget _buildLambReport(Map<String, dynamic> data) {
+    final cuts = data['cuts'] as List? ?? [];
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Card(
+          elevation: 0,
+          color: Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: const BorderSide(color: Color(0xFFE2E8F0))),
+          child: Padding(
+            padding: const EdgeInsets.all(22.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(color: MarkaziaColors.orange.withOpacity(0.12), borderRadius: BorderRadius.circular(12)),
+                      child: const Icon(Icons.receipt_long_rounded, color: MarkaziaColors.orange, size: 28),
+                    ),
+                    const SizedBox(width: 14),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('حسبة تفصيل وتقطيع الخروف (${data['sheet_name']})',
+                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                        const Text('المطابقة الرسمية الديناميكية للفاتورة والأوزان والقطعيات', style: TextStyle(fontSize: 12, color: Colors.black54)),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 18),
+                const Divider(height: 1),
+                const SizedBox(height: 18),
+                Row(
+                  children: [
+                    _kpiTile('عدد الخرفان', '${data['sheep_count']} خروف', Colors.grey.shade800),
+                    const SizedBox(width: 12),
+                    _kpiTile('سعر الكيلو (فاتورة)', '${((data['price_per_kg'] ?? 0.0) as num).toStringAsFixed(2)} د.أ', Colors.blueGrey.shade800),
+                    const SizedBox(width: 12),
+                    _kpiTile('إجمالي الفاتورة', '${((data['invoice_total'] ?? 0.0) as num).toStringAsFixed(2)} د.أ', MarkaziaColors.orange),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    _kpiTile('الوزن عند الاستلام (الفاتورة)', '${((data['weight_received'] ?? 0.0) as num).toStringAsFixed(2)} كغ', Colors.grey.shade700),
+                    const SizedBox(width: 12),
+                    _kpiTile('الوزن قبل التقطيع', '${((data['weight_cut'] ?? 0.0) as num).toStringAsFixed(2)} كغ', Colors.indigo.shade800),
+                    const SizedBox(width: 12),
+                    _kpiTile('الفاقد بالتقطيع', '${((data['waste_loss'] ?? 0.0) as num).toStringAsFixed(2)} كغ', Colors.red.shade800),
+                    const SizedBox(width: 12),
+                    _kpiTile('صافي الوزن بعد التقطيع', '${((data['weight_cut'] ?? 0.0) as num).toStringAsFixed(2)} كغ', Colors.green.shade800),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 20),
+        const Text('جدول تفصيل القطعيات وأسعارها وإجمالياتها ونسبها الفعلية:',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.dark)),
+        const SizedBox(height: 10),
+        Card(
+          elevation: 0,
+          color: Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14), side: const BorderSide(color: Color(0xFFE2E8F0))),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(14),
+            child: Table(
+              columnWidths: const {
+                0: FlexColumnWidth(2.8), 1: FlexColumnWidth(1.2),
+                2: FlexColumnWidth(1.0), 3: FlexColumnWidth(1.2), 4: FlexColumnWidth(1.5),
+              },
+              children: [
+                TableRow(
+                  decoration: const BoxDecoration(color: Color(0xFFF3F4F6)),
+                  children: const [
+                    Padding(padding: EdgeInsets.all(14.0), child: Text('اسم الصنف / القطعية', style: TextStyle(fontWeight: FontWeight.bold))),
+                    Padding(padding: EdgeInsets.all(14.0), child: Text('الكمية (كغ)', style: TextStyle(fontWeight: FontWeight.bold))),
+                    Padding(padding: EdgeInsets.all(14.0), child: Text('النسبة %', style: TextStyle(fontWeight: FontWeight.bold))),
+                    Padding(padding: EdgeInsets.all(14.0), child: Text('السعر (د.أ)', style: TextStyle(fontWeight: FontWeight.bold))),
+                    Padding(padding: EdgeInsets.all(14.0), child: Text('الإجمالي (د.أ)', style: TextStyle(fontWeight: FontWeight.bold))),
+                  ],
+                ),
+                ...cuts.map<TableRow>((c) {
+                  Color rowBg = Colors.white;
+                  if (c['status'] == 'highlight_yellow') rowBg = const Color(0xFFFEF9C3);
+                  if (c['status'] == 'highlight_red') rowBg = const Color(0xFFFEE2E2);
+
+                  return TableRow(
+                    decoration: BoxDecoration(color: rowBg, border: const Border(top: BorderSide(color: Color(0xFFF1F5F9)))),
+                    children: [
+                      Padding(padding: const EdgeInsets.all(12.0), child: Text(c['name'].toString(), style: const TextStyle(fontWeight: FontWeight.w600))),
+                      Padding(padding: const EdgeInsets.all(12.0), child: Text('${c['qty']} كغ')),
+                      Padding(padding: const EdgeInsets.all(12.0), child: Text(c['percentage'].toString(), style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black54))),
+                      Padding(padding: const EdgeInsets.all(12.0), child: Text('${c['price']} د.أ')),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text('${((c['total'] ?? 0.0) as num).toStringAsFixed(3)} د.أ',
+                            style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                      ),
+                    ],
+                  );
+                }).toList(),
+                TableRow(
+                  decoration: const BoxDecoration(color: Color(0xFF18181B)),
+                  children: [
+                    const Padding(padding: EdgeInsets.all(14.0), child: Text('المجموع الإجمالي للقطعيات الصافية', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white))),
+                    Padding(padding: const EdgeInsets.all(14.0), child: Text('${data['weight_cut']} كغ', style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange))),
+                    const Padding(padding: EdgeInsets.all(14.0), child: Text('100%', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white70))),
+                    const Padding(padding: EdgeInsets.all(14.0), child: Text('—', style: TextStyle(color: Colors.white54))),
+                    Padding(
+                      padding: const EdgeInsets.all(14.0),
+                      child: Text('${data['cuts_total_value']} د.أ',
+                          style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16, color: MarkaziaColors.orange)),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildDailySheet(Map<String, dynamic> data) {
+    final items = data['items'] as List? ?? [];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Card(
+          elevation: 0, color: Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: const BorderSide(color: Color(0xFFE2E8F0))),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(data['display_title'] ?? 'كشف طلبات', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
+                      const SizedBox(height: 4),
+                      Text('إجمالي الأصناف: ${data['items_count']} صنف', style: const TextStyle(color: Colors.black54)),
+                    ],
+                  ),
+                ),
+                _kpiTile('إجمالي المبيعات', '${((data['total_sales'] ?? 0.0) as num).toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 16),
+        Card(
+          elevation: 0, color: Colors.white,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14), side: const BorderSide(color: Color(0xFFE2E8F0))),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(
+              headingRowColor: MaterialStateProperty.all(const Color(0xFFFBF9F5)),
+              columns: const [
+                DataColumn(label: Text('اسم الصنف', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('SKU', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('الكمية', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('السعر', style: TextStyle(fontWeight: FontWeight.bold))),
+                DataColumn(label: Text('الإجمالي', style: TextStyle(fontWeight: FontWeight.bold))),
+              ],
+              rows: items.map<DataRow>((it) {
+                return DataRow(cells: [
+                  DataCell(Text(it['name'].toString(), style: const TextStyle(fontWeight: FontWeight.w600))),
+                  DataCell(Text(it['sku'].toString())),
+                  DataCell(Text('${it['quantity']}')),
+                  DataCell(Text('${it['price']} د.أ')),
+                  DataCell(Text('${((it['total'] ?? 0.0) as num).toStringAsFixed(3)} د.أ', style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange))),
+                ]);
+              }).toList(),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  // 4. دليل أودو الشامل
   Widget _buildOdooCatalogTab() {
     return _UniversalSearchList(
       items: _odooCatalog,
@@ -681,7 +781,7 @@ class _MainHubScreenState extends State<MainHubScreen> {
   Widget _kpiTile(String title, String value, Color color) {
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
         decoration: BoxDecoration(
           color: color.withOpacity(0.08),
           borderRadius: BorderRadius.circular(14),
@@ -692,275 +792,9 @@ class _MainHubScreenState extends State<MainHubScreen> {
           children: [
             Text(title, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey.shade600)),
             const SizedBox(height: 4),
-            Text(value, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: color)),
+            Text(value, style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: color)),
           ],
         ),
-      ),
-    );
-  }
-}
-
-// مستعرض شيتات وتواريخ طلبات مارت
-class _TalabatBrowser extends StatefulWidget {
-  final List<dynamic> sheets;
-  const _TalabatBrowser({required this.sheets});
-
-  @override
-  State<_TalabatBrowser> createState() => _TalabatBrowserState();
-}
-
-class _TalabatBrowserState extends State<_TalabatBrowser> {
-  int _selectedSheetIdx = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    final currentSheet = widget.sheets[_selectedSheetIdx] as Map<String, dynamic>;
-    final isLamb = currentSheet['type'] == 'lamb_report';
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        // شريط اختيار التاريخ والشيت (شهر 8 و 9)
-        Container(
-          height: 60,
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          color: Colors.white,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemCount: widget.sheets.length,
-            separatorBuilder: (_, __) => const SizedBox(width: 10),
-            itemBuilder: (context, idx) {
-              final sh = widget.sheets[idx];
-              final isSel = idx == _selectedSheetIdx;
-              final isL = sh['type'] == 'lamb_report';
-
-              return ChoiceChip(
-                selected: isSel,
-                selectedColor: MarkaziaColors.orange,
-                backgroundColor: const Color(0xFFFBF9F5),
-                avatar: Icon(isL ? Icons.receipt_long : Icons.calendar_today_rounded,
-                    size: 14, color: isSel ? Colors.white : MarkaziaColors.orange),
-                label: Text(sh['display_title'] ?? sh['sheet_name'],
-                    style: TextStyle(
-                      fontSize: 12, fontWeight: FontWeight.bold,
-                      color: isSel ? Colors.white : MarkaziaColors.dark,
-                    )),
-                onSelected: (val) {
-                  if (val) setState(() => _selectedSheetIdx = idx);
-                },
-              );
-            },
-          ),
-        ),
-        const Divider(height: 1, thickness: 1, color: Color(0xFFE2E8F0)),
-        Expanded(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(22.0),
-            child: isLamb ? _buildLambReport(currentSheet) : _buildDailySheet(currentSheet),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildLambReport(Map<String, dynamic> data) {
-    final cuts = data['cuts'] as List? ?? [];
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Card(
-          elevation: 0,
-          color: Colors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: const BorderSide(color: Color(0xFFE2E8F0))),
-          child: Padding(
-            padding: const EdgeInsets.all(22.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(color: MarkaziaColors.orange.withOpacity(0.12), borderRadius: BorderRadius.circular(12)),
-                      child: const Icon(Icons.receipt_long_rounded, color: MarkaziaColors.orange, size: 28),
-                    ),
-                    const SizedBox(width: 14),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('حسبة تفصيل وتقطيع الخروف (${data['sheet_name']})',
-                            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                        const Text('المطابقة الرسمية للفاتورة والأوزان والقطعيات', style: TextStyle(fontSize: 12, color: Colors.black54)),
-                      ],
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 18),
-                const Divider(height: 1),
-                const SizedBox(height: 18),
-                Row(
-                  children: [
-                    _kpiTile('عدد الخرفان', '${data['sheep_count']} خروف', Colors.grey.shade800),
-                    const SizedBox(width: 12),
-                    _kpiTile('سعر الكيلو (فاتورة)', '${data['price_per_kg']} د.أ', Colors.blueGrey.shade800),
-                    const SizedBox(width: 12),
-                    _kpiTile('إجمالي الفاتورة', '${data['invoice_total']} د.أ', MarkaziaColors.orange),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                Row(
-                  children: [
-                    _kpiTile('الوزن عند الاستلام (الفاتورة)', '${data['weight_received']} كغ', Colors.grey.shade700),
-                    const SizedBox(width: 12),
-                    _kpiTile('الوزن قبل التقطيع', '${data['weight_cut']} كغ', Colors.indigo.shade800),
-                    const SizedBox(width: 12),
-                    _kpiTile('الفاقد بالتقطيع', '${data['waste_loss']} كغ', Colors.red.shade800),
-                    const SizedBox(width: 12),
-                    _kpiTile('صافي الوزن بعد التقطيع', '${data['weight_cut']} كغ', Colors.green.shade800),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 20),
-        const Text('جدول تفصيل القطعيات وأسعارها وإجمالياتها:',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: MarkaziaColors.dark)),
-        const SizedBox(height: 10),
-        Card(
-          elevation: 0,
-          color: Colors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14), side: const BorderSide(color: Color(0xFFE2E8F0))),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(14),
-            child: Table(
-              columnWidths: const {
-                0: FlexColumnWidth(2.8), 1: FlexColumnWidth(1.2),
-                2: FlexColumnWidth(1.0), 3: FlexColumnWidth(1.2), 4: FlexColumnWidth(1.5),
-              },
-              children: [
-                TableRow(
-                  decoration: const BoxDecoration(color: Color(0xFFF3F4F6)),
-                  children: const [
-                    Padding(padding: EdgeInsets.all(14.0), child: Text('اسم الصنف / القطعية', style: TextStyle(fontWeight: FontWeight.bold))),
-                    Padding(padding: EdgeInsets.all(14.0), child: Text('الكمية (كغ)', style: TextStyle(fontWeight: FontWeight.bold))),
-                    Padding(padding: EdgeInsets.all(14.0), child: Text('النسبة %', style: TextStyle(fontWeight: FontWeight.bold))),
-                    Padding(padding: EdgeInsets.all(14.0), child: Text('السعر (د.أ)', style: TextStyle(fontWeight: FontWeight.bold))),
-                    Padding(padding: EdgeInsets.all(14.0), child: Text('الإجمالي (د.أ)', style: TextStyle(fontWeight: FontWeight.bold))),
-                  ],
-                ),
-                ...cuts.map<TableRow>((c) {
-                  Color rowBg = Colors.white;
-                  if (c['status'] == 'highlight_yellow') rowBg = const Color(0xFFFEF9C3);
-                  if (c['status'] == 'highlight_red') rowBg = const Color(0xFFFEE2E2);
-
-                  return TableRow(
-                    decoration: BoxDecoration(color: rowBg, border: const Border(top: BorderSide(color: Color(0xFFF1F5F9)))),
-                    children: [
-                      Padding(padding: const EdgeInsets.all(12.0), child: Text(c['name'].toString(), style: const TextStyle(fontWeight: FontWeight.w600))),
-                      Padding(padding: const EdgeInsets.all(12.0), child: Text('${c['qty']} كغ')),
-                      Padding(padding: const EdgeInsets.all(12.0), child: Text(c['percentage'].toString(), style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black54))),
-                      Padding(padding: const EdgeInsets.all(12.0), child: Text('${c['price']} د.أ')),
-                      Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Text('${(c['total'] as num).toStringAsFixed(3)} د.أ',
-                            style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                      ),
-                    ],
-                  );
-                }).toList(),
-                TableRow(
-                  decoration: const BoxDecoration(color: Color(0xFF18181B)),
-                  children: [
-                    const Padding(padding: EdgeInsets.all(14.0), child: Text('المجموع الإجمالي للقطعيات الصافية', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white))),
-                    Padding(padding: const EdgeInsets.all(14.0), child: Text('${data['weight_cut']} كغ', style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange))),
-                    const Padding(padding: EdgeInsets.all(14.0), child: Text('100%', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white70))),
-                    const Padding(padding: EdgeInsets.all(14.0), child: Text('—', style: TextStyle(color: Colors.white54))),
-                    Padding(
-                      padding: const EdgeInsets.all(14.0),
-                      child: Text('${data['cuts_total_value']} د.أ',
-                          style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 16, color: MarkaziaColors.orange)),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildDailySheet(Map<String, dynamic> data) {
-    final items = data['items'] as List? ?? [];
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Card(
-          elevation: 0, color: Colors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16), side: const BorderSide(color: Color(0xFFE2E8F0))),
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(data['display_title'] ?? 'كشف طلبات', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: MarkaziaColors.dark)),
-                      const SizedBox(height: 4),
-                      Text('إجمالي الأصناف: ${data['items_count']} صنف', style: const TextStyle(color: Colors.black54)),
-                    ],
-                  ),
-                ),
-                _kpiTile('إجمالي المبيعات', '${(data['total_sales'] as num).toStringAsFixed(3)} د.أ', MarkaziaColors.orange),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        Card(
-          elevation: 0, color: Colors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14), side: const BorderSide(color: Color(0xFFE2E8F0))),
-          child: DataTable(
-            headingRowColor: MaterialStateProperty.all(const Color(0xFFFBF9F5)),
-            columns: const [
-              DataColumn(label: Text('اسم الصنف', style: TextStyle(fontWeight: FontWeight.bold))),
-              DataColumn(label: Text('SKU', style: TextStyle(fontWeight: FontWeight.bold))),
-              DataColumn(label: Text('الكمية', style: TextStyle(fontWeight: FontWeight.bold))),
-              DataColumn(label: Text('السعر', style: TextStyle(fontWeight: FontWeight.bold))),
-              DataColumn(label: Text('الإجمالي', style: TextStyle(fontWeight: FontWeight.bold))),
-            ],
-            rows: items.map<DataRow>((it) {
-              return DataRow(cells: [
-                DataCell(Text(it['name'].toString(), style: const TextStyle(fontWeight: FontWeight.w600))),
-                DataCell(Text(it['sku'].toString())),
-                DataCell(Text('${it['quantity']}')),
-                DataCell(Text('${it['price']} د.أ')),
-                DataCell(Text('${(it['total'] as num).toStringAsFixed(3)} د.أ', style: const TextStyle(fontWeight: FontWeight.bold, color: MarkaziaColors.orange))),
-              ]);
-            }).toList(),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _kpiTile(String title, String value, Color color) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      decoration: BoxDecoration(
-        color: color.withOpacity(0.08), borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: color.withOpacity(0.2)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(title, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey.shade600)),
-          const SizedBox(height: 4),
-          Text(value, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: color)),
-        ],
       ),
     );
   }
@@ -1015,7 +849,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
       _filtered = widget.items.where((i) {
         final title = (i[widget.titleKey] ?? '').toString().toLowerCase();
         final code = (i['code'] ?? i['sku'] ?? i['barcode'] ?? i['odoo_code'] ?? '').toString().toLowerCase();
-        final date = (i['date'] ?? '').toString().toLowerCase();
+        final date = (i['date'] ?? i['sheet_name'] ?? '').toString().toLowerCase();
 
         final ings = (i['ingredients'] as List? ?? []);
         final ingMatch = ings.any((ing) {
@@ -1025,7 +859,13 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
           return n.contains(query) || c.contains(query) || r.contains(query);
         });
 
-        return query.isEmpty || title.contains(query) || code.contains(query) || date.contains(query) || ingMatch;
+        final cuts = (i['cuts'] as List? ?? []);
+        final cutMatch = cuts.any((cut) {
+          final n = (cut['name'] ?? '').toString().toLowerCase();
+          return n.contains(query);
+        });
+
+        return query.isEmpty || title.contains(query) || code.contains(query) || date.contains(query) || ingMatch || cutMatch;
       }).toList();
 
       if (_filtered.isNotEmpty && !_filtered.contains(_selected)) {
@@ -1055,7 +895,7 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
                     controller: _ctrl,
                     onChanged: _filter,
                     decoration: InputDecoration(
-                      hintText: 'بحث بالاسم، الكود، التاريخ، أو المادة...',
+                      hintText: 'بحث بالاسم، التاريخ، الكود، أو الصنف...',
                       prefixIcon: const Icon(Icons.search_rounded, color: MarkaziaColors.orange),
                       suffixIcon: _ctrl.text.isNotEmpty
                           ? IconButton(icon: const Icon(Icons.clear, size: 16), onPressed: () { _ctrl.clear(); _filter(''); })
@@ -1096,17 +936,24 @@ class _UniversalSearchListState extends State<_UniversalSearchList> {
                               fontWeight: isSel ? FontWeight.bold : FontWeight.w600,
                               color: isSel ? MarkaziaColors.orange : MarkaziaColors.dark,
                             )),
-                        subtitle: widget.isStaffTab
-                            ? Row(
-                                children: [
-                                  const Icon(Icons.calendar_today_rounded, size: 11, color: Colors.black45),
-                                  const SizedBox(width: 4),
-                                  Text(widget.subtitleBuilder(item),
-                                      style: TextStyle(fontSize: 11, color: isSel ? MarkaziaColors.orange : Colors.grey.shade600)),
-                                ],
-                              )
-                            : Text(widget.subtitleBuilder(item),
-                                style: TextStyle(fontSize: 11, color: isSel ? MarkaziaColors.orange : Colors.grey.shade600)),
+                        subtitle: Row(
+                          children: [
+                            Icon(
+                              item['type'] == 'lamb_report' ? Icons.receipt_long_rounded : (widget.isStaffTab ? Icons.calendar_today_rounded : Icons.info_outline),
+                              size: 12,
+                              color: isSel ? MarkaziaColors.orange : Colors.grey.shade500,
+                            ),
+                            const SizedBox(width: 4),
+                            Expanded(
+                              child: Text(
+                                widget.subtitleBuilder(item),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(fontSize: 11, color: isSel ? MarkaziaColors.orange : Colors.grey.shade600),
+                              ),
+                            ),
+                          ],
+                        ),
                         trailing: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.end,
