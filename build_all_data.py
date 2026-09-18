@@ -1,18 +1,28 @@
 ﻿import os
 import json
 import math
+import shutil
 import pandas as pd
 
-# مسارات الملفات الأربعة
+# مسارات الملفات
 p_costing = os.path.expanduser(r"~\Downloads\Costing V21.xlsx")
 if not os.path.exists(p_costing): p_costing = "Costing V21.xlsx"
 
 p_staff = os.path.expanduser(r"~\Desktop\ريسبي وجبات الموظفين.xlsx")
 p_odoo = os.path.expanduser(r"~\Downloads\اصناف اودو اخر تحديث (2).xlsx")
 p_talabat = os.path.expanduser(r"~\Downloads\طلبات مارت نهائي (3).xlsx")
+p_logo = os.path.expanduser(r"~\Desktop\شعار-المركزية4-1.png")
 
 out_dir = os.path.join("assets", "data")
 os.makedirs(out_dir, exist_ok=True)
+os.makedirs("assets", exist_ok=True)
+
+# نسخ الشعار تلقائياً إلى مجلد الأصول والويب
+if os.path.exists(p_logo):
+    shutil.copy(p_logo, os.path.join("assets", "logo.png"))
+    if os.path.exists("web"):
+        shutil.copy(p_logo, os.path.join("web", "favicon.png"))
+    print("✅ تم نسخ شعار المركزية بنجاح إلى أصول التطبيق.")
 
 def c_str(v):
     if pd.isna(v) or v is None: return ""
@@ -40,7 +50,7 @@ def find_col(df, keys):
     return None
 
 # ==========================================
-# 1. معالجة دليل أصناف أودو (Odoo Catalog)
+# 1. قراءة دليل أصناف أودو (Odoo Catalog)
 # ==========================================
 odoo_items = []
 odoo_map_by_code = {}
@@ -82,137 +92,49 @@ if os.path.exists(p_odoo):
         if barcode: odoo_map_by_code[barcode.lower()] = item_obj
         odoo_map_by_name[norm(name)] = item_obj
 
-    print(f"تمت قراءة {len(odoo_items)} صنف من أودو.")
+    print(f"تمت فهرسة {len(odoo_items)} صنف من أودو.")
 
 with open(os.path.join(out_dir, "odoo_catalog.json"), "w", encoding="utf-8") as f:
     json.dump(odoo_items, f, ensure_ascii=False, indent=2, allow_nan=False)
 
 # ==========================================
-# 2. معالجة طلبات مارت (Talabat Mart)
+# 2. قراءة شجرة التكاليف وقواعد RM & SF
 # ==========================================
-talabat_items = []
-if os.path.exists(p_talabat):
-    print(f"جاري قراءة طلبات مارت من: {p_talabat}...")
-    df_tal = pd.read_excel(p_talabat).dropna(how="all")
-    
-    t_name_col = find_col(df_tal, ["اسم", "name", "item", "وصف"]) or df_tal.columns[0]
-    t_code_col = find_col(df_tal, ["sku", "كود", "code", "رمز"])
-    t_barcode_col = find_col(df_tal, ["بار", "barcode", "ean"])
-    t_price_col = find_col(df_tal, ["سعر", "price", "بيع"])
-    t_cost_col = find_col(df_tal, ["تكلفة", "cost"])
-    t_cat_col = find_col(df_tal, ["قسم", "فئة", "category"])
+semi_dict = {}
+rm_sf_master = {}
 
-    for _, row in df_tal.iterrows():
-        t_name = c_str(row.get(t_name_col))
-        if not t_name: continue
-        t_code = c_str(row.get(t_code_col)) if t_code_col else ""
-        t_barcode = c_str(row.get(t_barcode_col)) if t_barcode_col else ""
-        t_price = c_num(row.get(t_price_col)) if t_price_col else 0.0
-        t_cost = c_num(row.get(t_cost_col)) if t_cost_col else 0.0
-        t_cat = c_str(row.get(t_cat_col)) if t_cat_col else "عام"
-
-        # الربط الذكي مع أودو لجلب التكلفة إذا لم تكن مسجلة في شيت طلبات
-        matched_odoo = odoo_map_by_code.get(t_barcode.lower()) or odoo_map_by_code.get(t_code.lower()) or odoo_map_by_name.get(norm(t_name))
-        matched_odoo_code = ""
-        if matched_odoo:
-            matched_odoo_code = matched_odoo.get("code", "")
-            if t_cost == 0.0:
-                t_cost = matched_odoo.get("cost", 0.0)
-
-        margin = ((t_price - t_cost) / t_price) if t_price > 0 else 0.0
-
-        talabat_items.append({
-            "name": t_name,
-            "sku": t_code,
-            "barcode": t_barcode,
-            "category": t_cat,
-            "price": t_price,
-            "cost": t_cost,
-            "margin": margin,
-            "odoo_code": matched_odoo_code
-        })
-
-    print(f"تمت معالجة {len(talabat_items)} صنف في طلبات مارت.")
-
-with open(os.path.join(out_dir, "talabat_mart.json"), "w", encoding="utf-8") as f:
-    json.dump(talabat_items, f, ensure_ascii=False, indent=2, allow_nan=False)
-
-# ==========================================
-# 3. معالجة وجبات الموظفين (Staff Meals) - معدل للتجميع حسب اسم الوجبة بدقة
-# ==========================================
-staff_meals = []
-if os.path.exists(p_staff):
-    print(f"جاري قراءة ريسبي وجبات الموظفين من: {p_staff}...")
-    xls_staff = pd.ExcelFile(p_staff)
-    meals_dict = {}
-
-    for s_name in xls_staff.sheet_names:
-        df_s = pd.read_excel(xls_staff, sheet_name=s_name).dropna(how="all")
-        
-        # مطابقة الأعمدة حسب تنسيق الإكسل الفعلي
-        col_meal_name = find_col(df_s, ["اسم الوجبه", "اسم الوجبة", "meal"])
-        col_ing_code = find_col(df_s, ["كود الصنف", "كود", "code"])
-        col_ing_name = find_col(df_s, ["رسبي الوجبة", "رسبي الوجبه", "مكون", "recipe"])
-        col_qty = find_col(df_s, ["كمية رسبي الوجبه", "كمية رسبي", "كمية", "qty"])
-        col_kg = find_col(df_s, ["بالكيلو", "كيلو", "kg"])
-        col_cost = find_col(df_s, ["الكلفة", "سعر الوحدة", "cost"])
-        col_total_cost = find_col(df_s, ["اجمالي الكلفة", "إجمالي الكلفة", "total cost", "الاجمالي"])
-
-        for _, row in df_s.iterrows():
-            meal_name = c_str(row.get(col_meal_name)) if col_meal_name else ""
-            if not meal_name: continue
-
-            ing_name = c_str(row.get(col_ing_name)) if col_ing_name else ""
-            if not ing_name: continue
-
-            ing_code = c_str(row.get(col_ing_code)) if col_ing_code else ""
-            qty_g = c_num(row.get(col_qty)) if col_qty else 0.0
-            qty_kg = c_num(row.get(col_kg)) if col_kg else 0.0
-            cost_u = c_num(row.get(col_cost)) if col_cost else 0.0
-            tot_c = c_num(row.get(col_total_cost)) if col_total_cost else 0.0
-
-            # حساب التكلفة إذا لم تكن موجودة
-            if tot_c == 0.0 and cost_u > 0:
-                tot_c = cost_u * (qty_kg if qty_kg > 0 else (qty_g / 1000.0 if qty_g > 0 else 1.0))
-
-            qty_val = qty_kg if qty_kg > 0 else qty_g
-            unit_val = "كيلو" if qty_kg > 0 else "غم"
-
-            if meal_name not in meals_dict:
-                meals_dict[meal_name] = {
-                    "name": meal_name,
-                    "code": f"STAFF-{len(meals_dict)+1:03d}",
-                    "total_cost": 0.0,
-                    "ingredients": []
-                }
-
-            meals_dict[meal_name]["ingredients"].append({
-                "code": ing_code,
-                "name": ing_name,
-                "quantity": qty_val,
-                "unit": unit_val,
-                "cost_per_unit": cost_u,
-                "total_cost": tot_c
-            })
-
-    for m in meals_dict.values():
-        m["total_cost"] = sum(i["total_cost"] for i in m["ingredients"])
-        staff_meals.append(m)
-
-    print(f"تم بنجاح تجميع واستخراج {len(staff_meals)} وجبة موظفين بالمكونات الفرعية.")
-
-with open(os.path.join(out_dir, "staff_meals.json"), "w", encoding="utf-8") as f:
-    json.dump(staff_meals, f, ensure_ascii=False, indent=2, allow_nan=False)
-
-# ==========================================
-# 4. معالجة شجرة التكاليف الرئيسية (BOM Costing)
-# ==========================================
 if os.path.exists(p_costing):
     print(f"جاري قراءة شجرة التكاليف الرئيسية: {p_costing}...")
     xls_c = pd.ExcelFile(p_costing)
-    df_semi = pd.read_excel(xls_c, sheet_name="Semi Finished Recipe").dropna(how="all")
-    semi_dict = {}
 
+    # فحص شيتات RM & SF العامة
+    for s_name in xls_c.sheet_names:
+        s_low = s_name.lower()
+        if ("rm" in s_low and "sf" in s_low) or "master" in s_low:
+            print(f"جاري استخراج بيانات شيت {s_name}...")
+            df_rm = pd.read_excel(xls_c, sheet_name=s_name).dropna(how="all")
+            r_code_col = find_col(df_rm, ["كود", "code", "مرجع", "odoo"])
+            r_name_col = find_col(df_rm, ["اسم", "name", "description", "مادة"])
+            r_unit_col = find_col(df_rm, ["وحدة", "unit"])
+            r_cost_col = find_col(df_rm, ["كلفة", "cost", "سعر"])
+            r_type_col = find_col(df_rm, ["نوع", "type"])
+            for _, r_row in df_rm.iterrows():
+                rc = c_str(r_row.get(r_code_col)) if r_code_col else ""
+                rn = c_str(r_row.get(r_name_col)) if r_name_col else ""
+                if not rc and not rn: continue
+                m_obj = {
+                    "code": rc,
+                    "name": rn,
+                    "unit": c_str(r_row.get(r_unit_col)) if r_unit_col else "",
+                    "cost": c_num(r_row.get(r_cost_col)) if r_cost_col else 0.0,
+                    "type": c_str(r_row.get(r_type_col)) if r_type_col else "RM/SF",
+                    "sheet": s_name
+                }
+                if rc: rm_sf_master[rc.lower()] = m_obj
+                if rn: rm_sf_master[norm(rn)] = m_obj
+
+    # قراءة شيت Semi Finished Recipe
+    df_semi = pd.read_excel(xls_c, sheet_name="Semi Finished Recipe").dropna(how="all")
     current_sf_odoo = ""
     current_sf_code = ""
     current_sf_name = ""
@@ -221,7 +143,6 @@ if os.path.exists(p_costing):
         vals = list(row.values)
         if len(vals) < 12: continue
 
-        # حفظ اسم الـ SF الحالي حتى لا تسقط أي مكونات تالية
         if c_str(vals[3]):
             current_sf_odoo = c_str(vals[0])
             current_sf_code = c_str(vals[1])
@@ -241,9 +162,11 @@ if os.path.exists(p_costing):
         }
         for k in [current_sf_code, current_sf_odoo, norm(current_sf_name), current_sf_name]:
             if k and k != "nan":
-                if k not in semi_dict: semi_dict[k] = []
-                semi_dict[k].append(sub_item)
+                k_low = k.lower()
+                if k_low not in semi_dict: semi_dict[k_low] = []
+                semi_dict[k_low].append(sub_item)
 
+    # قراءة Finished Recipe
     df_finished = pd.read_excel(xls_c, sheet_name="Finished Recipe").dropna(how="all")
     finished_items = {}
     current_dish = None
@@ -280,12 +203,12 @@ if os.path.exists(p_costing):
         if not ing_name: continue
 
         subs = []
-        for lookup in [ing_code, ing_odoo, norm(ing_name), ing_name]:
+        for lookup in [ing_code.lower(), ing_odoo.lower(), norm(ing_name)]:
             if lookup in semi_dict and len(semi_dict[lookup]) > 0:
                 subs = semi_dict[lookup]
                 break
 
-        is_sf = len(subs) > 0 or ing_odoo.startswith("SF") or ing_code.startswith("SF") or "محشي" in ing_name or "اوزي" in ing_name or "مقلي" in ing_name
+        is_sf = len(subs) > 0 or ing_odoo.startswith("SF") or ing_code.startswith("SF")
 
         current_dish["ingredients"].append({
             "odoo_code": ing_odoo,
@@ -308,7 +231,150 @@ if os.path.exists(p_costing):
     c_list = list(finished_items.values())
     with open(os.path.join(out_dir, "costing_data.json"), "w", encoding="utf-8") as f:
         json.dump(c_list, f, ensure_ascii=False, indent=2, allow_nan=False)
+    print(f"تم استخراج {len(c_list)} صنف في شجرة التكاليف.")
 
-    print(f"تم بنجاح استخراج {len(c_list)} صنف في شجرة التكاليف الرئيسية.")
+# ==========================================
+# 3. معالجة وجبات الموظفين الذكية (بالتواريخ وربط أودو)
+# ==========================================
+staff_meals = []
+if os.path.exists(p_staff):
+    print(f"جاري قراءة ريسبي وجبات الموظفين الذكي من: {p_staff}...")
+    xls_staff = pd.ExcelFile(p_staff)
+    meals_dict = {}
 
-print("=== تم تحديث جميع قواعد البيانات الأربعة بنجاح 100%! ===")
+    for s_name in xls_staff.sheet_names:
+        df_s = pd.read_excel(xls_staff, sheet_name=s_name).dropna(how="all")
+
+        col_date = find_col(df_s, ["تاريخ", "date"]) or df_s.columns[0]
+        col_code = find_col(df_s, ["كود", "code"]) or df_s.columns[1]
+        col_meal = find_col(df_s, ["اسم الوجبه", "اسم الوجبة", "meal"]) or df_s.columns[2]
+        col_raw = find_col(df_s, ["رسبي", "وصفة", "recipe"]) or df_s.columns[3]
+        col_qty = find_col(df_s, ["كمية رسبي", "كمية"]) or df_s.columns[4]
+        col_kg = find_col(df_s, ["بالكيلو", "كيلو"]) or df_s.columns[5]
+        col_cost = find_col(df_s, ["الكلفة", "سعر"]) or df_s.columns[6]
+        col_tot = find_col(df_s, ["اجمالي", "إجمالي"]) or df_s.columns[7]
+
+        for _, row in df_s.iterrows():
+            raw_date = row.get(col_date)
+            date_str = ""
+            if pd.notna(raw_date):
+                try:
+                    date_str = pd.to_datetime(raw_date).strftime("%Y-%m-%d")
+                except:
+                    date_str = c_str(raw_date)
+
+            meal_name = c_str(row.get(col_meal))
+            if not meal_name: continue
+
+            ing_code = c_str(row.get(col_code))
+            raw_desc = c_str(row.get(col_raw))
+
+            # البحث الذكي عن الاسم الرسمي في أودو باستخدام كود الصنف (Column B)
+            clean_name = ""
+            if ing_code:
+                odoo_match = odoo_map_by_code.get(ing_code.lower())
+                if odoo_match:
+                    clean_name = odoo_match.get("name", "")
+                elif ing_code.lower() in rm_sf_master:
+                    clean_name = rm_sf_master[ing_code.lower()].get("name", "")
+
+            # إذا لم يوجد في أودو، نستخدم الوصف من عامود D كاحتياط
+            if not clean_name:
+                clean_name = raw_desc or f"صنف {ing_code}"
+
+            qty_g = c_num(row.get(col_qty))
+            qty_kg = c_num(row.get(col_kg))
+            cost_u = c_num(row.get(col_cost))
+            tot_c = c_num(row.get(col_tot))
+
+            if tot_c == 0.0 and cost_u > 0:
+                tot_c = cost_u * (qty_kg if qty_kg > 0 else (qty_g / 1000.0 if qty_g > 0 else 1.0))
+
+            qty_val = qty_kg if qty_kg > 0 else qty_g
+            unit_val = "كيلو" if qty_kg > 0 else "غم"
+
+            # فحص إذا كان الصنف في وجبة الموظف نصف مصنع له تفريعات
+            subs = []
+            if ing_code.lower() in semi_dict:
+                subs = semi_dict[ing_code.lower()]
+            elif norm(clean_name) in semi_dict:
+                subs = semi_dict[norm(clean_name)]
+
+            # تجميع بالاسم والتاريخ لتمييز كل يوم
+            group_key = f"{meal_name}____{date_str}"
+            if group_key not in meals_dict:
+                meals_dict[group_key] = {
+                    "name": meal_name,
+                    "date": date_str if date_str else "تاريخ غير محدد",
+                    "code": f"STAFF-{len(meals_dict)+1:03d}",
+                    "total_cost": 0.0,
+                    "ingredients": []
+                }
+
+            meals_dict[group_key]["ingredients"].append({
+                "code": ing_code,
+                "name": clean_name,
+                "raw_description": raw_desc,
+                "quantity": qty_val,
+                "unit": unit_val,
+                "cost_per_unit": cost_u,
+                "total_cost": tot_c,
+                "is_semi_finished": len(subs) > 0 or ing_code.startswith("SF"),
+                "sub_ingredients": subs
+            })
+
+    for m in meals_dict.values():
+        m["total_cost"] = sum(i["total_cost"] for i in m["ingredients"])
+        staff_meals.append(m)
+
+    print(f"تم بنجاح تجميع {len(staff_meals)} وجبة موظفين بالتواريخ والأسماء الرسمية.")
+
+with open(os.path.join(out_dir, "staff_meals.json"), "w", encoding="utf-8") as f:
+    json.dump(staff_meals, f, ensure_ascii=False, indent=2, allow_nan=False)
+
+# ==========================================
+# 4. قراءة طلبات مارت
+# ==========================================
+talabat_items = []
+if os.path.exists(p_talabat):
+    print(f"جاري قراءة طلبات مارت...")
+    df_tal = pd.read_excel(p_talabat).dropna(how="all")
+    t_name_col = find_col(df_tal, ["اسم", "name", "item"]) or df_tal.columns[0]
+    t_code_col = find_col(df_tal, ["sku", "كود", "code"])
+    t_barcode_col = find_col(df_tal, ["بار", "barcode"])
+    t_price_col = find_col(df_tal, ["سعر", "price", "بيع"])
+    t_cost_col = find_col(df_tal, ["تكلفة", "cost"])
+    t_cat_col = find_col(df_tal, ["قسم", "فئة", "category"])
+
+    for _, row in df_tal.iterrows():
+        t_name = c_str(row.get(t_name_col))
+        if not t_name: continue
+        t_code = c_str(row.get(t_code_col)) if t_code_col else ""
+        t_barcode = c_str(row.get(t_barcode_col)) if t_barcode_col else ""
+        t_price = c_num(row.get(t_price_col)) if t_price_col else 0.0
+        t_cost = c_num(row.get(t_cost_col)) if t_cost_col else 0.0
+        t_cat = c_str(row.get(t_cat_col)) if t_cat_col else "عام"
+
+        matched_odoo = odoo_map_by_code.get(t_barcode.lower()) or odoo_map_by_code.get(t_code.lower()) or odoo_map_by_name.get(norm(t_name))
+        matched_odoo_code = ""
+        if matched_odoo:
+            matched_odoo_code = matched_odoo.get("code", "")
+            if t_cost == 0.0: t_cost = matched_odoo.get("cost", 0.0)
+
+        margin = ((t_price - t_cost) / t_price) if t_price > 0 else 0.0
+
+        talabat_items.append({
+            "name": t_name,
+            "sku": t_code,
+            "barcode": t_barcode,
+            "category": t_cat,
+            "price": t_price,
+            "cost": t_cost,
+            "margin": margin,
+            "odoo_code": matched_odoo_code
+        })
+
+with open(os.path.join(out_dir, "talabat_mart.json"), "w", encoding="utf-8") as f:
+    json.dump(talabat_items, f, ensure_ascii=False, indent=2, allow_nan=False)
+
+print("🎉 اكتمل تحديث جميع قواعد البيانات الأربعة والشعار بنجاح!")
